@@ -1,7 +1,7 @@
 ---
 name: General Features
 about: General Features
-title: "[Feature]"
+title: ''
 labels: general
 assignees: ''
 
