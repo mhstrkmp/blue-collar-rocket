@@ -1,3 +1,4 @@
+import React from "react";
 import Page from "./pages/Page";
 import "./App.css";
 
@@ -9,7 +10,9 @@ function App() {
         onLogout={() => console.log("logout")}
         onCreateAccount={() => console.log("create account")}
       />
-      <a href="/storybook">Go to Storybook</a>
+      <a href="/storybook" target="_blank">
+        Go to Storybook
+      </a>
     </div>
   );
 }

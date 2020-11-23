@@ -28,7 +28,6 @@
       "warn",
       { "vars": "all", "args": "all", "ignoreRestSiblings": true }
     ],
-    "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": "off",
     "import/no-anonymous-default-export": "off"
   }
