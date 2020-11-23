@@ -1,7 +1,7 @@
 ---
 name: User Story
 about: Define a user story here
-title: STORY
+title: "[STORY]"
 labels: ''
 assignees: ''
 
