@@ -1,13 +1,11 @@
 ---
 name: Component
 about: Define a component
-title: ''
+title: ""
 labels: component
-assignees: ''
-
+assignees: ""
 ---
 
-Description:
--
+## Description:
 
 Related to User Story:

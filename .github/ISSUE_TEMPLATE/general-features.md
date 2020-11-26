@@ -1,10 +1,7 @@
 ---
 name: General Features
 about: General Features
-title: ''
+title: ""
 labels: general
-assignees: ''
-
+assignees: ""
 ---
-
-

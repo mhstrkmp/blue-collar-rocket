@@ -1,10 +1,9 @@
 ---
 name: User Story
 about: Define a user story here
-title: ''
+title: ""
 labels: UserStory, frontend
-assignees: ''
-
+assignees: ""
 ---
 
 As a user, I
