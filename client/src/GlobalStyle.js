@@ -7,13 +7,13 @@ const GlobalStyle = createGlobalStyle`
 	box-sizing: border-box;
 }
 :root {
-    --primary-blue: #0052CC;
-    --primary-dark: #172B4D;
-    --primary-light: #fff;
+    --primary-first: #0052CC;
+    --primary-second: #172B4D;
+    --primary-third: #fff;
 
-    --secondary-red: #FF5630;
-    --secondary-gold: #FFAB00;
-    --secondary-green: #36B37E;
+    --secondary-warn: #FF5630;
+    --secondary-info: #FFAB00;
+    --secondary-success: #36B37E;
 
     --neutral-dark-N900: #091E42;
     --neutral-dark-N700: #253858;
