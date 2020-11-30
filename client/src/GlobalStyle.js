@@ -30,6 +30,7 @@ body
  {
   margin: 0;
   font-size: 16px;
+  color: var(--neutral-dark-N900);
 }
 `;
 

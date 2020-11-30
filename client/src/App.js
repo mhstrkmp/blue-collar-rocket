@@ -10,6 +10,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <HomePage />
+          <a href="/storybook" target="_blank">
+            Go to Storybook
+          </a>
         </Route>
       </Switch>
     </Router>
