@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components/macro";
 
 const GlobalStyle = createGlobalStyle`
 *,
@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
 body
  {
   margin: 0;
+  padding: 0;
   font-size: 16px;
   color: var(--neutral-dark-N900);
 }
