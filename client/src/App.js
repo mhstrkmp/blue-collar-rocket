@@ -1,19 +1,18 @@
 import React from "react";
-import Page from "./pages/Page";
-import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import GlobalStyle from "./GlobalStyle";
+import { HomePage } from "./pages/HomePage/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <Page
-        onLogin={() => console.log("login")}
-        onLogout={() => console.log("logout")}
-        onCreateAccount={() => console.log("create account")}
-      />
-      <a href="/storybook" target="_blank">
-        Go to Storybook
-      </a>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
