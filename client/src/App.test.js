@@ -1,9 +1,11 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import renderer from "react-test-renderer";
 import App from "./App";
 
-test("renders storybook react link", () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Go to Storybook/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App", () => {
+  test("snapshot renders", () => {
+    const component = renderer.create(<App />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

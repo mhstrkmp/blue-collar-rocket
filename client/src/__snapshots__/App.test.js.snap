@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot renders 1`] = `
+Array [
+  <h1>
+    Home
+  </h1>,
+  <div
+    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  >
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 fCuDut"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      Products Overview
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      href="/product-detail"
+      onClick={[Function]}
+    >
+      Product Detail
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      href="/customer-overview"
+      onClick={[Function]}
+    >
+      Customers
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      Checkout
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      href="/order-confirmation"
+      onClick={[Function]}
+    >
+      Order Confirmation
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      href="/loading"
+      onClick={[Function]}
+    >
+      Loading
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      href="/storybook"
+      onClick={[Function]}
+    >
+      Go To Storybook
+    </a>
+  </div>,
+]
+`;
