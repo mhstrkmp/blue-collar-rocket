@@ -9,56 +9,532 @@ Array [
     className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
   >
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 fCuDut"
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
       href="/"
       onClick={[Function]}
     >
       Home
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
       href="/product-overview"
       onClick={[Function]}
     >
       Products Overview
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
       href="/product-detail"
       onClick={[Function]}
     >
       Product Detail
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
       href="/customer-overview"
       onClick={[Function]}
     >
       Customers
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
       href="/checkout"
       onClick={[Function]}
     >
       Checkout
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
       href="/order-confirmation"
       onClick={[Function]}
     >
       Order Confirmation
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
       href="/loading"
       onClick={[Function]}
     >
       Loading
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 cwTmMg"
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/storybook"
+      onClick={[Function]}
+    >
+      Go To Storybook
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/CheckoutPage Standard 1`] = `
+Array [
+  <h1>
+    Checkout
+  </h1>,
+  <div
+    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  >
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      Products Overview
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-detail"
+      onClick={[Function]}
+    >
+      Product Detail
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/customer-overview"
+      onClick={[Function]}
+    >
+      Customers
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      Checkout
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/order-confirmation"
+      onClick={[Function]}
+    >
+      Order Confirmation
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/loading"
+      onClick={[Function]}
+    >
+      Loading
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/storybook"
+      onClick={[Function]}
+    >
+      Go To Storybook
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/CustomersOverviewPage Standard 1`] = `
+Array [
+  <h1>
+    Customers Overview
+  </h1>,
+  <div
+    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  >
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      Products Overview
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-detail"
+      onClick={[Function]}
+    >
+      Product Detail
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/customer-overview"
+      onClick={[Function]}
+    >
+      Customers
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      Checkout
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/order-confirmation"
+      onClick={[Function]}
+    >
+      Order Confirmation
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/loading"
+      onClick={[Function]}
+    >
+      Loading
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/storybook"
+      onClick={[Function]}
+    >
+      Go To Storybook
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/LoadingPage Standard 1`] = `
+Array [
+  <h1>
+    Loading
+  </h1>,
+  <div
+    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  >
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      Products Overview
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-detail"
+      onClick={[Function]}
+    >
+      Product Detail
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/customer-overview"
+      onClick={[Function]}
+    >
+      Customers
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      Checkout
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/order-confirmation"
+      onClick={[Function]}
+    >
+      Order Confirmation
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/loading"
+      onClick={[Function]}
+    >
+      Loading
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/storybook"
+      onClick={[Function]}
+    >
+      Go To Storybook
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/OrderConfirmationPage Standard 1`] = `
+Array [
+  <h1>
+    Order Confirmation
+  </h1>,
+  <div
+    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  >
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      Products Overview
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-detail"
+      onClick={[Function]}
+    >
+      Product Detail
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/customer-overview"
+      onClick={[Function]}
+    >
+      Customers
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      Checkout
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/order-confirmation"
+      onClick={[Function]}
+    >
+      Order Confirmation
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/loading"
+      onClick={[Function]}
+    >
+      Loading
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/storybook"
+      onClick={[Function]}
+    >
+      Go To Storybook
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/ProductPage Standard 1`] = `
+Array [
+  <h1>
+    Product Page
+  </h1>,
+  <div
+    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  >
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      Products Overview
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-detail"
+      onClick={[Function]}
+    >
+      Product Detail
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/customer-overview"
+      onClick={[Function]}
+    >
+      Customers
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      Checkout
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/order-confirmation"
+      onClick={[Function]}
+    >
+      Order Confirmation
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/loading"
+      onClick={[Function]}
+    >
+      Loading
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/storybook"
+      onClick={[Function]}
+    >
+      Go To Storybook
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/ProductsOverviewPage Standard 1`] = `
+Array [
+  <h1>
+    Products Overview
+  </h1>,
+  <div
+    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  >
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      Products Overview
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-detail"
+      onClick={[Function]}
+    >
+      Product Detail
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/customer-overview"
+      onClick={[Function]}
+    >
+      Customers
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      Checkout
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/order-confirmation"
+      onClick={[Function]}
+    >
+      Order Confirmation
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/loading"
+      onClick={[Function]}
+    >
+      Loading
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/storybook"
+      onClick={[Function]}
+    >
+      Go To Storybook
+    </a>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/ProfilePage Standard 1`] = `
+Array [
+  <h1>
+    Profile
+  </h1>,
+  <div
+    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  >
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      Products Overview
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-detail"
+      onClick={[Function]}
+    >
+      Product Detail
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/customer-overview"
+      onClick={[Function]}
+    >
+      Customers
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      Checkout
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/order-confirmation"
+      onClick={[Function]}
+    >
+      Order Confirmation
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/loading"
+      onClick={[Function]}
+    >
+      Loading
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
       href="/storybook"
       onClick={[Function]}
     >

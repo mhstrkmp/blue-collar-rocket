@@ -31,7 +31,10 @@ body
   margin: 0;
   padding: 0;
   font-size: 16px;
-  color: var(--neutral-dark-N900);
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--neutral-dark-N700);
 }
 `;
 

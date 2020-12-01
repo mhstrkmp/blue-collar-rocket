@@ -6,4 +6,4 @@ export default {
   component: CategoriesPage,
 };
 
-export const Standard = (args) => <CategoriesPage {...args} />;
+export const Standard = (args: any) => <CategoriesPage {...args} />;

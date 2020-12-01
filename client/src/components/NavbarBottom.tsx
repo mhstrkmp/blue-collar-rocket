@@ -3,19 +3,18 @@ import styled from "styled-components/macro";
 import { Link, LinkProps, useLocation } from "react-router-dom";
 
 const Container = styled.div`
-  /* Styling here */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 `;
-/* interface NavLinkProps extends LinkProps {
-  active: boolean;
-} */
+
 type NavLinkProps = { active: boolean } & LinkProps;
 const NavLink = styled(({ active, ...other }) => (
   <Link {...other} />
 ))<NavLinkProps>`
-  color: ${(props) => (props.active ? "red" : "blue")};
+  text-decoration: none;
+  color: ${(props) =>
+    props.active ? "var(--neutral-dark-N900)" : "var(--neutral-mid-N200)"};
 `;
 
 export const NavbarBottom = () => {
