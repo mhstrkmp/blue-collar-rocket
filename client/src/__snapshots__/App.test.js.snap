@@ -20,49 +20,21 @@ Array [
       href="/product-overview"
       onClick={[Function]}
     >
-      Products Overview
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/product-detail"
-      onClick={[Function]}
-    >
-      Product Detail
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/customer-overview"
-      onClick={[Function]}
-    >
-      Customers
+      Suche
     </a>
     <a
       className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
       href="/checkout"
       onClick={[Function]}
     >
-      Checkout
+      Warenkorb
     </a>
     <a
       className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/order-confirmation"
+      href="/profile"
       onClick={[Function]}
     >
-      Order Confirmation
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/loading"
-      onClick={[Function]}
-    >
-      Loading
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/storybook"
-      onClick={[Function]}
-    >
-      Go To Storybook
+      Profil
     </a>
   </div>,
 ]

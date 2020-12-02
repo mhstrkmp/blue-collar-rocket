@@ -30,34 +30,13 @@ export const NavbarBottom = () => {
         to={"/product-overview"}
         active={location.pathname === "/product-overview"}
       >
-        Products Overview
-      </NavLink>
-      <NavLink
-        to={"/product-detail"}
-        active={location.pathname === "/product-detail"}
-      >
-        Product Detail
-      </NavLink>
-      <NavLink
-        to={"/customer-overview"}
-        active={location.pathname === "/customer-overview"}
-      >
-        Customers
+        Suche
       </NavLink>
       <NavLink to={"/checkout"} active={location.pathname === "/checkout"}>
-        Checkout
+        Warenkorb
       </NavLink>
-      <NavLink
-        to={"/order-confirmation"}
-        active={location.pathname === "/order-confirmation"}
-      >
-        Order Confirmation
-      </NavLink>
-      <NavLink to={"/loading"} active={location.pathname === "/loading"}>
-        Loading
-      </NavLink>
-      <NavLink to={"/storybook"} active={location.pathname === "/storybook"}>
-        Go To Storybook
+      <NavLink to={"/profile"} active={location.pathname === "/profile"}>
+        Profil
       </NavLink>
     </Container>
   );
