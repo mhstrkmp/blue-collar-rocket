@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot renders 1`] = `
+Array [
+  <h1>
+    Home
+  </h1>,
+  <div
+    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  >
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      Suche
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      Warenkorb
+    </a>
+    <a
+      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      href="/profile"
+      onClick={[Function]}
+    >
+      Profil
+    </a>
+  </div>,
+]
+`;
