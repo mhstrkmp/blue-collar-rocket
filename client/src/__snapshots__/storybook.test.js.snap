@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Component/Button Button Add 1`] = `
+<button
+  className="Button-pzvjfl-0 dmLhUt"
+>
+  Hinzufügen
+</button>
+`;
+
+exports[`Storyshots Component/Button Button Order 1`] = `
+<button
+  className="Button-pzvjfl-0 dmLhUt"
+>
+  Bestellen
+</button>
+`;
+
+exports[`Storyshots Component/Searchbar Search 1`] = `
+<input
+  className="Searchbar-sc-1bd71k1-0 klVVlE"
+  placeholder="Suche"
+/>
+`;
+
 exports[`Storyshots Pages/CategoriesPage Standard 1`] = `
 Array [
   <h1>
