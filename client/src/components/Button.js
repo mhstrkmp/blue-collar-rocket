@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 
 const Button = styled.button`
-  height: 2rem;
+  height: 3rem;
   width: 150px;
   border-radius: 6px;
   background: var(--secondary-success);

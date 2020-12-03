@@ -2,9 +2,13 @@
 
 exports[`App snapshot renders 1`] = `
 Array [
-  <h1>
-    Home
-  </h1>,
+  <header
+    className="Header__Container-sc-17wre1r-0 hRODWv"
+  >
+    <h1
+      className="Header__Headline-sc-17wre1r-1 duXfVz"
+    />
+  </header>,
   <div
     className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
   >

@@ -2,7 +2,7 @@
 
 exports[`Storyshots Component/Button Button Add 1`] = `
 <button
-  className="Button-pzvjfl-0 dmLhUt"
+  className="Button-pzvjfl-0 fMftLg"
 >
   Hinzufügen
 </button>
@@ -10,24 +10,50 @@ exports[`Storyshots Component/Button Button Add 1`] = `
 
 exports[`Storyshots Component/Button Button Order 1`] = `
 <button
-  className="Button-pzvjfl-0 dmLhUt"
+  className="Button-pzvjfl-0 fMftLg"
 >
   Bestellen
 </button>
 `;
 
+exports[`Storyshots Component/Header Header Home 1`] = `
+<header
+  className="Header__Container-sc-17wre1r-0 hRODWv"
+>
+  <h1
+    className="Header__Headline-sc-17wre1r-1 duXfVz"
+  >
+    Home
+  </h1>
+</header>
+`;
+
+exports[`Storyshots Component/ProductOverviewCard Product Overview Card Default 1`] = `
+<div
+  className="ProductOverviewCard__Container-sc-1ufyc7s-0 eUdpqV"
+>
+  <h1>
+    Home
+  </h1>
+</div>
+`;
+
 exports[`Storyshots Component/Searchbar Search 1`] = `
 <input
-  className="Searchbar-sc-1bd71k1-0 klVVlE"
+  className="Searchbar-sc-1bd71k1-0 fMbmEz"
   placeholder="Suche"
 />
 `;
 
-exports[`Storyshots Pages/CategoriesPage Standard 1`] = `
+exports[`Storyshots Pages/Categories Categories 1`] = `
 Array [
-  <h1>
-    Home
-  </h1>,
+  <header
+    className="Header__Container-sc-17wre1r-0 hRODWv"
+  >
+    <h1
+      className="Header__Headline-sc-17wre1r-1 duXfVz"
+    />
+  </header>,
   <div
     className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
   >
