@@ -10,5 +10,9 @@ const Template = (args) => <ProductOverviewCard {...args} />;
 
 export const ProductOverviewCardDefault = Template.bind({});
 ProductOverviewCardDefault.args = {
-  children: "Home",
+  headline: "Blaue Box",
+  imgSrc: "https://via.placeholder.com/250",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...",
+  price: 328.5,
 };

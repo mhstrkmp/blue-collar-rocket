@@ -30,11 +30,32 @@ exports[`Storyshots Component/Header Header Home 1`] = `
 
 exports[`Storyshots Component/ProductOverviewCard Product Overview Card Default 1`] = `
 <div
-  className="ProductOverviewCard__Container-sc-1ufyc7s-0 eUdpqV"
+  className="ProductOverviewCard__Container-sc-1ufyc7s-0 ndfMM"
 >
-  <h1>
-    Home
-  </h1>
+  <h2
+    className="ProductOverviewCard__Headline-sc-1ufyc7s-1 hIOKLl"
+  >
+    Blaue Box
+  </h2>
+  <div
+    className="ProductOverviewCard__CardImage-sc-1ufyc7s-2 giqhaU"
+  >
+    <img
+      alt="Blaue Box"
+      src="https://via.placeholder.com/250"
+    />
+  </div>
+  <article
+    className="ProductOverviewCard__CardDescription-sc-1ufyc7s-3 dWKWIC"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...
+  </article>
+  <aside
+    className="ProductOverviewCard__CardPrice-sc-1ufyc7s-4 jwVEoe"
+  >
+    € 
+    328.5
+  </aside>
 </div>
 `;
 
