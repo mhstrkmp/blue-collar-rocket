@@ -1,15 +1,15 @@
 import React from "react";
-import ProductOverviewCard from "./ProductOverviewCard";
+import CardMediumProduct from "./CardMediumProduct";
 
 export default {
   title: "Component/ProductOverviewCard",
-  component: ProductOverviewCard,
+  component: CardMediumProduct,
 };
 
-const Template = (args) => <ProductOverviewCard {...args} />;
+const Template = (args) => <CardMediumProduct {...args} />;
 
-export const ProductOverviewCardDefault = Template.bind({});
-ProductOverviewCardDefault.args = {
+export const CardMediumProductDefault = Template.bind({});
+CardMediumProductDefault.args = {
   headline: "Blaue Box",
   imgSrc: "https://via.placeholder.com/250",
   description:

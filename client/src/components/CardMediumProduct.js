@@ -39,7 +39,7 @@ const CardPrice = styled.aside`
   padding: 1em 2em;
 `;
 
-const ProductOverviewCard = ({ headline, imgSrc, description, price }) => {
+const CardMediumProduct = ({ headline, imgSrc, description, price }) => {
   return (
     <Container>
       <Headline>{headline}</Headline>
@@ -52,11 +52,11 @@ const ProductOverviewCard = ({ headline, imgSrc, description, price }) => {
   );
 };
 
-ProductOverviewCard.propTypes = {
+CardMediumProduct.propTypes = {
   headline: PropTypes.string,
   imgSrc: PropTypes.string,
   description: PropTypes.string,
   price: PropTypes.number,
 };
 
-export default ProductOverviewCard;
+export default CardMediumProduct;

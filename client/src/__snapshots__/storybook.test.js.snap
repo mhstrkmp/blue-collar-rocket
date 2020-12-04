@@ -28,17 +28,17 @@ exports[`Storyshots Component/Header Header Home 1`] = `
 </header>
 `;
 
-exports[`Storyshots Component/ProductOverviewCard Product Overview Card Default 1`] = `
+exports[`Storyshots Component/ProductOverviewCard Card Medium Product Default 1`] = `
 <div
-  className="ProductOverviewCard__Container-sc-1ufyc7s-0 ndfMM"
+  className="CardMediumProduct__Container-sc-1k0olew-0 ZTIcV"
 >
   <h2
-    className="ProductOverviewCard__Headline-sc-1ufyc7s-1 hIOKLl"
+    className="CardMediumProduct__Headline-sc-1k0olew-1 tVeoE"
   >
     Blaue Box
   </h2>
   <div
-    className="ProductOverviewCard__CardImage-sc-1ufyc7s-2 giqhaU"
+    className="CardMediumProduct__CardImage-sc-1k0olew-2 UUAMV"
   >
     <img
       alt="Blaue Box"
@@ -46,16 +46,56 @@ exports[`Storyshots Component/ProductOverviewCard Product Overview Card Default 
     />
   </div>
   <article
-    className="ProductOverviewCard__CardDescription-sc-1ufyc7s-3 dWKWIC"
+    className="CardMediumProduct__CardDescription-sc-1k0olew-3 eagpQL"
   >
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...
   </article>
   <aside
-    className="ProductOverviewCard__CardPrice-sc-1ufyc7s-4 jwVEoe"
+    className="CardMediumProduct__CardPrice-sc-1k0olew-4 caGHPH"
   >
     € 
     328.5
   </aside>
+</div>
+`;
+
+exports[`Storyshots Component/ProductOverviewCard Card Small Product Default 1`] = `
+<div
+  className="CardSmallProduct__Container-ers87-0 hxvxfz"
+>
+  <div
+    className="CardSmallProduct__CardImage-ers87-4 SWhgG"
+  >
+    <img
+      alt="Blaue Box"
+      src="https://via.placeholder.com/150"
+    />
+  </div>
+  <div
+    className="CardSmallProduct__DescriptionContainer-ers87-1 gpzOcx"
+  >
+    <h2
+      className="CardSmallProduct__Headline-ers87-3 kJiiSK"
+    >
+      Blaue Box
+    </h2>
+    <div
+      className="CardSmallProduct__DetailsContainer-ers87-2 jNxLiR"
+    >
+      <aside
+        className="CardSmallProduct__CardPrice-ers87-5 cqKgG"
+      >
+        € 
+        328.5
+      </aside>
+      <aside
+        className="CardSmallProduct__CardQuantity-ers87-6 gqVhdb"
+      >
+        x 
+        1
+      </aside>
+    </div>
+  </div>
 </div>
 `;
 
