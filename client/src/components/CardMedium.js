@@ -9,11 +9,9 @@ const Container = styled.div`
   height: 150px;
   width: 340px;
   background: none;
-  color: var(--neutral-dark-N900);
 `;
 
 const DescriptionContainer = styled.div`
-  /* Styling here */
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -23,14 +21,8 @@ const DescriptionContainer = styled.div`
 `;
 
 const DetailsContainer = styled.div`
-  /* Styling here */
   display: flex;
   justify-content: space-between;
-`;
-
-const Headline = styled.h2`
-  color: var(--neutral-dark-N900);
-  margin: 0;
 `;
 
 const CardImage = styled.div`
@@ -44,38 +36,28 @@ const CardImage = styled.div`
   border-radius: 6px;
 `;
 
-const CardPrice = styled.aside`
-  color: var(--neutral-dark-N900);
-  font-weight: bold;
-`;
-
-const CardQuantity = styled.aside`
-  color: var(--neutral-dark-N900);
-  font-weight: bold;
-`;
-
-const CardSmallProduct = ({ headline, imgSrc, quantity, price }) => {
+const CardMedium = ({ title, imgSrc, quantity, price }) => {
   return (
     <Container>
       <CardImage>
-        <img src={imgSrc} alt={headline} />
+        <img src={imgSrc} alt={title} />
       </CardImage>
       <DescriptionContainer>
-        <Headline>{headline}</Headline>
+        <h2>{title}</h2>
         <DetailsContainer>
-          <CardPrice>€ {price}</CardPrice>
-          <CardQuantity>x {quantity}</CardQuantity>
+          <p>€ {price}</p>
+          <p>x {quantity}</p>
         </DetailsContainer>
       </DescriptionContainer>
     </Container>
   );
 };
 
-CardSmallProduct.propTypes = {
-  headline: PropTypes.string,
+CardMedium.propTypes = {
+  title: PropTypes.string,
   imgSrc: PropTypes.string,
   price: PropTypes.number,
   quantity: PropTypes.number,
 };
 
-export default CardSmallProduct;
+export default CardMedium;

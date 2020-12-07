@@ -1,28 +1,34 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 
 const Container = styled.header`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 3rem;
   width: 100vw;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--primary-third);
   background: var(--primary-first);
   border: none;
   filter: drop-shadow(2px 2px 2px var(--primary-first));
 `;
 
-const Headline = styled.h1`
-  /* Styling here */
-  text-align: center;
+const Title = styled.h1`
+  font-weight: normal;
+  font-size: 1.5em;
   text-transform: uppercase;
+  padding: 0;
   color: var(--primary-third);
 `;
 
-const Header = (props) => (
+const Header = ({ title }) => (
   <Container>
-    <Headline {...props} />
+    <Title>{title}</Title>
   </Container>
 );
 
 export default Header;
+
+Header.propTypes = {
+  title: PropTypes.string,
+};

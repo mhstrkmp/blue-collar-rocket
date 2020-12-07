@@ -1,11 +1,12 @@
 import React from "react";
-import { NavbarBottom } from "../../components/NavbarBottom";
 
 export const LoadingPage = () => {
   return (
     <>
       <h1>Loading</h1>
-      <NavbarBottom />
+      <a href="/storybook" target="_blank">
+        Go to Storybook
+      </a>
     </>
   );
 };

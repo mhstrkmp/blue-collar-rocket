@@ -9,6 +9,7 @@ const Button = styled.button`
   cursor: pointer;
   color: var(--primary-third);
   font-weight: bold;
+  margin: 1.5em 0 3em 0;
   filter: drop-shadow(2px 2px 2px var(--neutral-mid-N60));
 `;
 

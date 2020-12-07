@@ -2,13 +2,13 @@ import React from "react";
 import Searchbar from "./Searchbar";
 
 export default {
-  title: "Component/Searchbar",
+  title: "Components/Searchbar",
   component: Searchbar,
 };
 
 const Template = (args) => <Searchbar {...args} />;
 
-export const Search = Template.bind({});
-Search.args = {
+export const Default = Template.bind({});
+Default.args = {
   placeholder: "Suche",
 };

@@ -36,6 +36,21 @@ body
   -moz-osx-font-smoothing: grayscale;
   color: var(--neutral-dark-N700);
 }
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--neutral-dark-N700);
+  margin: 0;
+  padding-bottom: 0.3em;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 0.2em;
+
+}
 `;
 
 export default GlobalStyle;

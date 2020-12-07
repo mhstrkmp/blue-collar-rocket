@@ -9,13 +9,9 @@ const Container = styled.div`
   align-items: center;
   max-width: 340px;
   background: var(--primary-third);
-  color: var(--neutral-dark-N900);
   border-radius: 6px;
+  padding: 1em 0;
   filter: drop-shadow(2px 2px 2px var(--primary-first));
-`;
-
-const Headline = styled.h2`
-  color: var(--neutral-dark-N900);
 `;
 
 const CardImage = styled.div`
@@ -39,24 +35,24 @@ const CardPrice = styled.aside`
   padding: 1em 2em;
 `;
 
-const CardMediumProduct = ({ headline, imgSrc, description, price }) => {
+const CardLarge = ({ title, imgSrc, description, price }) => {
   return (
     <Container>
-      <Headline>{headline}</Headline>
+      <h2>{title}</h2>
       <CardImage>
-        <img src={imgSrc} alt={headline} />
+        <img src={imgSrc} alt={title} />
       </CardImage>
       <CardDescription>{description}</CardDescription>
-      <CardPrice>€ {price}</CardPrice>
+      <CardPrice>Preis: € {price}</CardPrice>
     </Container>
   );
 };
 
-CardMediumProduct.propTypes = {
-  headline: PropTypes.string,
+CardLarge.propTypes = {
+  title: PropTypes.string,
   imgSrc: PropTypes.string,
   description: PropTypes.string,
   price: PropTypes.number,
 };
 
-export default CardMediumProduct;
+export default CardLarge;

@@ -2,18 +2,18 @@ import React from "react";
 import Button from "./Button";
 
 export default {
-  title: "Component/Button",
+  title: "Components/Button",
   component: Button,
 };
 
 const Template = (args) => <Button {...args} />;
 
-export const ButtonAdd = Template.bind({});
-ButtonAdd.args = {
+export const Add = Template.bind({});
+Add.args = {
   children: "Hinzufügen",
 };
 
-export const ButtonOrder = Template.bind({});
-ButtonOrder.args = {
+export const Order = Template.bind({});
+Order.args = {
   children: "Bestellen",
 };
