@@ -1,321 +1,672 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Pages/CategoriesPage Standard 1`] = `
-Array [
-  <h1>
+exports[`Storyshots Components/Button Add 1`] = `
+<button
+  className="Button-pzvjfl-0 lntRdW"
+>
+  Hinzufügen
+</button>
+`;
+
+exports[`Storyshots Components/Button Order 1`] = `
+<button
+  className="Button-pzvjfl-0 lntRdW"
+>
+  Bestellen
+</button>
+`;
+
+exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
+<div
+  className="CardExtraLarge__Container-fu46da-0 jHCDMk"
+>
+  <h2>
+    Blaue Box
+  </h2>
+  <div
+    className="CardExtraLarge__CardImage-fu46da-1 jMQAFB"
+  >
+    <img
+      alt="Blaue Box"
+      src="https://via.placeholder.com/240"
+    />
+  </div>
+  <article
+    className="CardExtraLarge__CardDescription-fu46da-2 dFFSoh"
+  >
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aspernatur tenetur culpa illum molestiae officia ...
+  </article>
+  <article>
+    <h3>
+      Leistungsumfang:
+    </h3>
+    <ul>
+      <li>
+        Eine blaue Box
+      </li>
+      <li>
+        Lieferung und Montage
+      </li>
+      <li>
+        Entsorgung der alten grauen Box
+      </li>
+    </ul>
+  </article>
+  <aside
+    className="CardExtraLarge__CardPrice-fu46da-3 grsCJX"
+  >
+    Preis: € 
+    328.5
+  </aside>
+  <button
+    className="Button-pzvjfl-0 lntRdW"
+  >
+    Hinzufügen
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Cards/Large Product 1`] = `
+<div
+  className="CardLarge__Container-s54zhd-0 iOETZv"
+>
+  <h2>
+    Blaue Box
+  </h2>
+  <div
+    className="CardLarge__CardImage-s54zhd-1 brXhcv"
+  >
+    <img
+      alt="Blaue Box"
+      src="https://via.placeholder.com/150"
+    />
+  </div>
+  <article
+    className="CardLarge__CardDescription-s54zhd-2 bVsbFz"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...
+  </article>
+  <aside
+    className="CardLarge__CardPrice-s54zhd-3 jjmLul"
+  >
+    Preis: € 
+    328.5
+  </aside>
+</div>
+`;
+
+exports[`Storyshots Components/Cards/Medium Product 1`] = `
+<div
+  className="CardMedium__Container-ud6k7h-0 gPCKwI"
+>
+  <div
+    className="CardMedium__CardImage-ud6k7h-3 ilNQcw"
+  >
+    <img
+      alt="Blaue Box"
+      src="https://via.placeholder.com/100"
+    />
+  </div>
+  <div
+    className="CardMedium__DescriptionContainer-ud6k7h-1 gcGxjk"
+  >
+    <h2>
+      Blaue Box
+    </h2>
+    <div
+      className="CardMedium__DetailsContainer-ud6k7h-2 fXBuwY"
+    >
+      <p>
+        € 
+        328.5
+      </p>
+      <p>
+        x 
+        1
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Cards/Small Category 1`] = `
+<div
+  className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+>
+  <h2>
+    Kategorie
+  </h2>
+  <p>
+    Lorem ipsum dolor sit
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Cards/Small Customer 1`] = `
+<div
+  className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+>
+  <h2>
+    Max Mustermann
+  </h2>
+  <p>
+    Musterstraße 95
+  </p>
+  <p>
+    48924 Musterstadt
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Header Default 1`] = `
+<header
+  className="Header__Container-sc-17wre1r-0 bWUEZh"
+>
+  <h1
+    className="Header__Title-sc-17wre1r-1 dMDOcO"
+  >
     Home
-  </h1>,
-  <div
-    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
-  >
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
-      href="/"
-      onClick={[Function]}
-    >
-      Home
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/product-overview"
-      onClick={[Function]}
-    >
-      Suche
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/checkout"
-      onClick={[Function]}
-    >
-      Warenkorb
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/profile"
-      onClick={[Function]}
-    >
-      Profil
-    </a>
-  </div>,
-]
+  </h1>
+</header>
 `;
 
-exports[`Storyshots Pages/CheckoutPage Standard 1`] = `
+exports[`Storyshots Components/Navbar Bottom Default 1`] = `
+<div
+  className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+>
+  <a
+    aria-current="page"
+    className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk active"
+    href="/"
+    onClick={[Function]}
+    style={
+      Object {
+        "fill": "var(--primary-third)",
+      }
+    }
+  >
+    <svg>
+      home.svg
+    </svg>
+  </a>
+  <a
+    aria-current={null}
+    className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
+    href="/product-overview"
+    onClick={[Function]}
+  >
+    <svg>
+      find_in_page.svg
+    </svg>
+  </a>
+  <a
+    aria-current={null}
+    className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
+    href="/checkout"
+    onClick={[Function]}
+  >
+    <svg>
+      shopping_cart.svg
+    </svg>
+  </a>
+  <a
+    aria-current={null}
+    className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
+    href="/profile"
+    onClick={[Function]}
+  >
+    <svg>
+      profile.svg
+    </svg>
+  </a>
+</div>
+`;
+
+exports[`Storyshots Components/Searchbar Default 1`] = `
+<input
+  className="Searchbar-sc-1bd71k1-0 fMbmEz"
+  placeholder="Suche"
+/>
+`;
+
+exports[`Storyshots Pages/Checkout Checkout 1`] = `
 Array [
-  <h1>
-    Checkout
-  </h1>,
+  <header
+    className="Header__Container-sc-17wre1r-0 bWUEZh"
+  >
+    <h1
+      className="Header__Title-sc-17wre1r-1 dMDOcO"
+    >
+      warenkorb
+    </h1>
+  </header>,
   <div
-    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
   >
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      aria-current="page"
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk active"
       href="/"
       onClick={[Function]}
+      style={
+        Object {
+          "fill": "var(--primary-third)",
+        }
+      }
     >
-      Home
+      <svg>
+        home.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/product-overview"
       onClick={[Function]}
     >
-      Suche
+      <svg>
+        find_in_page.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/checkout"
       onClick={[Function]}
     >
-      Warenkorb
+      <svg>
+        shopping_cart.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/profile"
       onClick={[Function]}
     >
-      Profil
+      <svg>
+        profile.svg
+      </svg>
     </a>
   </div>,
-]
-`;
-
-exports[`Storyshots Pages/CustomersOverviewPage Standard 1`] = `
-Array [
-  <h1>
-    Customers Overview
-  </h1>,
-  <div
-    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  <a
+    href="/storybook"
+    target="_blank"
   >
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
-      href="/"
-      onClick={[Function]}
-    >
-      Home
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/product-overview"
-      onClick={[Function]}
-    >
-      Suche
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/checkout"
-      onClick={[Function]}
-    >
-      Warenkorb
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/profile"
-      onClick={[Function]}
-    >
-      Profil
-    </a>
-  </div>,
+    Go to Storybook
+  </a>,
 ]
 `;
 
-exports[`Storyshots Pages/LoadingPage Standard 1`] = `
-Array [
-  <h1>
-    Loading
-  </h1>,
-  <div
-    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
-  >
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
-      href="/"
-      onClick={[Function]}
-    >
-      Home
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/product-overview"
-      onClick={[Function]}
-    >
-      Suche
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/checkout"
-      onClick={[Function]}
-    >
-      Warenkorb
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/profile"
-      onClick={[Function]}
-    >
-      Profil
-    </a>
-  </div>,
-]
-`;
-
-exports[`Storyshots Pages/OrderConfirmationPage Standard 1`] = `
+exports[`Storyshots Pages/Confirmation Confirmation 1`] = `
 Array [
   <h1>
     Order Confirmation
   </h1>,
-  <div
-    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  <a
+    href="/storybook"
+    target="_blank"
   >
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
-      href="/"
-      onClick={[Function]}
-    >
-      Home
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/product-overview"
-      onClick={[Function]}
-    >
-      Suche
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/checkout"
-      onClick={[Function]}
-    >
-      Warenkorb
-    </a>
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
-      href="/profile"
-      onClick={[Function]}
-    >
-      Profil
-    </a>
-  </div>,
+    Go to Storybook
+  </a>,
 ]
 `;
 
-exports[`Storyshots Pages/ProductPage Standard 1`] = `
+exports[`Storyshots Pages/Customers Customers 1`] = `
 Array [
-  <h1>
-    Product Page
-  </h1>,
+  <header
+    className="Header__Container-sc-17wre1r-0 bWUEZh"
+  >
+    <h1
+      className="Header__Title-sc-17wre1r-1 dMDOcO"
+    >
+      kunden
+    </h1>
+  </header>,
   <div
-    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
   >
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      aria-current="page"
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk active"
       href="/"
       onClick={[Function]}
+      style={
+        Object {
+          "fill": "var(--primary-third)",
+        }
+      }
     >
-      Home
+      <svg>
+        home.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/product-overview"
       onClick={[Function]}
     >
-      Suche
+      <svg>
+        find_in_page.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/checkout"
       onClick={[Function]}
     >
-      Warenkorb
+      <svg>
+        shopping_cart.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/profile"
       onClick={[Function]}
     >
-      Profil
+      <svg>
+        profile.svg
+      </svg>
     </a>
   </div>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
 ]
 `;
 
-exports[`Storyshots Pages/ProductsOverviewPage Standard 1`] = `
+exports[`Storyshots Pages/Home Home 1`] = `
 Array [
-  <h1>
-    Products Overview
-  </h1>,
-  <div
-    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  <header
+    className="Header__Container-sc-17wre1r-0 bWUEZh"
   >
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
-      href="/"
-      onClick={[Function]}
+    <h1
+      className="Header__Title-sc-17wre1r-1 dMDOcO"
     >
       Home
+    </h1>
+  </header>,
+  <div
+    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+  >
+    <a
+      aria-current="page"
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "fill": "var(--primary-third)",
+        }
+      }
+    >
+      <svg>
+        home.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/product-overview"
       onClick={[Function]}
     >
-      Suche
+      <svg>
+        find_in_page.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/checkout"
       onClick={[Function]}
     >
-      Warenkorb
+      <svg>
+        shopping_cart.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/profile"
       onClick={[Function]}
     >
-      Profil
+      <svg>
+        profile.svg
+      </svg>
     </a>
   </div>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
 ]
 `;
 
-exports[`Storyshots Pages/ProfilePage Standard 1`] = `
+exports[`Storyshots Pages/Loading Loading 1`] = `
 Array [
   <h1>
-    Profile
+    Loading
   </h1>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
+]
+`;
+
+exports[`Storyshots Pages/Product Product 1`] = `
+Array [
+  <header
+    className="Header__Container-sc-17wre1r-0 bWUEZh"
+  >
+    <h1
+      className="Header__Title-sc-17wre1r-1 dMDOcO"
+    >
+      Angebot
+    </h1>
+  </header>,
   <div
-    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
   >
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
+      aria-current="page"
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk active"
       href="/"
       onClick={[Function]}
+      style={
+        Object {
+          "fill": "var(--primary-third)",
+        }
+      }
     >
-      Home
+      <svg>
+        home.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/product-overview"
       onClick={[Function]}
     >
-      Suche
+      <svg>
+        find_in_page.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/checkout"
       onClick={[Function]}
     >
-      Warenkorb
+      <svg>
+        shopping_cart.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/profile"
       onClick={[Function]}
     >
-      Profil
+      <svg>
+        profile.svg
+      </svg>
     </a>
   </div>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
+]
+`;
+
+exports[`Storyshots Pages/Products Products 1`] = `
+Array [
+  <header
+    className="Header__Container-sc-17wre1r-0 bWUEZh"
+  >
+    <h1
+      className="Header__Title-sc-17wre1r-1 dMDOcO"
+    >
+      Angebote
+    </h1>
+  </header>,
+  <div
+    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+  >
+    <a
+      aria-current="page"
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "fill": "var(--primary-third)",
+        }
+      }
+    >
+      <svg>
+        home.svg
+      </svg>
+    </a>
+    <a
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      <svg>
+        find_in_page.svg
+      </svg>
+    </a>
+    <a
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      <svg>
+        shopping_cart.svg
+      </svg>
+    </a>
+    <a
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
+      href="/profile"
+      onClick={[Function]}
+    >
+      <svg>
+        profile.svg
+      </svg>
+    </a>
+  </div>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
+]
+`;
+
+exports[`Storyshots Pages/Profile Profile 1`] = `
+Array [
+  <header
+    className="Header__Container-sc-17wre1r-0 bWUEZh"
+  >
+    <h1
+      className="Header__Title-sc-17wre1r-1 dMDOcO"
+    >
+      Profil
+    </h1>
+  </header>,
+  <div
+    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+  >
+    <a
+      aria-current="page"
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "fill": "var(--primary-third)",
+        }
+      }
+    >
+      <svg>
+        home.svg
+      </svg>
+    </a>
+    <a
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
+      href="/product-overview"
+      onClick={[Function]}
+    >
+      <svg>
+        find_in_page.svg
+      </svg>
+    </a>
+    <a
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      <svg>
+        shopping_cart.svg
+      </svg>
+    </a>
+    <a
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
+      href="/profile"
+      onClick={[Function]}
+    >
+      <svg>
+        profile.svg
+      </svg>
+    </a>
+  </div>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
 ]
 `;

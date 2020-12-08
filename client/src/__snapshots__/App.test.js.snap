@@ -2,40 +2,69 @@
 
 exports[`App snapshot renders 1`] = `
 Array [
-  <h1>
-    Home
-  </h1>,
-  <div
-    className="NavbarBottom__Container-sc-17hvsnk-0 guYphZ"
+  <header
+    className="Header__Container-sc-17wre1r-0 bWUEZh"
   >
-    <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 klXJLp"
-      href="/"
-      onClick={[Function]}
+    <h1
+      className="Header__Title-sc-17wre1r-1 dMDOcO"
     >
       Home
+    </h1>
+  </header>,
+  <div
+    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+  >
+    <a
+      aria-current="page"
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "fill": "var(--primary-third)",
+        }
+      }
+    >
+      <svg>
+        home.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/product-overview"
       onClick={[Function]}
     >
-      Suche
+      <svg>
+        find_in_page.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/checkout"
       onClick={[Function]}
     >
-      Warenkorb
+      <svg>
+        shopping_cart.svg
+      </svg>
     </a>
     <a
-      className="NavbarBottom__NavLink-sc-17hvsnk-1 btIWbG"
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
       href="/profile"
       onClick={[Function]}
     >
-      Profil
+      <svg>
+        profile.svg
+      </svg>
     </a>
   </div>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
 ]
 `;

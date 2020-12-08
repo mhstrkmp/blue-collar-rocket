@@ -16,28 +16,28 @@ function App() {
       <GlobalStyle />
       <Switch>
         <Route exact path="/">
-          <CategoriesPage />
+          <CategoriesPage title={"Home"} />
         </Route>
         <Route path="/loading">
           <LoadingPage />
         </Route>
         <Route path="/product-overview">
-          <ProductsOverviewPage />
+          <ProductsOverviewPage title={"Angebote"} />
         </Route>
         <Route path="/product-detail">
-          <ProductPage />
+          <ProductPage title={"Angebot"} />
         </Route>
         <Route path="/customer-overview">
-          <CustomersOverviewPage />
+          <CustomersOverviewPage title={"Kunden"} />
         </Route>
         <Route path="/checkout">
-          <CheckoutPage />
+          <CheckoutPage title={"Warenkorb"} />
         </Route>
         <Route path="/order-confirmation">
           <OrderConfirmationPage />
         </Route>
         <Route path="/profile">
-          <ProfilePage />
+          <ProfilePage title={"Profil"} />
         </Route>
       </Switch>
     </Router>
