@@ -3,11 +3,13 @@ import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 
 const Container = styled.header`
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3rem;
-  width: 100vw;
+  width: 100%;
   background: var(--primary-first);
   border: none;
   filter: drop-shadow(2px 2px 2px var(--primary-first));
