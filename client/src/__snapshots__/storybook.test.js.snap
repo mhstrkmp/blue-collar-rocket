@@ -43,7 +43,11 @@ exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
     <ul>
       <li>
         Eine blaue Box
+      </li>
+      <li>
         Lieferung und Montage
+      </li>
+      <li>
         Entsorgung der alten grauen Box
       </li>
     </ul>
@@ -764,7 +768,11 @@ Array [
         <ul>
           <li>
             Eine blaue Box
+          </li>
+          <li>
             Lieferung und Montage
+          </li>
+          <li>
             Entsorgung der alten grauen Box
           </li>
         </ul>
