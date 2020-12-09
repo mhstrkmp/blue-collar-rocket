@@ -10,6 +10,7 @@ const Container = styled.div`
   max-width: 340px;
   background: var(--primary-third);
   border-radius: 6px;
+  margin: 1rem;
   padding: 1em 0;
   filter: drop-shadow(2px 2px 2px var(--primary-first));
 `;
@@ -35,23 +36,23 @@ const CardPrice = styled.aside`
   padding: 1em 2em;
 `;
 
-const CardLarge = ({ title, imgSrc, description, price }) => {
+const CardLarge = ({ cardTitle, imgSrc, cardText, price }) => {
   return (
     <Container>
-      <h2>{title}</h2>
+      <h2>{cardTitle}</h2>
       <CardImage>
-        <img src={imgSrc} alt={title} />
+        <img src={imgSrc} alt={cardTitle} />
       </CardImage>
-      <CardDescription>{description}</CardDescription>
+      <CardDescription>{cardText}</CardDescription>
       <CardPrice>Preis: € {price}</CardPrice>
     </Container>
   );
 };
 
 CardLarge.propTypes = {
-  title: PropTypes.string,
+  cardTitle: PropTypes.string,
   imgSrc: PropTypes.string,
-  description: PropTypes.string,
+  cardText: PropTypes.string,
   price: PropTypes.number,
 };
 

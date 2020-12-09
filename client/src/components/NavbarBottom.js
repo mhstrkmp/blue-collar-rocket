@@ -7,6 +7,9 @@ import { ReactComponent as IconCart } from "../assets/shopping_cart.svg";
 import { ReactComponent as IconProfile } from "../assets/profile.svg";
 
 const Container = styled.div`
+  z-index: 100;
+  position: sticky;
+  bottom: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

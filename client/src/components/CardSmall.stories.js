@@ -10,12 +10,12 @@ const Template = (args) => <CardSmall {...args} />;
 
 export const Category = Template.bind({});
 Category.args = {
-  title: "Kategorie",
-  description: ["Lorem ipsum dolor sit"],
+  cardTitle: "Kategorie",
+  cardText: ["Lorem ipsum dolor sit"],
 };
 
 export const Customer = Template.bind({});
 Customer.args = {
-  title: "Max Mustermann",
-  description: ["Musterstraße 95", "48924 Musterstadt"],
+  cardTitle: "Max Mustermann",
+  cardText: ["Musterstraße 95", "48924 Musterstadt"],
 };

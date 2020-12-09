@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 
 const Container = styled.header`
+  z-index: 100;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;

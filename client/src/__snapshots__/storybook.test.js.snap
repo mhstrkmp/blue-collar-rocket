@@ -18,7 +18,7 @@ exports[`Storyshots Components/Button Order 1`] = `
 
 exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
 <div
-  className="CardExtraLarge__Container-fu46da-0 jHCDMk"
+  className="CardExtraLarge__Container-fu46da-0 iCNjIY"
 >
   <h2>
     Blaue Box
@@ -68,7 +68,7 @@ exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
 
 exports[`Storyshots Components/Cards/Large Product 1`] = `
 <div
-  className="CardLarge__Container-s54zhd-0 iOETZv"
+  className="CardLarge__Container-s54zhd-0 dEGmhj"
 >
   <h2>
     Blaue Box
@@ -160,7 +160,7 @@ exports[`Storyshots Components/Cards/Small Customer 1`] = `
 
 exports[`Storyshots Components/Header Default 1`] = `
 <header
-  className="Header__Container-sc-17wre1r-0 bWUEZh"
+  className="Header__Container-sc-17wre1r-0 bkfIWN"
 >
   <h1
     className="Header__Title-sc-17wre1r-1 dMDOcO"
@@ -172,7 +172,7 @@ exports[`Storyshots Components/Header Default 1`] = `
 
 exports[`Storyshots Components/Navbar Bottom Default 1`] = `
 <div
-  className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+  className="NavbarBottom__Container-okzrgt-0 dRgMHa"
 >
   <a
     aria-current="page"
@@ -232,7 +232,7 @@ exports[`Storyshots Components/Searchbar Default 1`] = `
 exports[`Storyshots Pages/Checkout Checkout 1`] = `
 Array [
   <header
-    className="Header__Container-sc-17wre1r-0 bWUEZh"
+    className="Header__Container-sc-17wre1r-0 bkfIWN"
   >
     <h1
       className="Header__Title-sc-17wre1r-1 dMDOcO"
@@ -241,7 +241,7 @@ Array [
     </h1>
   </header>,
   <div
-    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+    className="NavbarBottom__Container-okzrgt-0 dRgMHa"
   >
     <a
       aria-current="page"
@@ -315,7 +315,7 @@ Array [
 exports[`Storyshots Pages/Customers Customers 1`] = `
 Array [
   <header
-    className="Header__Container-sc-17wre1r-0 bWUEZh"
+    className="Header__Container-sc-17wre1r-0 bkfIWN"
   >
     <h1
       className="Header__Title-sc-17wre1r-1 dMDOcO"
@@ -323,8 +323,174 @@ Array [
       kunden
     </h1>
   </header>,
+  <section
+    className="Wrapper__ContentWrapper-sc-1so8v63-0 ivINYv"
+  >
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Max Mustermann
+      </h2>
+      <p>
+        Musterstraße 95
+      </p>
+      <p>
+        48924 Musterstadt
+      </p>
+    </div>
+  </section>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
   <div
-    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+    className="NavbarBottom__Container-okzrgt-0 dRgMHa"
   >
     <a
       aria-current="page"
@@ -372,19 +538,13 @@ Array [
       </svg>
     </a>
   </div>,
-  <a
-    href="/storybook"
-    target="_blank"
-  >
-    Go to Storybook
-  </a>,
 ]
 `;
 
 exports[`Storyshots Pages/Home Home 1`] = `
 Array [
   <header
-    className="Header__Container-sc-17wre1r-0 bWUEZh"
+    className="Header__Container-sc-17wre1r-0 bkfIWN"
   >
     <h1
       className="Header__Title-sc-17wre1r-1 dMDOcO"
@@ -392,8 +552,118 @@ Array [
       Home
     </h1>
   </header>,
+  <section
+    className="Wrapper__ContentWrapper-sc-1so8v63-0 ivINYv"
+  >
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 1
+      </h2>
+      <p>
+        Category 1 description
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 2
+      </h2>
+      <p>
+        Category 2 description
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 3
+      </h2>
+      <p>
+        Category 3 description
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 4
+      </h2>
+      <p>
+        Category 4 description
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 5
+      </h2>
+      <p>
+        Category 5 description
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 6
+      </h2>
+      <p>
+        Category 6 description
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 7
+      </h2>
+      <p>
+        Category 7 description
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 8
+      </h2>
+      <p>
+        Category 8 description
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 9
+      </h2>
+      <p>
+        Category 9 description
+      </p>
+    </div>
+    <div
+      className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+    >
+      <h2>
+        Kategorie 10
+      </h2>
+      <p>
+        Category 10 description
+      </p>
+    </div>
+  </section>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
   <div
-    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+    className="NavbarBottom__Container-okzrgt-0 dRgMHa"
   >
     <a
       aria-current="page"
@@ -441,12 +711,6 @@ Array [
       </svg>
     </a>
   </div>,
-  <a
-    href="/storybook"
-    target="_blank"
-  >
-    Go to Storybook
-  </a>,
 ]
 `;
 
@@ -467,7 +731,7 @@ Array [
 exports[`Storyshots Pages/Product Product 1`] = `
 Array [
   <header
-    className="Header__Container-sc-17wre1r-0 bWUEZh"
+    className="Header__Container-sc-17wre1r-0 bkfIWN"
   >
     <h1
       className="Header__Title-sc-17wre1r-1 dMDOcO"
@@ -475,8 +739,65 @@ Array [
       Angebot
     </h1>
   </header>,
+  <section
+    className="Wrapper__ContentWrapper-sc-1so8v63-0 ivINYv"
+  >
+    <div
+      className="CardExtraLarge__Container-fu46da-0 iCNjIY"
+    >
+      <h2>
+        Blaue Box
+      </h2>
+      <div
+        className="CardExtraLarge__CardImage-fu46da-1 jMQAFB"
+      >
+        <img
+          alt="Blaue Box"
+          src="https://via.placeholder.com/240"
+        />
+      </div>
+      <article
+        className="CardExtraLarge__CardDescription-fu46da-2 dFFSoh"
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aspernatur tenetur culpa illum molestiae officia ...
+      </article>
+      <article>
+        <h3>
+          Leistungsumfang:
+        </h3>
+        <ul>
+          <li>
+            Eine blaue Box
+          </li>
+          <li>
+            Lieferung und Montage
+          </li>
+          <li>
+            Entsorgung der alten grauen Box
+          </li>
+        </ul>
+      </article>
+      <aside
+        className="CardExtraLarge__CardPrice-fu46da-3 grsCJX"
+      >
+        Preis: € 
+        328.5
+      </aside>
+      <button
+        className="Button-pzvjfl-0 lntRdW"
+      >
+        Hinzufügen
+      </button>
+    </div>
+  </section>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
   <div
-    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+    className="NavbarBottom__Container-okzrgt-0 dRgMHa"
   >
     <a
       aria-current="page"
@@ -524,19 +845,13 @@ Array [
       </svg>
     </a>
   </div>,
-  <a
-    href="/storybook"
-    target="_blank"
-  >
-    Go to Storybook
-  </a>,
 ]
 `;
 
 exports[`Storyshots Pages/Products Products 1`] = `
 Array [
   <header
-    className="Header__Container-sc-17wre1r-0 bWUEZh"
+    className="Header__Container-sc-17wre1r-0 bkfIWN"
   >
     <h1
       className="Header__Title-sc-17wre1r-1 dMDOcO"
@@ -544,8 +859,152 @@ Array [
       Angebote
     </h1>
   </header>,
+  <section
+    className="Wrapper__ContentWrapper-sc-1so8v63-0 ivINYv"
+  >
+    <div
+      className="Wrapper__CardsWrapper-sc-1so8v63-1 kOsNDf"
+    >
+      <div
+        className="CardLarge__Container-s54zhd-0 dEGmhj"
+      >
+        <h2>
+          Blaue Box
+        </h2>
+        <div
+          className="CardLarge__CardImage-s54zhd-1 brXhcv"
+        >
+          <img
+            alt="Blaue Box"
+            src="https://via.placeholder.com/150"
+          />
+        </div>
+        <article
+          className="CardLarge__CardDescription-s54zhd-2 bVsbFz"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...
+        </article>
+        <aside
+          className="CardLarge__CardPrice-s54zhd-3 jjmLul"
+        >
+          Preis: € 
+          328.5
+        </aside>
+      </div>
+      <div
+        className="CardLarge__Container-s54zhd-0 dEGmhj"
+      >
+        <h2>
+          Blaue Box
+        </h2>
+        <div
+          className="CardLarge__CardImage-s54zhd-1 brXhcv"
+        >
+          <img
+            alt="Blaue Box"
+            src="https://via.placeholder.com/150"
+          />
+        </div>
+        <article
+          className="CardLarge__CardDescription-s54zhd-2 bVsbFz"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...
+        </article>
+        <aside
+          className="CardLarge__CardPrice-s54zhd-3 jjmLul"
+        >
+          Preis: € 
+          328.5
+        </aside>
+      </div>
+      <div
+        className="CardLarge__Container-s54zhd-0 dEGmhj"
+      >
+        <h2>
+          Blaue Box
+        </h2>
+        <div
+          className="CardLarge__CardImage-s54zhd-1 brXhcv"
+        >
+          <img
+            alt="Blaue Box"
+            src="https://via.placeholder.com/150"
+          />
+        </div>
+        <article
+          className="CardLarge__CardDescription-s54zhd-2 bVsbFz"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...
+        </article>
+        <aside
+          className="CardLarge__CardPrice-s54zhd-3 jjmLul"
+        >
+          Preis: € 
+          328.5
+        </aside>
+      </div>
+      <div
+        className="CardLarge__Container-s54zhd-0 dEGmhj"
+      >
+        <h2>
+          Blaue Box
+        </h2>
+        <div
+          className="CardLarge__CardImage-s54zhd-1 brXhcv"
+        >
+          <img
+            alt="Blaue Box"
+            src="https://via.placeholder.com/150"
+          />
+        </div>
+        <article
+          className="CardLarge__CardDescription-s54zhd-2 bVsbFz"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...
+        </article>
+        <aside
+          className="CardLarge__CardPrice-s54zhd-3 jjmLul"
+        >
+          Preis: € 
+          328.5
+        </aside>
+      </div>
+      <div
+        className="CardLarge__Container-s54zhd-0 dEGmhj"
+      >
+        <h2>
+          Blaue Box
+        </h2>
+        <div
+          className="CardLarge__CardImage-s54zhd-1 brXhcv"
+        >
+          <img
+            alt="Blaue Box"
+            src="https://via.placeholder.com/150"
+          />
+        </div>
+        <article
+          className="CardLarge__CardDescription-s54zhd-2 bVsbFz"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...
+        </article>
+        <aside
+          className="CardLarge__CardPrice-s54zhd-3 jjmLul"
+        >
+          Preis: € 
+          328.5
+        </aside>
+      </div>
+    </div>
+    <a
+      href="/storybook"
+      target="_blank"
+    >
+      Go to Storybook
+    </a>
+  </section>,
   <div
-    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+    className="NavbarBottom__Container-okzrgt-0 dRgMHa"
   >
     <a
       aria-current="page"
@@ -593,19 +1052,13 @@ Array [
       </svg>
     </a>
   </div>,
-  <a
-    href="/storybook"
-    target="_blank"
-  >
-    Go to Storybook
-  </a>,
 ]
 `;
 
 exports[`Storyshots Pages/Profile Profile 1`] = `
 Array [
   <header
-    className="Header__Container-sc-17wre1r-0 bWUEZh"
+    className="Header__Container-sc-17wre1r-0 bkfIWN"
   >
     <h1
       className="Header__Title-sc-17wre1r-1 dMDOcO"
@@ -614,7 +1067,7 @@ Array [
     </h1>
   </header>,
   <div
-    className="NavbarBottom__Container-okzrgt-0 bDYGkS"
+    className="NavbarBottom__Container-okzrgt-0 dRgMHa"
   >
     <a
       aria-current="page"
