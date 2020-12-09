@@ -13,11 +13,11 @@ const Container = styled.div`
   margin-bottom: 1.5em;
 `;
 
-const CardSmall = ({ title, description }) => {
+const CardSmall = ({ cardTitle, cardText }) => {
   return (
     <Container>
-      <h2>{title}</h2>
-      {description.map((item) => {
+      <h2>{cardTitle}</h2>
+      {cardText.map((item) => {
         return <p key={item}>{item}</p>;
       })}
     </Container>
@@ -25,8 +25,8 @@ const CardSmall = ({ title, description }) => {
 };
 
 CardSmall.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.array,
+  cardTitle: PropTypes.string,
+  cardText: PropTypes.array,
 };
 
 export default CardSmall;

@@ -10,9 +10,8 @@ const Template = (args) => <CardLarge {...args} />;
 
 export const Product = Template.bind({});
 Product.args = {
-  title: "Blaue Box",
+  cardTitle: "Blaue Box",
   imgSrc: "https://via.placeholder.com/150",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...",
+  cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...",
   price: 328.5,
 };

@@ -7,11 +7,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  max-width: 340px;
-  background: var(--primary-third);
-  border-radius: 6px;
-  filter: drop-shadow(2px 2px 2px var(--primary-first));
+  align-items: flex-start;
 `;
 
 const CardImage = styled.div`
@@ -34,7 +30,7 @@ const CardPrice = styled.aside`
   padding: 1em 0;
 `;
 
-const CardExtraLarge = ({ title, imgSrc, description, price, service }) => {
+const CardExtraLarge = ({ title, imgSrc, description, service, price }) => {
   return (
     <Container>
       <h2>{title}</h2>
@@ -45,7 +41,7 @@ const CardExtraLarge = ({ title, imgSrc, description, price, service }) => {
       <article>
         <h3>Leistungsumfang:</h3>
         <ul>
-          {service.map((item) => {
+          {[service].map((item) => {
             return <li key={item}>{item}</li>;
           })}
         </ul>
@@ -62,6 +58,7 @@ CardExtraLarge.propTypes = {
   description: PropTypes.string,
   price: PropTypes.number,
   service: PropTypes.array,
+  product: PropTypes.array,
 };
 
 export default CardExtraLarge;
