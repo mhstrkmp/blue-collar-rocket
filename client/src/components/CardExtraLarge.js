@@ -41,7 +41,7 @@ const CardExtraLarge = ({ title, imgSrc, description, service, price }) => {
       <article>
         <h3>Leistungsumfang:</h3>
         <ul>
-          {[service].map((item) => {
+          {service.map((item) => {
             return <li key={item}>{item}</li>;
           })}
         </ul>
