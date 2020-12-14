@@ -20,31 +20,39 @@ const sendPostRequest = async (order) => {
 
 export const CheckoutPage = ({ title }) => {
   const storedObjects = localStorage.getItem("blueCollarRocketCart");
-  const storedObjectsJson = JSON.parse(storedObjects);
-  const { customer, item } = storedObjectsJson;
+  const cart = JSON.parse(storedObjects);
 
   return (
     <>
       <Header title={title} />
       <ContentWrapper>
         <h2>Kundendaten:</h2>
-        <CardSmall
-          cardTitle={customer.name}
-          cardText={[customer.address.street, customer.address.city]}
-        />
-        <CardMedium
-          title={item.name}
-          imgSrc={item.imgUrl}
-          price={item.price}
-          quantity={1}
-        />
-        <Button
-          onClick={() => {
-            sendPostRequest(storedObjectsJson);
-          }}
-        >
-          Hinzufügen
-        </Button>
+        {cart ? (
+          <>
+            <CardSmall
+              cardTitle={cart.customer.name}
+              cardText={[
+                cart.customer.address.street,
+                cart.customer.address.city,
+              ]}
+            />
+            <CardMedium
+              title={cart.item.name}
+              imgSrc={cart.item.imgUrl}
+              price={cart.item.price}
+              quantity={1}
+            />
+            <Button
+              onClick={() => {
+                sendPostRequest(cart);
+              }}
+            >
+              Hinzufügen
+            </Button>
+          </>
+        ) : (
+          <>Can't load cart data</>
+        )}
       </ContentWrapper>
       <a href="/storybook" target="_blank">
         Go to Storybook

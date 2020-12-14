@@ -246,6 +246,20 @@ Array [
       warenkorb
     </h1>
   </header>,
+  <section
+    className="Wrapper__ContentWrapper-sc-1so8v63-0 ivINYv"
+  >
+    <h2>
+      Kundendaten:
+    </h2>
+    Can't load cart data
+  </section>,
+  <a
+    href="/storybook"
+    target="_blank"
+  >
+    Go to Storybook
+  </a>,
   <div
     className="NavbarBottom__Container-okzrgt-0 dRgMHa"
   >
@@ -295,12 +309,6 @@ Array [
       </svg>
     </a>
   </div>,
-  <a
-    href="/storybook"
-    target="_blank"
-  >
-    Go to Storybook
-  </a>,
 ]
 `;
 
