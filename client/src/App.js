@@ -9,7 +9,7 @@ import { OrderConfirmationPage } from "./pages/OrderConfirmationPage/OrderConfir
 import { ProductPage } from "./pages/ProductPage/ProductPage";
 import { ProductsOverviewPage } from "./pages/ProductsOverviewPage/ProductsOverviewPage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
-import { ReactQueryDevtools } from "react-query-devtools";
+//import { ReactQueryDevtools } from "react-query-devtools";
 
 function App() {
   return (
@@ -43,7 +43,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <ReactQueryDevtools initialIsOpen />
+      {/* <ReactQueryDevtools initialIsOpen /> */}
     </>
   );
 }
