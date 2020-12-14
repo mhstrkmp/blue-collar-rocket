@@ -18,14 +18,9 @@
           "categoryDescription": "Lorem ipsum dolor sit amet"
         }
       ],
-      "members": [
-        425,
-        426
-      ],
+      "members": [425, 426],
       "membersCount": 2,
-      "customers": [
-        925
-      ],
+      "customers": [925],
       "customersCount": 1,
       "itemsCount": 1,
       "itemsSold": 1,
@@ -102,9 +97,7 @@
   "orders": [
     {
       "dateAdded": "<YYYY-mm-dd>",
-      "itemIds": [
-        2534
-      ],
+      "itemIds": [2534],
       "userId": 1,
       "memberId": 425,
       "customerId": 925,
