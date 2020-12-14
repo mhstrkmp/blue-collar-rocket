@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 import PropTypes from "prop-types";
 import Button from "./Button";
@@ -30,7 +31,18 @@ const CardPrice = styled.aside`
   padding: 1em 0;
 `;
 
-const CardExtraLarge = ({ title, imgSrc, description, service, price }) => {
+const CardExtraLarge = ({
+  title,
+  imgSrc,
+  description,
+  service,
+  price,
+  itemId,
+}) => {
+  const handleOnClick = (key, value) => {
+    localStorage.setItem(key, JSON.stringify(value));
+  };
+
   return (
     <Container>
       <h2>{title}</h2>
@@ -41,19 +53,36 @@ const CardExtraLarge = ({ title, imgSrc, description, service, price }) => {
       <article>
         <h3>Leistungsumfang:</h3>
         <ul>
-          {service.map((item) => {
-            return <li key={item}>{item}</li>;
-          })}
+          {service ? (
+            service.map((item) => <li key={item}>{item}</li>)
+          ) : (
+            <>Can't load data</>
+          )}
         </ul>
       </article>
       <CardPrice>Preis: € {price}</CardPrice>
-      <Button>Hinzufügen</Button>
+      <Link to="/customers">
+        <Button
+          onClick={() => {
+            handleOnClick("blueCollarRocketCart", {
+              userId: 1,
+              memberId: 425,
+              done: false,
+              item: { id: itemId, name: title, price, imgUrl: imgSrc },
+              customer: null,
+            });
+          }}
+        >
+          Hinzufügen
+        </Button>
+      </Link>
     </Container>
   );
 };
 
 CardExtraLarge.propTypes = {
   title: PropTypes.string,
+  itemId: PropTypes.number,
   imgSrc: PropTypes.string,
   description: PropTypes.string,
   price: PropTypes.number,

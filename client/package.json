@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.12.9",
-    "@storybook/addon-storyshots": "^6.1.9",
     "@storybook/addon-actions": "^6.1.7",
     "@storybook/addon-essentials": "^6.1.7",
     "@storybook/addon-links": "^6.1.7",
+    "@storybook/addon-storyshots": "^6.1.9",
     "@storybook/node-logger": "^6.1.7",
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.7",
@@ -18,11 +18,13 @@
     "@types/node": "^14.14.10",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "@types/styled-components": "^5.1.4",
     "@types/react-router-dom": "^5.1.6",
+    "@types/styled-components": "^5.1.4",
+    "axios": "^0.21.0",
     "babel-loader": "^8.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-query": "^2.26.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "react-test-renderer": "^17.0.1",
@@ -54,8 +56,9 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3600",
   "devDependencies": {
+    "react-query-devtools": "^2.6.3",
     "jest-styled-components": "^7.0.3"
   }
 }

@@ -9,38 +9,42 @@ import { OrderConfirmationPage } from "./pages/OrderConfirmationPage/OrderConfir
 import { ProductPage } from "./pages/ProductPage/ProductPage";
 import { ProductsOverviewPage } from "./pages/ProductsOverviewPage/ProductsOverviewPage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
+//import { ReactQueryDevtools } from "react-query-devtools";
 
 function App() {
   return (
-    <Router>
-      <GlobalStyle />
-      <Switch>
-        <Route exact path="/">
-          <CategoriesPage title={"Home"} />
-        </Route>
-        <Route path="/loading">
-          <LoadingPage />
-        </Route>
-        <Route path="/product-overview">
-          <ProductsOverviewPage title={"Angebote"} />
-        </Route>
-        <Route path="/product-detail">
-          <ProductPage title={"Angebot"} />
-        </Route>
-        <Route path="/customer-overview">
-          <CustomersOverviewPage title={"Kunden"} />
-        </Route>
-        <Route path="/checkout">
-          <CheckoutPage title={"Warenkorb"} />
-        </Route>
-        <Route path="/order-confirmation">
-          <OrderConfirmationPage />
-        </Route>
-        <Route path="/profile">
-          <ProfilePage title={"Profil"} />
-        </Route>
-      </Switch>
-    </Router>
+    <>
+      <Router>
+        <GlobalStyle />
+        <Switch>
+          <Route path="/loading">
+            <LoadingPage />
+          </Route>
+          <Route exact path="/">
+            <CategoriesPage title={"Home"} />
+          </Route>
+          <Route path="/category/:id">
+            <ProductsOverviewPage title={"Angebote"} />
+          </Route>
+          <Route path="/item/:id">
+            <ProductPage title={"Angebot"} />
+          </Route>
+          <Route path="/customers">
+            <CustomersOverviewPage title={"Kunden"} />
+          </Route>
+          <Route path="/checkout">
+            <CheckoutPage title={"Warenkorb"} />
+          </Route>
+          <Route path="/order-confirmation">
+            <OrderConfirmationPage />
+          </Route>
+          <Route path="/profile">
+            <ProfilePage title={"Profil"} />
+          </Route>
+        </Switch>
+      </Router>
+      {/* <ReactQueryDevtools initialIsOpen /> */}
+    </>
   );
 }
 
