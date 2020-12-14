@@ -1,0 +1,142 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Meister GmbH",
+      "address": {
+        "street": "Fake Strasse 42",
+        "city": "Bielefeld",
+        "state": "NRW",
+        "zip": "33602"
+      },
+      "email": "fake@fakemail.com",
+      "phone": "7892354897",
+      "categories": [
+        {
+          "id": 10983,
+          "categoryName": "Kategorie 1",
+          "categoryDescription": "Lorem ipsum dolor sit amet"
+        }
+      ],
+      "members": [
+        425,
+        426
+      ],
+      "membersCount": 2,
+      "customers": [
+        925
+      ],
+      "customersCount": 1,
+      "itemsCount": 1,
+      "itemsSold": 1,
+      "itemsRevenue": 328.5
+    }
+  ],
+  "members": [
+    {
+      "name": "Max Mustermann",
+      "address": {
+        "street": "Musterstrasse 42",
+        "city": "Bielefeld",
+        "state": "NRW",
+        "zip": "33602"
+      },
+      "email": "mustermann@fakemail.com",
+      "phone": "7893452354",
+      "ordersCount": 1,
+      "ordersRevenue": 328.5,
+      "userId": 1,
+      "id": 425
+    },
+    {
+      "name": "Meister Röhrich",
+      "address": {
+        "street": "Musterstrasse 95",
+        "city": "Bielefeld",
+        "state": "NRW",
+        "zip": "33602"
+      },
+      "email": "roehrich@fakemail.com",
+      "phone": "745236454",
+      "ordersCount": null,
+      "ordersRevenue": null,
+      "userId": 1,
+      "id": 426
+    }
+  ],
+  "customers": [
+    {
+      "name": "Frau Günzelsen",
+      "address": {
+        "street": "Fake Strasse 98",
+        "city": "Bielefeld",
+        "state": "NRW",
+        "zip": "33602"
+      },
+      "email": "guenzelsen@fakemail.com",
+      "phone": "70974897",
+      "ordersCount": 1,
+      "ordersRevenue": 328.5,
+      "id": 925,
+      "userId": 1
+    }
+  ],
+  "items": [
+    {
+      "name": "Blaue Box",
+      "imgUrl": "https://via.placeholder.com/150/0052CC/FFFFFF",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+      "service": [
+        "Eine blaue Box",
+        "Lieferung und Montage",
+        "Entsorgung der alten grauen Box"
+      ],
+      "price": 328.5,
+      "itemsSold": 1,
+      "itemsRevenue": 328.5,
+      "categoryId": 10983,
+      "userId": 1,
+      "id": 2534
+    }
+  ],
+  "orders": [
+    {
+      "dateAdded": "<YYYY-mm-dd>",
+      "itemIds": [
+        2534
+      ],
+      "userId": 1,
+      "memberId": 425,
+      "customerId": 925,
+      "done": false,
+      "id": 5834
+    },
+    {
+      "userId": 1,
+      "memberId": 425,
+      "done": false,
+      "item": {
+        "id": 2534,
+        "name": "Blaue Box",
+        "price": 328.5,
+        "imgUrl": "https://via.placeholder.com/150/0052CC/FFFFFF"
+      },
+      "customer": {
+        "name": "Frau Günzelsen",
+        "address": {
+          "street": "Fake Strasse 98",
+          "city": "Bielefeld",
+          "state": "NRW",
+          "zip": "33602"
+        },
+        "email": "guenzelsen@fakemail.com",
+        "phone": "70974897",
+        "ordersCount": 1,
+        "ordersRevenue": 328.5,
+        "id": 925,
+        "userId": 1
+      },
+      "id": 5835
+    }
+  ]
+}
