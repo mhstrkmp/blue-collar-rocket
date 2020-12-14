@@ -24,18 +24,23 @@ export const ProductsOverviewPage = ({ title }) => {
         <Header title={title} />
         <ContentWrapper>
           <CardsWrapper>
-            {data &&
+            {data ? (
               data.map((item) => (
-                <Link key={`Card_${item.id}`} to={`/item/${item.id}`}>
-                  <CardLarge
-                    key={item.id + "_" + item.name}
-                    cardTitle={item.name}
-                    imgSrc={item.imgUrl}
-                    cardText={item.description}
-                    price={item.price}
-                  />
-                </Link>
-              ))}
+                <>
+                  <Link key={`Card_${item.id}`} to={`/item/${item.id}`}>
+                    <CardLarge
+                      key={item.id + "_" + item.name}
+                      cardTitle={item.name}
+                      imgSrc={item.imgUrl}
+                      cardText={item.description}
+                      price={item.price}
+                    />
+                  </Link>
+                </>
+              ))
+            ) : (
+              <>Can't load data</>
+            )}
           </CardsWrapper>
           <a href="/storybook" target="_blank">
             Go to Storybook

@@ -17,9 +17,11 @@ const CardSmall = ({ cardTitle, cardText }) => {
   return (
     <Container>
       <h2>{cardTitle}</h2>
-      {cardText.map((item) => {
-        return <p key={item}>{item}</p>;
-      })}
+      {cardText ? (
+        cardText.map((item) => <p key={item}>{item}</p>)
+      ) : (
+        <>Can't load data</>
+      )}
     </Container>
   );
 };

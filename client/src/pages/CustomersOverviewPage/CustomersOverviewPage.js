@@ -29,24 +29,29 @@ export const CustomersOverviewPage = ({ title }) => {
       <ReactQueryCacheProvider queryCache={queryCache}>
         <Header title={title} />
         <ContentWrapper>
-          {data &&
+          {data ? (
             data.map((item) => (
-              <Link
-                onClick={() => {
-                  handleOnClick("blueCollarRocketCart", {
-                    customer: { ...item },
-                  });
-                }}
-                key={`link_${item.id}`}
-                to="/checkout"
-              >
-                <CardSmall
-                  key={item.id}
-                  cardTitle={item.name}
-                  cardText={[item.address.street, item.address.city]}
-                />
-              </Link>
-            ))}
+              <>
+                <Link
+                  onClick={() => {
+                    handleOnClick("blueCollarRocketCart", {
+                      customer: { ...item },
+                    });
+                  }}
+                  key={`link_${item.id}`}
+                  to="/checkout"
+                >
+                  <CardSmall
+                    key={item.id}
+                    cardTitle={item.name}
+                    cardText={[item.address.street, item.address.city]}
+                  />
+                </Link>
+              </>
+            ))
+          ) : (
+            <>Can't load data</>
+          )}
         </ContentWrapper>
         <a href="/storybook" target="_blank">
           Go to Storybook

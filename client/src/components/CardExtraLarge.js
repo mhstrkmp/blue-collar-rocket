@@ -53,9 +53,11 @@ const CardExtraLarge = ({
       <article>
         <h3>Leistungsumfang:</h3>
         <ul>
-          {service.map((item) => {
-            return <li key={item}>{item}</li>;
-          })}
+          {service ? (
+            service.map((item) => <li key={item}>{item}</li>)
+          ) : (
+            <>Can't load data</>
+          )}
         </ul>
       </article>
       <CardPrice>Preis: € {price}</CardPrice>

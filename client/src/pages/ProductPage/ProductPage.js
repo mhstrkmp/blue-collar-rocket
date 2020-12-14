@@ -23,18 +23,23 @@ export const ProductPage = ({ title }) => {
       <ReactQueryCacheProvider queryCache={queryCache}>
         <Header title={title} />
         <ContentWrapper>
-          {data &&
+          {data ? (
             data.map((item) => (
-              <CardExtraLarge
-                key={`CardExtraLarge_${item.id}`}
-                title={item.name}
-                imgSrc={item.imgUrl}
-                description={item.description}
-                service={item.service}
-                price={item.price}
-                itemId={item.id}
-              />
-            ))}
+              <>
+                <CardExtraLarge
+                  key={`CardExtraLarge_${item.id}`}
+                  title={item.name}
+                  imgSrc={item.imgUrl}
+                  description={item.description}
+                  service={item.service}
+                  price={item.price}
+                  itemId={item.id}
+                />
+              </>
+            ))
+          ) : (
+            <>Can't load data</>
+          )}
         </ContentWrapper>
         <a href="/storybook" target="_blank">
           Go to Storybook
