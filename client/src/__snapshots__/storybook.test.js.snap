@@ -198,7 +198,7 @@ exports[`Storyshots Components/Navbar Bottom Default 1`] = `
   <a
     aria-current={null}
     className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
-    href="/product-overview"
+    href="/items"
     onClick={[Function]}
   >
     <svg>
@@ -281,7 +281,7 @@ Array [
     <a
       aria-current={null}
       className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
-      href="/product-overview"
+      href="/items"
       onClick={[Function]}
     >
       <svg>
@@ -380,7 +380,7 @@ Array [
     <a
       aria-current={null}
       className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
-      href="/product-overview"
+      href="/items"
       onClick={[Function]}
     >
       <svg>
