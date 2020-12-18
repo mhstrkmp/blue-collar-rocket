@@ -22,7 +22,7 @@ export const CategoriesPage = ({ title }) => {
       <ReactQueryCacheProvider queryCache={queryCache}>
         <Header title={title} />
         <ContentWrapper>
-          {data.categories &&
+          {data.categories ? (
             data.categories.map((item) => (
               <Link
                 key={item.categoryId + "_" + item.title}
@@ -34,7 +34,10 @@ export const CategoriesPage = ({ title }) => {
                   cardText={[item.categoryDescription]}
                 />
               </Link>
-            ))}
+            ))
+          ) : (
+            <>Can't load data</>
+          )}
         </ContentWrapper>
         <a href="/storybook" target="_blank">
           Go to Storybook

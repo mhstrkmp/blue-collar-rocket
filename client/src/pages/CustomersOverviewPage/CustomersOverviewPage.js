@@ -18,7 +18,7 @@ const handleOnClick = (key, value) => {
 
 export const CustomersOverviewPage = ({ title }) => {
   const { isLoading, error, data } = useQuery("customersData", () =>
-    fetch(`/api/customers?userId=1`).then((res) => res.json())
+    fetch(`/api/customers`).then((res) => res.json())
   );
 
   if (isLoading) return "Loading";

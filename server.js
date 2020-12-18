@@ -8,6 +8,8 @@ const {
   getObjects,
   getUserById,
   updateUserById,
+  getItemsByCategory,
+  getItemById,
 } = require("./lib/api");
 
 const app = express();
@@ -68,6 +70,32 @@ app
         .send("An unexpected error occured. Please try again later!");
     }
   });
+
+app.route("/api/category/:id").get(async (req, res) => {
+  const { id } = req.params;
+  try {
+    const users = await getItemsByCategory(id);
+    res.send(users);
+  } catch (error) {
+    console.error(error);
+    res
+      .status(500)
+      .send("An unexpected error occured. Please try again later!");
+  }
+});
+
+app.route("/api/items/:id").get(async (req, res) => {
+  const { id } = req.params;
+  try {
+    const users = await getItemById(id);
+    res.send(users);
+  } catch (error) {
+    console.error(error);
+    res
+      .status(500)
+      .send("An unexpected error occured. Please try again later!");
+  }
+});
 
 app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, "client/build")));

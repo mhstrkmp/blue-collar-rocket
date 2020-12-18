@@ -11,13 +11,14 @@ const queryCache = new QueryCache();
 
 export const ProductPage = ({ title }) => {
   const { id } = useParams();
-  const { isLoading, error, data } = useQuery("itemData", () =>
-    fetch(`/api/items?id=${id}`).then((res) => res.json())
+  const { isLoading, error, data } = useQuery("singleItemData", () =>
+    fetch(`/api/items/${id}`).then((res) => res.json())
   );
 
   if (isLoading) return "Loading...";
 
   if (error) return "An error has occurred: " + error.message;
+
   return (
     <>
       <ReactQueryCacheProvider queryCache={queryCache}>

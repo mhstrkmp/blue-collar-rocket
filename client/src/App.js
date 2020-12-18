@@ -9,7 +9,7 @@ import { OrderConfirmationPage } from "./pages/OrderConfirmationPage/OrderConfir
 import { ProductPage } from "./pages/ProductPage/ProductPage";
 import { ProductsOverviewPage } from "./pages/ProductsOverviewPage/ProductsOverviewPage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
-import { ReactQueryDevtools } from "react-query-devtools";
+// import { ReactQueryDevtools } from "react-query-devtools";
 
 function App() {
   return (
@@ -24,9 +24,12 @@ function App() {
             <CategoriesPage title={"Home"} />
           </Route>
           <Route path="/category/:id">
-            <ProductsOverviewPage title={"Angebote"} />
+            <ProductsOverviewPage title={"Kategorie"} />
           </Route>
-          <Route path="/item/:id">
+          <Route path="/items">
+            <ProductsOverviewPage title={"Angebotsübersicht"} />
+          </Route>
+          <Route path="/items/:id">
             <ProductPage title={"Angebot"} />
           </Route>
           <Route path="/customers">
@@ -43,7 +46,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <ReactQueryDevtools initialIsOpen />
+      {/* <ReactQueryDevtools initialIsOpen /> */}
     </>
   );
 }
