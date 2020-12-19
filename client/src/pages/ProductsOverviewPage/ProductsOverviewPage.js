@@ -5,14 +5,16 @@ import { ContentWrapper, CardsWrapper } from "../../components/Wrapper";
 import NavbarBottom from "../../components/NavbarBottom";
 import CardLarge from "../../components/CardLarge";
 import { useQuery, QueryCache, ReactQueryCacheProvider } from "react-query";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const queryCache = new QueryCache();
 
 export const ProductsOverviewPage = ({ title }) => {
-  const { id } = useParams();
-  const { isLoading, error, data } = useQuery("itemData", () =>
-    fetch(`/api/items?categoryId=${id}`).then((res) => res.json())
+  const location = useLocation();
+
+  const { isLoading, error, data } = useQuery(
+    ["itemsData", location.pathname],
+    () => fetch(`/api${location.pathname}`).then((res) => res.json())
   );
 
   if (isLoading) return "Loading...";
@@ -27,9 +29,12 @@ export const ProductsOverviewPage = ({ title }) => {
             {data ? (
               data.map((item) => (
                 <>
-                  <Link key={`Card_${item.id}`} to={`/item/${item.id}`}>
+                  <Link
+                    key={`link_${item.itemId}`}
+                    to={`/items/${item.itemId}`}
+                  >
                     <CardLarge
-                      key={item.id + "_" + item.name}
+                      key={`card_${item.itemId}`}
                       cardTitle={item.name}
                       imgSrc={item.imgUrl}
                       cardText={item.description}
@@ -54,5 +59,6 @@ export const ProductsOverviewPage = ({ title }) => {
 
 ProductsOverviewPage.propTypes = {
   title: PropTypes.string,
+  api: PropTypes.string,
   products: PropTypes.array,
 };

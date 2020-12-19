@@ -34,7 +34,7 @@ const NavbarBottom = () => {
       <StyledNavLink to="/" activeStyle={activeNavLink} exact={true}>
         <IconHome />
       </StyledNavLink>
-      <StyledNavLink to="/product-overview" activeStyle={activeNavLink}>
+      <StyledNavLink to="/items" activeStyle={activeNavLink}>
         <IconSearch />
       </StyledNavLink>
       <StyledNavLink to="/checkout" activeStyle={activeNavLink}>
