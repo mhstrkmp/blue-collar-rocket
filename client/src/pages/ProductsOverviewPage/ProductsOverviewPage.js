@@ -29,10 +29,7 @@ export const ProductsOverviewPage = ({ title }) => {
             {data ? (
               data.map((item) => (
                 <>
-                  <Link
-                    key={`link_${item.itemId}`}
-                    to={`/items/${item.itemId}`}
-                  >
+                  <Link key={`link_${item.itemId}`} to={`/item/${item.itemId}`}>
                     <CardLarge
                       key={`card_${item.itemId}`}
                       cardTitle={item.name}

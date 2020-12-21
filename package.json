@@ -1,13 +1,12 @@
 {
-  "name": "awesome-project-template",
+  "name": "blue-collar-rocket",
   "private": "true",
   "version": "1.0.0",
-  "description": "Boilerplate for Crate-React-App with an Express.js API and Storybook.js",
+  "description": "blue-collar-rocket / capstone project",
   "main": "server.js",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "json-server": "^0.16.3",
     "mongodb": "^3.6.3"
   },
   "devDependencies": {

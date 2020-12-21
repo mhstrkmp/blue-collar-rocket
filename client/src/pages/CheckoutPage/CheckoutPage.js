@@ -6,6 +6,7 @@ import CardSmall from "../../components/CardSmall";
 import CardMedium from "../../components/CardMedium";
 import Button from "../../components/Button";
 import NavbarBottom from "../../components/NavbarBottom";
+import { useHistory } from "react-router-dom";
 const axios = require("axios").default;
 
 const sendPostRequest = async (order) => {
@@ -18,7 +19,12 @@ const sendPostRequest = async (order) => {
   }
 };
 
+const deleteLocalStorage = (item) => {
+  localStorage.removeItem(item);
+};
+
 export const CheckoutPage = ({ title }) => {
+  let history = useHistory();
   const storedObjects = localStorage.getItem("blueCollarRocketCart");
   const cart = JSON.parse(storedObjects);
 
@@ -43,11 +49,13 @@ export const CheckoutPage = ({ title }) => {
               quantity={1}
             />
             <Button
-              onClick={() => {
-                sendPostRequest(cart);
+              onClick={async () => {
+                await sendPostRequest(cart);
+                deleteLocalStorage("blueCollarRocketCart");
+                history.push("/");
               }}
             >
-              Hinzufügen
+              Bestellen
             </Button>
           </>
         ) : (
