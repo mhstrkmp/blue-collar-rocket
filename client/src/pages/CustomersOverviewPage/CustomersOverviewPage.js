@@ -4,10 +4,8 @@ import Header from "../../components/Header";
 import { ContentWrapper } from "../../components/Wrapper";
 import CardSmall from "../../components/CardSmall";
 import NavbarBottom from "../../components/NavbarBottom";
-import { useQuery, QueryCache, ReactQueryCacheProvider } from "react-query";
+import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
-
-const queryCache = new QueryCache();
 
 const handleOnClick = (key, value) => {
   const storedObjects = localStorage.getItem(key);
@@ -26,38 +24,36 @@ export const CustomersOverviewPage = ({ title }) => {
 
   return (
     <>
-      <ReactQueryCacheProvider queryCache={queryCache}>
-        <Header title={title} />
-        <ContentWrapper>
-          {data ? (
-            data.map((item) => (
-              <>
-                <Link
-                  onClick={() => {
-                    handleOnClick("blueCollarRocketCart", {
-                      customer: { ...item },
-                    });
-                  }}
-                  key={`link_${item.id}`}
-                  to="/checkout"
-                >
-                  <CardSmall
-                    key={item.id}
-                    cardTitle={item.name}
-                    cardText={[item.address.street, item.address.city]}
-                  />
-                </Link>
-              </>
-            ))
-          ) : (
-            <>Can't load data</>
-          )}
-        </ContentWrapper>
-        <a href="/storybook" target="_blank">
-          Go to Storybook
-        </a>
-        <NavbarBottom />
-      </ReactQueryCacheProvider>
+      <Header title={title} />
+      <ContentWrapper>
+        {data ? (
+          data.map((item) => (
+            <>
+              <Link
+                onClick={() => {
+                  handleOnClick("blueCollarRocketCart", {
+                    customer: { ...item },
+                  });
+                }}
+                key={`link_${item.id}`}
+                to="/checkout"
+              >
+                <CardSmall
+                  key={item.id}
+                  cardTitle={item.name}
+                  cardText={[item.address.street, item.address.city]}
+                />
+              </Link>
+            </>
+          ))
+        ) : (
+          <>Can't load data</>
+        )}
+      </ContentWrapper>
+      <a href="/storybook" target="_blank">
+        Go to Storybook
+      </a>
+      <NavbarBottom />
     </>
   );
 };

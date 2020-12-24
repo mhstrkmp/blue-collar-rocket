@@ -5,9 +5,7 @@ import Header from "../../components/Header";
 import { ContentWrapper } from "../../components/Wrapper";
 import CardExtraLarge from "../../components/CardExtraLarge";
 import NavbarBottom from "../../components/NavbarBottom";
-import { useQuery, QueryCache, ReactQueryCacheProvider } from "react-query";
-
-const queryCache = new QueryCache();
+import { useQuery } from "react-query";
 
 export const ProductPage = ({ title }) => {
   const { id } = useParams();
@@ -21,32 +19,30 @@ export const ProductPage = ({ title }) => {
 
   return (
     <>
-      <ReactQueryCacheProvider queryCache={queryCache}>
-        <Header title={title} />
-        <ContentWrapper>
-          {data ? (
-            data.map((item) => (
-              <>
-                <CardExtraLarge
-                  key={`CardExtraLarge_${item.id}`}
-                  title={item.name}
-                  imgSrc={item._id}
-                  description={item.description}
-                  service={item.service}
-                  price={item.price}
-                  itemId={item.id}
-                />
-              </>
-            ))
-          ) : (
-            <>Can't load data</>
-          )}
-        </ContentWrapper>
-        <a href="/storybook" target="_blank">
-          Go to Storybook
-        </a>
-        <NavbarBottom />
-      </ReactQueryCacheProvider>
+      <Header title={title} />
+      <ContentWrapper>
+        {data ? (
+          data.map((item) => (
+            <>
+              <CardExtraLarge
+                key={`CardExtraLarge_${item.id}`}
+                title={item.name}
+                imgSrc={item._id}
+                description={item.description}
+                service={item.service}
+                price={item.price}
+                itemId={item.id}
+              />
+            </>
+          ))
+        ) : (
+          <>Can't load data</>
+        )}
+      </ContentWrapper>
+      <a href="/storybook" target="_blank">
+        Go to Storybook
+      </a>
+      <NavbarBottom />
     </>
   );
 };

@@ -9,44 +9,49 @@ import { OrderConfirmationPage } from "./pages/OrderConfirmationPage/OrderConfir
 import { ProductPage } from "./pages/ProductPage/ProductPage";
 import { ProductsOverviewPage } from "./pages/ProductsOverviewPage/ProductsOverviewPage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
-import { ReactQueryDevtools } from "react-query-devtools";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
     <>
-      <Router>
-        <GlobalStyle />
-        <Switch>
-          <Route path="/loading">
-            <LoadingPage />
-          </Route>
-          <Route exact path="/">
-            <CategoriesPage title={"Home"} />
-          </Route>
-          <Route path="/category/:id">
-            <ProductsOverviewPage title={"Kategorie"} />
-          </Route>
-          <Route path="/items">
-            <ProductsOverviewPage title={"Angebotsübersicht"} />
-          </Route>
-          <Route path="/item/:id">
-            <ProductPage title={"Angebot"} />
-          </Route>
-          <Route path="/customers">
-            <CustomersOverviewPage title={"Kunden"} />
-          </Route>
-          <Route path="/checkout">
-            <CheckoutPage title={"Warenkorb"} />
-          </Route>
-          <Route path="/order-confirmation">
-            <OrderConfirmationPage />
-          </Route>
-          <Route path="/profile">
-            <ProfilePage title={"Profil"} />
-          </Route>
-        </Switch>
-      </Router>
-      <ReactQueryDevtools initialIsOpen={false} />
+      <QueryClientProvider client={queryClient}>
+        <Router>
+          <GlobalStyle />
+          <Switch>
+            <Route path="/loading">
+              <LoadingPage />
+            </Route>
+            <Route exact path="/">
+              <CategoriesPage title={"Home"} />
+            </Route>
+            <Route path="/category/:id">
+              <ProductsOverviewPage title={"Kategorie"} />
+            </Route>
+            <Route path="/items">
+              <ProductsOverviewPage title={"Angebotsübersicht"} />
+            </Route>
+            <Route path="/item/:id">
+              <ProductPage title={"Angebot"} />
+            </Route>
+            <Route path="/customers">
+              <CustomersOverviewPage title={"Kunden"} />
+            </Route>
+            <Route path="/checkout">
+              <CheckoutPage title={"Warenkorb"} />
+            </Route>
+            <Route path="/order-confirmation">
+              <OrderConfirmationPage />
+            </Route>
+            <Route path="/profile">
+              <ProfilePage title={"Profil"} />
+            </Route>
+          </Switch>
+        </Router>
+        <ReactQueryDevtools initialIsOpen={false} />
+      </QueryClientProvider>
     </>
   );
 }

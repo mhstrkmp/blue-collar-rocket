@@ -6,6 +6,395 @@ Array [
   <footer
     className="ReactQueryDevtools"
   >
+    <div
+      className="ReactQueryDevtoolsPanel"
+      style={
+        Object {
+          "backgroundColor": "#0b1521",
+          "borderTop": "1px solid #3f4e60",
+          "bottom": "0",
+          "boxShadow": "0 0 20px rgba(0,0,0,.3)",
+          "color": "white",
+          "display": "flex",
+          "fontFamily": "sans-serif",
+          "fontSize": "clamp(12px, 1.5vw, 14px)",
+          "height": "500px",
+          "maxHeight": "90%",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "fixed",
+          "right": "0",
+          "transform": "translateY(15px) scale(1.02)",
+          "transformOrigin": "top",
+          "transition": "all .2s ease",
+          "width": "100%",
+          "zIndex": "99999",
+        }
+      }
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "
+            .ReactQueryDevtoolsPanel * {
+              scrollbar-color: #132337 #3f4e60;
+            }
+              
+            .ReactQueryDevtoolsPanel *::-webkit-scrollbar, .ReactQueryDevtoolsPanel scrollbar {
+              width: 1rem;
+              height: 1rem;
+            }
+            
+            .ReactQueryDevtoolsPanel *::-webkit-scrollbar-track, .ReactQueryDevtoolsPanel scrollbar-track {
+              background: #132337;
+            }
+             
+            .ReactQueryDevtoolsPanel *::-webkit-scrollbar-thumb, .ReactQueryDevtoolsPanel scrollbar-thumb {
+              background: #3f4e60;
+              border-radius: .5rem;
+              border: 3px solid #132337;
+            }
+          ",
+          }
+        }
+      />
+      <div
+        onMouseDown={[Function]}
+        style={
+          Object {
+            "cursor": "row-resize",
+            "height": "4px",
+            "left": 0,
+            "marginBottom": "-4px",
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+            "zIndex": 100000,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "borderRight": "1px solid #222e3e",
+            "display": "flex",
+            "flex": "1 1 500px",
+            "flexDirection": "column",
+            "maxHeight": "100%",
+            "minHeight": "40%",
+            "overflow": "auto",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "#132337",
+              "display": "flex",
+              "justifyContent": "space-between",
+              "padding": ".5rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "fontSize": "1.2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              Queries (
+              1
+              )
+            </div>
+          </div>
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "inline-block",
+                  "fontSize": "0.9em",
+                  "marginBottom": ".5rem",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "background": "#00ab52",
+                    "borderRadius": ".2em",
+                    "display": "inline-flex",
+                    "fontWeight": "bold",
+                    "opacity": 0.3,
+                    "padding": ".2em .4em",
+                    "textShadow": "0 0 10px black",
+                  }
+                }
+              >
+                fresh 
+                <code
+                  style={
+                    Object {
+                      "fontSize": ".9em",
+                    }
+                  }
+                >
+                  (
+                  0
+                  )
+                </code>
+              </span>
+               
+              <span
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "background": "#006bff",
+                    "borderRadius": ".2em",
+                    "display": "inline-flex",
+                    "fontWeight": "bold",
+                    "opacity": 0.3,
+                    "padding": ".2em .4em",
+                    "textShadow": "0 0 10px black",
+                  }
+                }
+              >
+                fetching 
+                <code
+                  style={
+                    Object {
+                      "fontSize": ".9em",
+                    }
+                  }
+                >
+                  (
+                  0
+                  )
+                </code>
+              </span>
+               
+              <span
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "background": "#ffb200",
+                    "borderRadius": ".2em",
+                    "color": "black",
+                    "display": "inline-flex",
+                    "fontWeight": "bold",
+                    "opacity": 0.3,
+                    "padding": ".2em .4em",
+                    "textShadow": "0",
+                  }
+                }
+              >
+                stale 
+                <code
+                  style={
+                    Object {
+                      "fontSize": ".9em",
+                    }
+                  }
+                >
+                  (
+                  0
+                  )
+                </code>
+              </span>
+               
+              <span
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "background": "#3f4e60",
+                    "borderRadius": ".2em",
+                    "display": "inline-flex",
+                    "fontWeight": "bold",
+                    "opacity": 1,
+                    "padding": ".2em .4em",
+                    "textShadow": "0 0 10px black",
+                  }
+                }
+              >
+                inactive 
+                <code
+                  style={
+                    Object {
+                      "fontSize": ".9em",
+                    }
+                  }
+                >
+                  (
+                  1
+                  )
+                </code>
+              </span>
+            </span>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                }
+              }
+            >
+              <input
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Filter"
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": 0,
+                    "borderRadius": ".2em",
+                    "color": "#000",
+                    "flex": "1",
+                    "fontSize": ".9em",
+                    "lineHeight": "1.3",
+                    "marginRight": ".5rem",
+                    "padding": ".3em .4em",
+                  }
+                }
+                value=""
+              />
+              <select
+                onChange={[Function]}
+                style={
+                  Object {
+                    "WebkitAppearance": "none",
+                    "appearance": "none",
+                    "backgroundColor": "#fff",
+                    "backgroundImage": "url(\\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23444444'><polygon points='0,25 100,25 50,75'/></svg>\\")",
+                    "backgroundPosition": "right .55em center",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": ".65em auto, 100%",
+                    "border": 0,
+                    "borderRadius": ".2em",
+                    "color": "#000",
+                    "display": "inline-block",
+                    "flex": "1",
+                    "fontFamily": "sans-serif",
+                    "fontSize": ".9em",
+                    "fontWeight": "normal",
+                    "height": "auto",
+                    "lineHeight": "1.3",
+                    "marginRight": ".5rem",
+                    "minWidth": 75,
+                    "padding": ".3em 1.5em .3em .5em",
+                  }
+                }
+                value="Status > Last Updated"
+              >
+                <option
+                  value="Status > Last Updated"
+                >
+                  Sort by 
+                  Status &gt; Last Updated
+                </option>
+                <option
+                  value="Query Hash"
+                >
+                  Sort by 
+                  Query Hash
+                </option>
+                <option
+                  value="Last Updated"
+                >
+                  Sort by 
+                  Last Updated
+                </option>
+              </select>
+              <button
+                onClick={[Function]}
+                style={
+                  Object {
+                    "appearance": "none",
+                    "background": "#3f4e60",
+                    "border": "0",
+                    "borderRadius": ".3em",
+                    "color": "white",
+                    "cursor": "pointer",
+                    "fontSize": ".9em",
+                    "fontWeight": "bold",
+                    "opacity": undefined,
+                    "padding": ".2rem .4rem",
+                  }
+                }
+              >
+                ⬆ Asc
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "flex": "1",
+              "overflowY": "auto",
+            }
+          }
+        >
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "background": undefined,
+                "borderBottom": "solid 1px #222e3e",
+                "cursor": "pointer",
+                "display": "flex",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "#ffb200",
+                  "color": "white",
+                  "display": "flex",
+                  "flex": "0 0 auto",
+                  "fontWeight": "bold",
+                  "height": "2rem",
+                  "justifyContent": "center",
+                  "textShadow": "0 0 10px black",
+                  "width": "2rem",
+                }
+              }
+            >
+              0
+            </div>
+            <code
+              style={
+                Object {
+                  "fontSize": ".9em",
+                  "padding": ".5rem",
+                }
+              }
+            >
+              "userCategories"
+            </code>
+          </div>
+        </div>
+      </div>
+    </div>
     <button
       aria-label="Open React Query Devtools"
       onClick={[Function]}
