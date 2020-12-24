@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 import PropTypes from "prop-types";
 import Button from "./Button";
+import { Image, Transformation } from "cloudinary-react";
 
 const Container = styled.div`
   display: flex;
@@ -47,7 +48,12 @@ const CardExtraLarge = ({
     <Container>
       <h2>{title}</h2>
       <CardImage>
-        <img src={imgSrc} alt={title} />
+        <CardImage>
+          <Image cloud_name="mhstrkmp" publicId={`bcr/item_${imgSrc}`}>
+            <Transformation width="240" crop="scale" />
+            <Transformation defaultImage="default.png" />
+          </Image>
+        </CardImage>
       </CardImage>
       <CardDescription>{description}</CardDescription>
       <article>

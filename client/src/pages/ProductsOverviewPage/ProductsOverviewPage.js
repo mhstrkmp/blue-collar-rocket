@@ -28,17 +28,15 @@ export const ProductsOverviewPage = ({ title }) => {
           <CardsWrapper>
             {data ? (
               data.map((item) => (
-                <>
-                  <Link key={`link_${item.itemId}`} to={`/item/${item.itemId}`}>
-                    <CardLarge
-                      key={`card_${item.itemId}`}
-                      cardTitle={item.name}
-                      imgSrc={item.imgUrl}
-                      cardText={item.description}
-                      price={item.price}
-                    />
-                  </Link>
-                </>
+                <Link key={`link_${item._id}`} to={`/item/${item.itemId}`}>
+                  <CardLarge
+                    key={`card_${item._id}`}
+                    cardTitle={item.name}
+                    imgSrc={item._id}
+                    cardText={item.description}
+                    price={item.price}
+                  />
+                </Link>
               ))
             ) : (
               <>Can't load data</>

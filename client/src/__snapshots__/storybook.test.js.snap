@@ -26,10 +26,13 @@ exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
   <div
     className="CardExtraLarge__CardImage-fu46da-1 jMQAFB"
   >
-    <img
-      alt="Blaue Box"
-      src="https://via.placeholder.com/240"
-    />
+    <div
+      className="CardExtraLarge__CardImage-fu46da-1 jMQAFB"
+    >
+      <img
+        src="http://res.cloudinary.com/mhstrkmp/image/upload/c_scale,w_240/d_default.png/v1/bcr/item_https://via.placeholder.com/240"
+      />
+    </div>
   </div>
   <article
     className="CardExtraLarge__CardDescription-fu46da-2 dFFSoh"
@@ -83,8 +86,7 @@ exports[`Storyshots Components/Cards/Large Product 1`] = `
     className="CardLarge__CardImage-s54zhd-1 brXhcv"
   >
     <img
-      alt="Blaue Box"
-      src="https://via.placeholder.com/150"
+      src="http://res.cloudinary.com/mhstrkmp/image/upload/c_scale,w_150/d_default.png/v1/bcr/item_https://via.placeholder.com/150"
     />
   </div>
   <article
@@ -109,8 +111,7 @@ exports[`Storyshots Components/Cards/Medium Product 1`] = `
     className="CardMedium__CardImage-ud6k7h-3 ilNQcw"
   >
     <img
-      alt="Blaue Box"
-      src="https://via.placeholder.com/100"
+      src="http://res.cloudinary.com/mhstrkmp/image/upload/c_scale,w_100/d_default.png/v1/bcr/item_https://via.placeholder.com/100"
     />
   </div>
   <div

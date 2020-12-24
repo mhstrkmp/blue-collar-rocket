@@ -22,6 +22,7 @@
     "@types/styled-components": "^5.1.4",
     "axios": "^0.21.0",
     "babel-loader": "^8.1.0",
+    "cloudinary-react": "^1.6.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-query": "^2.26.4",

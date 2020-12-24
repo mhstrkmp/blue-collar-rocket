@@ -113,9 +113,13 @@ app.listen(port, () => {
 });
 
 async function runDatabase() {
-  console.log("Connecting to database ...");
-  await dbConnect(process.env.DB_URI, process.env.DB_NAME);
-  console.log("Connected to database");
-  console.log(`API listening at http://localhost:${port}`);
+  try {
+    console.log("Connecting to database ...");
+    await dbConnect(process.env.DB_URI, process.env.DB_NAME);
+    console.log("Connected to database");
+    console.log(`API listening at http://localhost:${port}`);
+  } catch (error) {
+    console.error(error);
+  }
 }
 runDatabase();

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import PropTypes from "prop-types";
+import { Image, Transformation } from "cloudinary-react";
 
 const Container = styled.div`
   display: flex;
@@ -41,7 +42,10 @@ const CardLarge = ({ cardTitle, imgSrc, cardText, price }) => {
     <Container>
       <h2>{cardTitle}</h2>
       <CardImage>
-        <img src={imgSrc} alt={cardTitle} />
+        <Image cloud_name="mhstrkmp" publicId={`bcr/item_${imgSrc}`}>
+          <Transformation width="150" crop="scale" />
+          <Transformation defaultImage="default.png" />
+        </Image>
       </CardImage>
       <CardDescription>{cardText}</CardDescription>
       <CardPrice>Preis: € {price}</CardPrice>
