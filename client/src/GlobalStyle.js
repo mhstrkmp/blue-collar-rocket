@@ -51,6 +51,15 @@ p {
   padding-bottom: 0.2em;
 
 }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--neutral-dark-N500);
+  }
+
 `;
 
 export default GlobalStyle;
