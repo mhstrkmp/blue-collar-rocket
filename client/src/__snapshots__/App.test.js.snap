@@ -2,7 +2,9 @@
 
 exports[`App snapshot renders 1`] = `
 Array [
-  "Loading...",
+  <div>
+    Please login first...
+  </div>,
   <footer
     className="ReactQueryDevtools"
   >
@@ -114,7 +116,7 @@ Array [
               }
             >
               Queries (
-              1
+              0
               )
             </div>
           </div>
@@ -228,7 +230,7 @@ Array [
                     "borderRadius": ".2em",
                     "display": "inline-flex",
                     "fontWeight": "bold",
-                    "opacity": 1,
+                    "opacity": 0.3,
                     "padding": ".2em .4em",
                     "textShadow": "0 0 10px black",
                   }
@@ -243,7 +245,7 @@ Array [
                   }
                 >
                   (
-                  1
+                  0
                   )
                 </code>
               </span>
@@ -351,48 +353,7 @@ Array [
               "overflowY": "auto",
             }
           }
-        >
-          <div
-            onClick={[Function]}
-            style={
-              Object {
-                "background": undefined,
-                "borderBottom": "solid 1px #222e3e",
-                "cursor": "pointer",
-                "display": "flex",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "background": "#ffb200",
-                  "color": "white",
-                  "display": "flex",
-                  "flex": "0 0 auto",
-                  "fontWeight": "bold",
-                  "height": "2rem",
-                  "justifyContent": "center",
-                  "textShadow": "0 0 10px black",
-                  "width": "2rem",
-                }
-              }
-            >
-              0
-            </div>
-            <code
-              style={
-                Object {
-                  "fontSize": ".9em",
-                  "padding": ".5rem",
-                }
-              }
-            >
-              "userCategories"
-            </code>
-          </div>
-        </div>
+        />
       </div>
     </div>
     <button
