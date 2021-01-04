@@ -10,6 +10,7 @@ const {
   updateUserById,
   getItemsByCategory,
   getItemById,
+  authenticateUser,
 } = require("./lib/api");
 
 const app = express();
@@ -92,6 +93,22 @@ app.route("/api/items/:id").get(async (req, res) => {
   } catch (error) {
     console.error(error);
     res
+      .status(500)
+      .send("An unexpected error occured. Please try again later!");
+  }
+});
+
+app.route("/api/auth/:username/:password").get(async (req, res) => {
+  // Send username, password
+  const { username, password } = req.params;
+  try {
+    // Search for corresponding user
+    const userData = await authenticateUser("users", username, password);
+    res.send(userData);
+  } catch (error) {
+    console.error(error);
+    res
+      // Error message: Wrong username or password please try again
       .status(500)
       .send("An unexpected error occured. Please try again later!");
   }
