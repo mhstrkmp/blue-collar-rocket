@@ -167,7 +167,7 @@ exports[`Storyshots Components/Cards/Small Customer 1`] = `
 
 exports[`Storyshots Components/Header Default 1`] = `
 <header
-  className="Header__Container-sc-17wre1r-0 bkfIWN"
+  className="Header__Container-sc-17wre1r-0 aKnJE"
 >
   <h1
     className="Header__Title-sc-17wre1r-1 dMDOcO"
@@ -179,7 +179,7 @@ exports[`Storyshots Components/Header Default 1`] = `
 
 exports[`Storyshots Components/Navbar Bottom Default 1`] = `
 <div
-  className="NavbarBottom__Container-okzrgt-0 dRgMHa"
+  className="NavbarBottom__Container-okzrgt-0 bbVMRI"
 >
   <a
     aria-current="page"
@@ -234,18 +234,4 @@ exports[`Storyshots Components/Searchbar Default 1`] = `
   className="Searchbar-sc-1bd71k1-0 fMbmEz"
   placeholder="Suche"
 />
-`;
-
-exports[`Storyshots Pages/Loading Loading 1`] = `
-Array [
-  <h1>
-    Loading
-  </h1>,
-  <a
-    href="/storybook"
-    target="_blank"
-  >
-    Go to Storybook
-  </a>,
-]
 `;

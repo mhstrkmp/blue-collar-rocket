@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Header from "../../components/Header";
-import { ContentWrapper } from "../../components/Wrapper";
+import { AppWrapper, ContentWrapper } from "../../components/Wrapper";
 import CardSmall from "../../components/CardSmall";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useQuery } from "react-query";
@@ -24,36 +24,38 @@ export const CustomersOverviewPage = ({ title }) => {
 
   return (
     <>
-      <Header title={title} />
-      <ContentWrapper>
-        {data ? (
-          data.map((item) => (
-            <>
-              <Link
-                onClick={() => {
-                  handleOnClick("blueCollarRocketCart", {
-                    customer: { ...item },
-                  });
-                }}
-                key={`link_${item.id}`}
-                to="/checkout"
-              >
-                <CardSmall
-                  key={item.id}
-                  cardTitle={item.name}
-                  cardText={[item.address.street, item.address.city]}
-                />
-              </Link>
-            </>
-          ))
-        ) : (
-          <>Can't load data</>
-        )}
-      </ContentWrapper>
-      <a href="/storybook" target="_blank">
-        Go to Storybook
-      </a>
-      <NavbarBottom />
+      <AppWrapper>
+        <Header title={title} />
+        <ContentWrapper>
+          {data ? (
+            data.map((item) => (
+              <>
+                <Link
+                  onClick={() => {
+                    handleOnClick("blueCollarRocketCart", {
+                      customer: { ...item },
+                    });
+                  }}
+                  key={`link_${item.id}`}
+                  to="/checkout"
+                >
+                  <CardSmall
+                    key={item.id}
+                    cardTitle={item.name}
+                    cardText={[item.address.street, item.address.city]}
+                  />
+                </Link>
+              </>
+            ))
+          ) : (
+            <>Can't load data</>
+          )}
+          <a href="/storybook" target="_blank">
+            Go to Storybook
+          </a>
+        </ContentWrapper>
+        <NavbarBottom />
+      </AppWrapper>
     </>
   );
 };

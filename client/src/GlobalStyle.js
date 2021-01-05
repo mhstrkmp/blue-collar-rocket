@@ -6,6 +6,8 @@ const GlobalStyle = createGlobalStyle`
 *::after {
 	box-sizing: border-box;
 }
+
+
 :root {
     --primary-first: #0052CC;
     --primary-second: #172B4D;
@@ -26,6 +28,8 @@ const GlobalStyle = createGlobalStyle`
     --neutral-light-N10: #FAFBFC;
     --neutral-light-N0: #fff;
 }
+
+
 body
  {
   margin: 0;
@@ -35,7 +39,14 @@ body
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--neutral-dark-N700);
+  background-color: var(--neutral-light-N10);
 }
+
+@media (min-width: 815px) {
+  body {
+  background-color: var(--primary-second);
+  }}
+
 
 h1,
 h2,
@@ -46,11 +57,12 @@ h4 {
   padding-bottom: 0.3em;
 }
 
+
 p {
   margin: 0;
   padding-bottom: 0.2em;
-
 }
+
 
 a:link,
 a:visited,
@@ -59,7 +71,6 @@ a:active {
   text-decoration: none;
   color: var(--neutral-dark-N500);
   }
-
 `;
 
 export default GlobalStyle;

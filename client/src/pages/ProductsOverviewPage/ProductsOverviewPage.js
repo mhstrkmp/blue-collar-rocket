@@ -1,7 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Header from "../../components/Header";
-import { ContentWrapper, CardsWrapper } from "../../components/Wrapper";
+import {
+  AppWrapper,
+  ContentWrapper,
+  CardsWrapper,
+} from "../../components/Wrapper";
 import NavbarBottom from "../../components/NavbarBottom";
 import CardLarge from "../../components/CardLarge";
 import { useQuery } from "react-query";
@@ -20,30 +24,32 @@ export const ProductsOverviewPage = ({ title }) => {
   if (error) return "An error has occurred: " + error.message;
   return (
     <>
-      <Header title={title} />
-      <ContentWrapper>
-        <CardsWrapper>
-          {data ? (
-            data.map((item) => (
-              <Link key={`link_${item._id}`} to={`/item/${item._id}`}>
-                <CardLarge
-                  key={`card_${item._id}`}
-                  cardTitle={item.name}
-                  imgSrc={item._id}
-                  cardText={item.description}
-                  price={item.price}
-                />
-              </Link>
-            ))
-          ) : (
-            <CardsWrapper>Can't load data</CardsWrapper>
-          )}
-        </CardsWrapper>
-        <a href="/storybook" target="_blank">
-          Go to Storybook
-        </a>
-      </ContentWrapper>
-      <NavbarBottom />
+      <AppWrapper>
+        <Header title={title} />
+        <ContentWrapper>
+          <CardsWrapper>
+            {data ? (
+              data.map((item) => (
+                <Link key={`link_${item._id}`} to={`/item/${item._id}`}>
+                  <CardLarge
+                    key={`card_${item._id}`}
+                    cardTitle={item.name}
+                    imgSrc={item._id}
+                    cardText={item.description}
+                    price={item.price}
+                  />
+                </Link>
+              ))
+            ) : (
+              <CardsWrapper>Can't load data</CardsWrapper>
+            )}
+          </CardsWrapper>
+          <a href="/storybook" target="_blank">
+            Go to Storybook
+          </a>
+        </ContentWrapper>
+        <NavbarBottom />
+      </AppWrapper>
     </>
   );
 };
