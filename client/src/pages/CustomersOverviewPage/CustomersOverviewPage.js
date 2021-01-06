@@ -6,12 +6,12 @@ import CardSmall from "../../components/CardSmall";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
+import { getLocalStorageCart } from "../../utils/utils";
 
-const handleOnClick = (key, value) => {
-  const storedObjects = localStorage.getItem(key);
-  const storedObjectsJson = JSON.parse(storedObjects);
-  const updateStoredObjects = { ...storedObjectsJson, ...value };
-  localStorage.setItem(key, JSON.stringify(updateStoredObjects));
+const handleOnClick = (cartId, customer) => {
+  let cart = getLocalStorageCart(cartId);
+  cart = { ...cart, ...customer };
+  localStorage.setItem(cartId, JSON.stringify(cart));
 };
 
 export const CustomersOverviewPage = ({ title }) => {

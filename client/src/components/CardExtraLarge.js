@@ -41,7 +41,7 @@ const CardExtraLarge = ({
   itemId,
 }) => {
   const handleOnClick = (key, value) => {
-    localStorage.setItem(key, JSON.stringify(value));
+    localStorage.setItem(key, JSON.stringify({ ...value }));
   };
 
   return (
@@ -72,10 +72,11 @@ const CardExtraLarge = ({
           onClick={() => {
             handleOnClick("blueCollarRocketCart", {
               userId: 1,
-              memberId: 425,
+              name: title,
+              itemId,
+              price,
+              imgSrc,
               done: false,
-              item: { id: itemId, name: title, price, imgSrc },
-              customer: null,
             });
           }}
         >

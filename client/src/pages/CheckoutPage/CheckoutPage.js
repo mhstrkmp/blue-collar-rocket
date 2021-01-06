@@ -26,48 +26,43 @@ const deleteLocalStorage = (item) => {
 
 export const CheckoutPage = ({ title }) => {
   let history = useHistory();
-  // const storedObjects = localStorage.getItem("blueCollarRocketCart");
-  // const cart = JSON.parse(storedObjects) || {};
-  let cart;
-  cart = getLocalStorageCart("blueCollarRocketCart");
+  const cart = getLocalStorageCart("blueCollarRocketCart");
 
   return (
     <>
       <AppWrapper>
         <Header title={title} />
         <ContentWrapper>
-          {cart ? (
+          {cart && cart.customer ? (
             <>
-              {cart.customer &&
-                (<h2>Kundendaten:</h2>)(
-                  <CardSmall
-                    cardTitle={cart.customer.name}
-                    cardText={[
-                      cart.customer.address.street,
-                      cart.customer.address.city,
-                    ]}
-                  />
-                )}
+              <CardSmall
+                cardTitle={cart.customer.name}
+                cardText={[
+                  cart.customer.address.street,
+                  cart.customer.address.city,
+                ]}
+              />
               <CardMedium
-                title={cart.item.name}
-                imgSrc={cart.item.imgSrc}
-                price={cart.item.price}
+                title={cart.name}
+                imgSrc={cart.imgSrc}
+                price={cart.price}
                 quantity={1}
               />
-              {cart.customer && (
-                <Button
-                  onClick={async () => {
-                    await sendPostRequest(cart);
-                    deleteLocalStorage("blueCollarRocketCart");
-                    history.push("/");
-                  }}
-                >
-                  Bestellen
-                </Button>
-              )}
+              <Button
+                onClick={async () => {
+                  await sendPostRequest(cart);
+                  deleteLocalStorage("blueCollarRocketCart");
+                  history.push("/");
+                }}
+              >
+                Bestellen
+              </Button>
             </>
           ) : (
-            <h2>Keine Artikel im Warenkob</h2>
+            <h2>
+              Es sind keine Artikel im Warenkob oder es wurde kein Kunde
+              ausgewählt
+            </h2>
           )}
           <a href="/storybook" target="_blank">
             Go to Storybook
