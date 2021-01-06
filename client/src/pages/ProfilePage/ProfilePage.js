@@ -10,6 +10,9 @@ export const ProfilePage = ({ title }) => {
       <AppWrapper>
         <Header title={title} />
         <ContentWrapper>
+          <div>
+            <h2>Profile Page is coming soon ...</h2>
+          </div>
           <a href="/storybook" target="_blank">
             Go to Storybook
           </a>

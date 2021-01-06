@@ -51,7 +51,7 @@ exports[`App snapshot renders 1`] = `
         Username: Meister GmbH
       </p>
       <p>
-        Password: Passwort
+        Password: passwort
       </p>
     </div>
   </div>

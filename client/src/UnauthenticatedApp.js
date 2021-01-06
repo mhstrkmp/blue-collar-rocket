@@ -55,7 +55,7 @@ const UnauthenticatedApp = () => {
           <div>
             <h3>Test Credentials:</h3>
             <p>Username: Meister GmbH</p>
-            <p>Password: Passwort</p>
+            <p>Password: passwort</p>
           </div>
         </Container>
       </AppWrapper>
