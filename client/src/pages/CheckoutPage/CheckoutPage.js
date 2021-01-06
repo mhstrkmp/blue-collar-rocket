@@ -7,6 +7,7 @@ import CardMedium from "../../components/CardMedium";
 import Button from "../../components/Button";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useHistory } from "react-router-dom";
+import { getLocalStorageCart } from "../../utils/utils";
 const axios = require("axios").default;
 
 const sendPostRequest = async (order) => {
@@ -25,8 +26,10 @@ const deleteLocalStorage = (item) => {
 
 export const CheckoutPage = ({ title }) => {
   let history = useHistory();
-  const storedObjects = localStorage.getItem("blueCollarRocketCart");
-  const cart = JSON.parse(storedObjects) || null;
+  // const storedObjects = localStorage.getItem("blueCollarRocketCart");
+  // const cart = JSON.parse(storedObjects) || {};
+  let cart;
+  cart = getLocalStorageCart("blueCollarRocketCart");
 
   return (
     <>
@@ -35,29 +38,33 @@ export const CheckoutPage = ({ title }) => {
         <ContentWrapper>
           {cart ? (
             <>
-              <h2>Kundendaten:</h2>
-              <CardSmall
-                cardTitle={cart.customer.name}
-                cardText={[
-                  cart.customer.address.street,
-                  cart.customer.address.city,
-                ]}
-              />
+              {cart.customer &&
+                (<h2>Kundendaten:</h2>)(
+                  <CardSmall
+                    cardTitle={cart.customer.name}
+                    cardText={[
+                      cart.customer.address.street,
+                      cart.customer.address.city,
+                    ]}
+                  />
+                )}
               <CardMedium
                 title={cart.item.name}
-                imgSrc={cart.item.imgUrl}
+                imgSrc={cart.item.imgSrc}
                 price={cart.item.price}
                 quantity={1}
               />
-              <Button
-                onClick={async () => {
-                  await sendPostRequest(cart);
-                  deleteLocalStorage("blueCollarRocketCart");
-                  history.push("/");
-                }}
-              >
-                Bestellen
-              </Button>
+              {cart.customer && (
+                <Button
+                  onClick={async () => {
+                    await sendPostRequest(cart);
+                    deleteLocalStorage("blueCollarRocketCart");
+                    history.push("/");
+                  }}
+                >
+                  Bestellen
+                </Button>
+              )}
             </>
           ) : (
             <h2>Keine Artikel im Warenkob</h2>

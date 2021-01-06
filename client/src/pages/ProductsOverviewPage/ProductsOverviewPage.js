@@ -34,7 +34,7 @@ export const ProductsOverviewPage = ({ title }) => {
                   <CardLarge
                     key={`card_${item._id}`}
                     cardTitle={item.name}
-                    imgSrc={item._id}
+                    imgSrc={item.imgCloudinaryId}
                     cardText={item.description}
                     price={item.price}
                   />

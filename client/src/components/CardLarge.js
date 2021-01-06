@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import PropTypes from "prop-types";
+import { makeExerp } from "../utils/utils";
 import { Image, Transformation } from "cloudinary-react";
 
 const Container = styled.div`
@@ -8,6 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 300px;
   max-width: 340px;
   background: var(--primary-third);
   border-radius: 6px;
@@ -42,12 +44,12 @@ const CardLarge = ({ cardTitle, imgSrc, cardText, price }) => {
     <Container>
       <h2>{cardTitle}</h2>
       <CardImage>
-        <Image cloud_name="mhstrkmp" publicId={`bcr/item_${imgSrc}`}>
+        <Image cloud_name="mhstrkmp" publicId={imgSrc}>
           <Transformation width="150" crop="scale" />
           <Transformation defaultImage="default.png" />
         </Image>
       </CardImage>
-      <CardDescription>{cardText}</CardDescription>
+      <CardDescription>{makeExerp(cardText, 60)}</CardDescription>
       <CardPrice>Preis: € {price}</CardPrice>
     </Container>
   );

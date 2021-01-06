@@ -28,7 +28,7 @@ export const ProductPage = ({ title }) => {
                 <CardExtraLarge
                   key={`CardExtraLarge_${item.id}`}
                   title={item.name}
-                  imgSrc={item._id}
+                  imgSrc={item.imgCloudinaryId}
                   description={item.description}
                   service={item.service}
                   price={item.price}

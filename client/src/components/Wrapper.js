@@ -14,12 +14,16 @@ export const AppWrapper = styled.section`
 `;
 
 export const ContentWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
   overflow: auto;
-  width: 98%;
-  max-width: 400px;
+  width: 100%;
   height: 100%;
+  max-width: 400px;
   max-height: 812px;
-  margin: 0.5rem auto 0.5rem;
+  padding: 1rem 2rem 6.5rem 2rem;
 `;
 
 export const CardsWrapper = styled.div`
