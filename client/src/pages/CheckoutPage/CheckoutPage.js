@@ -26,15 +26,15 @@ const deleteLocalStorage = (item) => {
 export const CheckoutPage = ({ title }) => {
   let history = useHistory();
   const storedObjects = localStorage.getItem("blueCollarRocketCart");
-  const cart = JSON.parse(storedObjects);
+  const cart = JSON.parse(storedObjects) || null;
 
   return (
     <>
       <Header title={title} />
       <ContentWrapper>
-        <h2>Kundendaten:</h2>
         {cart ? (
           <>
+            <h2>Kundendaten:</h2>
             <CardSmall
               cardTitle={cart.customer.name}
               cardText={[
@@ -59,7 +59,7 @@ export const CheckoutPage = ({ title }) => {
             </Button>
           </>
         ) : (
-          <>Can't load cart data</>
+          <h2>Keine Artikel im Warenkob</h2>
         )}
       </ContentWrapper>
       <a href="/storybook" target="_blank">

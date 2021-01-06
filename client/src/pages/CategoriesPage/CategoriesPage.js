@@ -21,12 +21,9 @@ export const CategoriesPage = ({ title }) => {
       <ContentWrapper>
         {data.categories ? (
           data.categories.map((item) => (
-            <Link
-              key={item.title + "_" + item._id}
-              to={`/category/${item.categoryId}`}
-            >
+            <Link key={item.categoryId} to={`/category/${item.categoryId}`}>
               <CardSmall
-                key={item.categoryName + "_" + item._id}
+                key={`${item.categoryId}_${item.categoryName}`}
                 cardTitle={item.categoryName}
                 cardText={[item.categoryDescription]}
               />
