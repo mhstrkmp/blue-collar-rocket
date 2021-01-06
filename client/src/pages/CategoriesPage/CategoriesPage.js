@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import Header from "../../components/Header";
-import { ContentWrapper } from "../../components/Wrapper";
+import { AppWrapper, ContentWrapper } from "../../components/Wrapper";
 import CardSmall from "../../components/CardSmall";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useQuery } from "react-query";
@@ -17,26 +17,28 @@ export const CategoriesPage = ({ title }) => {
 
   return (
     <>
-      <Header title={title} />
-      <ContentWrapper>
-        {data.categories ? (
-          data.categories.map((item) => (
-            <Link key={item.categoryId} to={`/category/${item.categoryId}`}>
-              <CardSmall
-                key={`${item.categoryId}_${item.categoryName}`}
-                cardTitle={item.categoryName}
-                cardText={[item.categoryDescription]}
-              />
-            </Link>
-          ))
-        ) : (
-          <>Can't load data</>
-        )}
-      </ContentWrapper>
-      <a href="/storybook" target="_blank">
-        Go to Storybook
-      </a>
-      <NavbarBottom />
+      <AppWrapper>
+        <Header title={title} />
+        <ContentWrapper>
+          {data.categories ? (
+            data.categories.map((item) => (
+              <Link key={item.categoryId} to={`/category/${item.categoryId}`}>
+                <CardSmall
+                  key={`${item.categoryId}_${item.categoryName}`}
+                  cardTitle={item.categoryName}
+                  cardText={[item.categoryDescription]}
+                />
+              </Link>
+            ))
+          ) : (
+            <>Can't load data</>
+          )}
+          <a href="/storybook" target="_blank">
+            Go to Storybook
+          </a>
+        </ContentWrapper>
+        <NavbarBottom />
+      </AppWrapper>
     </>
   );
 };

@@ -14,9 +14,10 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: center;
   height: 3rem;
-  width: 100vw;
+  width: 100%;
   background: var(--primary-first);
   border: none;
+  filter: drop-shadow(1px 1px 1px var(--primary-second));
 `;
 
 const StyledNavLink = styled(NavLink)`

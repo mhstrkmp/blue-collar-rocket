@@ -1,55 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App snapshot renders 1`] = `
-<div
-  className="UnauthenticatedApp__Container-sc-14rep0y-0 iBIrMZ"
+<section
+  className="Wrapper__AppWrapper-sc-1so8v63-0 jgcRmx"
 >
-  <svg>
-    logo.svg
-  </svg>
-  <h2>
-    Please Log In:
-  </h2>
-  <form
-    onSubmit={[Function]}
+  <div
+    className="UnauthenticatedApp__Container-sc-14rep0y-0 fQZnIl"
   >
-    <label>
-      <p>
-        Username:
-      </p>
-      <input
-        onChange={[Function]}
-        type="text"
-      />
-    </label>
-    <label>
-      <p>
-        Password:
-      </p>
-      <input
-        onChange={[Function]}
-        type="password"
-      />
-    </label>
+    <svg>
+      logo.svg
+    </svg>
+    <h2>
+      Please Log In:
+    </h2>
+    <form
+      onSubmit={[Function]}
+    >
+      <label>
+        <p>
+          Username:
+        </p>
+        <input
+          onChange={[Function]}
+          type="text"
+        />
+      </label>
+      <label>
+        <p>
+          Password:
+        </p>
+        <input
+          onChange={[Function]}
+          type="password"
+        />
+      </label>
+      <div>
+        <button
+          className="Button-pzvjfl-0 lntRdW"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
     <div>
-      <button
-        className="Button-pzvjfl-0 lntRdW"
-        type="submit"
-      >
-        Submit
-      </button>
+      <h3>
+        Test Credentials:
+      </h3>
+      <p>
+        Username: Meister GmbH
+      </p>
+      <p>
+        Password: passwort
+      </p>
     </div>
-  </form>
-  <div>
-    <h3>
-      Test Credentials:
-    </h3>
-    <p>
-      Username: Meister GmbH
-    </p>
-    <p>
-      Password: Passwort
-    </p>
   </div>
-</div>
+</section>
 `;

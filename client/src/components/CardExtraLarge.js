@@ -49,7 +49,7 @@ const CardExtraLarge = ({
       <h2>{title}</h2>
       <CardImage>
         <CardImage>
-          <Image cloud_name="mhstrkmp" publicId={`bcr/item_${imgSrc}`}>
+          <Image cloud_name="mhstrkmp" publicId={imgSrc}>
             <Transformation width="240" crop="scale" />
             <Transformation defaultImage="default.png" />
           </Image>
@@ -74,7 +74,7 @@ const CardExtraLarge = ({
               userId: 1,
               memberId: 425,
               done: false,
-              item: { id: itemId, name: title, price, imgUrl: imgSrc },
+              item: { id: itemId, name: title, price, imgSrc },
               customer: null,
             });
           }}

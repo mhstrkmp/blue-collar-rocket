@@ -3,17 +3,16 @@ import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 
 const Container = styled.header`
-  z-index: 100;
   position: sticky;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3rem;
-  width: 100vw;
+  width: 100%;
   background: var(--primary-first);
   border: none;
-  filter: drop-shadow(2px 2px 2px var(--primary-first));
+  filter: drop-shadow(1px 1px 1px var(--primary-second));
 `;
 
 const Title = styled.h1`
