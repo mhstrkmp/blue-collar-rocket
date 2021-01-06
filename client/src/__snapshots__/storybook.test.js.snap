@@ -30,7 +30,7 @@ exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
       className="CardExtraLarge__CardImage-fu46da-1 jMQAFB"
     >
       <img
-        src="http://res.cloudinary.com/mhstrkmp/image/upload/c_scale,w_240/d_default.png/v1/bcr/item_https://via.placeholder.com/240"
+        src="https://via.placeholder.com/240"
       />
     </div>
   </div>
@@ -77,7 +77,7 @@ exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
 
 exports[`Storyshots Components/Cards/Large Product 1`] = `
 <div
-  className="CardLarge__Container-s54zhd-0 dEGmhj"
+  className="CardLarge__Container-s54zhd-0 fidxZc"
 >
   <h2>
     Blaue Box
@@ -86,13 +86,13 @@ exports[`Storyshots Components/Cards/Large Product 1`] = `
     className="CardLarge__CardImage-s54zhd-1 brXhcv"
   >
     <img
-      src="http://res.cloudinary.com/mhstrkmp/image/upload/c_scale,w_150/d_default.png/v1/bcr/item_https://via.placeholder.com/150"
+      src="https://via.placeholder.com/150"
     />
   </div>
   <article
     className="CardLarge__CardDescription-s54zhd-2 bVsbFz"
   >
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ...
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ips...
   </article>
   <aside
     className="CardLarge__CardPrice-s54zhd-3 jjmLul"
@@ -111,7 +111,7 @@ exports[`Storyshots Components/Cards/Medium Product 1`] = `
     className="CardMedium__CardImage-ud6k7h-3 ilNQcw"
   >
     <img
-      src="http://res.cloudinary.com/mhstrkmp/image/upload/c_scale,w_100/d_default.png/v1/bcr/item_https://via.placeholder.com/100"
+      src="https://via.placeholder.com/100"
     />
   </div>
   <div
@@ -167,7 +167,7 @@ exports[`Storyshots Components/Cards/Small Customer 1`] = `
 
 exports[`Storyshots Components/Header Default 1`] = `
 <header
-  className="Header__Container-sc-17wre1r-0 aKnJE"
+  className="Header__Container-sc-17wre1r-0 fflpnF"
 >
   <h1
     className="Header__Title-sc-17wre1r-1 dMDOcO"
