@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Header from "../../components/Header";
 import NavbarBottom from "../../components/NavbarBottom";
+import Chart from "../../components/Chart";
 import { AppWrapper, ContentWrapper } from "../../components/Wrapper";
 
 export const ProfilePage = ({ title }) => {
@@ -10,9 +11,7 @@ export const ProfilePage = ({ title }) => {
       <AppWrapper>
         <Header title={title} />
         <ContentWrapper>
-          <div>
-            <h2>Profile Page is coming soon ...</h2>
-          </div>
+          <Chart />
           <a href="/storybook" target="_blank">
             Go to Storybook
           </a>
