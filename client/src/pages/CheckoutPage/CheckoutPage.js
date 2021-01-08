@@ -8,14 +8,16 @@ import Button from "../../components/Button";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useHistory } from "react-router-dom";
 import { getLocalStorageCart } from "../../utils/utils";
-const axios = require("axios").default;
+import axios from "axios";
 
 const sendPostRequest = async (order) => {
   try {
-    const res = await axios.post("/api/orders", order);
-    console.log(res.data);
+    const data = {
+      dateAdded: new Date().toISOString(),
+      ...order,
+    };
+    await axios.post("/api/orders", data);
   } catch (err) {
-    // Error handling
     console.error(err);
   }
 };

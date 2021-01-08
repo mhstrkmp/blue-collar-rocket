@@ -1,9 +1,5 @@
 import React from "react";
-import { useQuery } from "react-query";
 import { Bar } from "react-chartjs-2";
-import styled from "styled-components/macro";
-import { convertIsoDateToLocale } from "../utils/utils";
-import axios from "axios";
 
 const chartData = {
   labels: [
@@ -69,58 +65,6 @@ const options = {
   },
 };
 
-const Table = styled.table`
-  margin: 1.8em 0;
-  font-size: 0.8em;
-  th {
-    padding-bottom: 0.6em;
-  }
-  td {
-    padding-bottom: 0.3em;
-  }
-  td:not(:last-child) {
-    padding-right: 0.5em;
-  }
-`;
-
-const Chart = () => {
-  const { isLoading, error, data } = useQuery("orders", async () => {
-    try {
-      const { data } = await axios.get("/api/orders");
-      return data;
-    } catch (err) {
-      // Error handling
-      console.error(err);
-      return err;
-    }
-  });
-
-  if (isLoading) return "Loading...";
-  if (error) return "An error has occurred: " + error.message;
-
-  return (
-    <>
-      <h2>Deine Bonuszahlungen</h2>
-      <Bar data={chartData} options={options} />
-      <Table>
-        <thead>
-          <tr>
-            <th colSpan="4">Vermittelte Aufträge</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((item) => (
-            <tr key={`id_${item._id}`}>
-              <td>{convertIsoDateToLocale(item.dateAdded)}</td>
-              <td>{item.customer.name}</td>
-              <td>{item.name}</td>
-              <td>€{item.price.toFixed(2)}</td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
-    </>
-  );
-};
+const Chart = () => <Bar data={chartData} options={options} />;
 
 export default Chart;
