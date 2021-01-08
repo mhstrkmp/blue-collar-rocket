@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Header from "../../components/Header";
+import Searchbar from "../../components/Searchbar";
 import {
   AppWrapper,
   ContentWrapper,
@@ -10,26 +11,40 @@ import NavbarBottom from "../../components/NavbarBottom";
 import CardLarge from "../../components/CardLarge";
 import { useQuery } from "react-query";
 import { Link, useLocation } from "react-router-dom";
+import Fuse from "fuse.js";
 
 export const ProductsOverviewPage = ({ title }) => {
   const location = useLocation();
+  const [searchQuery, setSearchQuery] = useState("");
 
   const { isLoading, error, data } = useQuery(
-    ["itemsData", location.pathname],
+    ["products", location.pathname],
     () => fetch(`/api${location.pathname}`).then((res) => res.json())
   );
-
   if (isLoading) return "Loading...";
-
   if (error) return "An error has occurred: " + error.message;
+
+  const fuse = new Fuse(data, {
+    keys: ["name"],
+  });
+
+  const results = searchQuery ? fuse.search(searchQuery) : data;
+
   return (
     <>
       <AppWrapper>
         <Header title={title} />
         <ContentWrapper>
+          <Searchbar
+            placeholder={"Suche ..."}
+            value={searchQuery}
+            onChange={(e) => {
+              setSearchQuery(e.target.value);
+            }}
+          />
           <CardsWrapper>
-            {data ? (
-              data.map((item) => (
+            {results ? (
+              results.map((item) => (
                 <Link key={`link_${item._id}`} to={`/item/${item._id}`}>
                   <CardLarge
                     key={`card_${item._id}`}
