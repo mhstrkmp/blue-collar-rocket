@@ -231,7 +231,7 @@ exports[`Storyshots Components/Navbar Bottom Default 1`] = `
 
 exports[`Storyshots Components/Searchbar Default 1`] = `
 <input
-  className="Searchbar-sc-1bd71k1-0 fMbmEz"
+  className="Searchbar-sc-1bd71k1-0 xnXli"
   placeholder="Suche"
 />
 `;
