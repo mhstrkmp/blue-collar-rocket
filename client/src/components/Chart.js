@@ -2,8 +2,8 @@ import React from "react";
 import { useQuery } from "react-query";
 import { Bar } from "react-chartjs-2";
 import styled from "styled-components/macro";
-import { isoDateConverter } from "../utils/utils";
-const axios = require("axios").default;
+import { convertIsoDateToLocale } from "../utils/utils";
+import axios from "axios";
 
 const chartData = {
   labels: [
@@ -109,14 +109,12 @@ const Chart = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((item, index) => (
-            <tr key={`tr_${index}`}>
-              <td key={`td_date${index}`}>
-                {isoDateConverter(item.dateAdded)}
-              </td>
-              <td key={`td_customer_${index}`}>{item.customer.name}</td>
-              <td key={`td_name_${index}`}>{item.name}</td>
-              <td key={`td_price${index}`}>€{item.price.toFixed(2)}</td>
+          {data.map((item) => (
+            <tr key={`id_${item._id}`}>
+              <td>{convertIsoDateToLocale(item.dateAdded)}</td>
+              <td>{item.customer.name}</td>
+              <td>{item.name}</td>
+              <td>€{item.price.toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
@@ -126,5 +124,3 @@ const Chart = () => {
 };
 
 export default Chart;
-
-//{data.customer.map((item) => console.log(item.userId))}

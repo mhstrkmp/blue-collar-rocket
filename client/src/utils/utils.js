@@ -1,7 +1,12 @@
-const isoDateConverter = (isoString) => {
-  const options = { year: "2-digit", month: "2-digit", day: "2-digit" };
+const dateConverterOptions = {
+  year: "2-digit",
+  month: "2-digit",
+  day: "2-digit",
+};
+
+const convertIsoDateToLocale = (isoString) => {
   const date = new Date(isoString);
-  return date.toLocaleDateString("de-DE", options);
+  return date.toLocaleDateString("de-DE", dateConverterOptions);
 };
 
 const makeExerp = (text, length) => {
@@ -20,6 +25,4 @@ const getLocalStorageCart = (cartId) => {
   return cart;
 };
 
-exports.isoDateConverter = isoDateConverter;
-exports.getLocalStorageCart = getLocalStorageCart;
-exports.makeExerp = makeExerp;
+export { convertIsoDateToLocale, makeExerp, getLocalStorageCart };
