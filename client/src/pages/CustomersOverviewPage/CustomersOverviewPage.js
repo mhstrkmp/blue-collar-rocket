@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Header from "../../components/Header";
+import Searchbar from "../../components/Searchbar";
 import { AppWrapper, ContentWrapper } from "../../components/Wrapper";
 import CardSmall from "../../components/CardSmall";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
 import { getLocalStorageCart } from "../../utils/utils";
+import Fuse from "fuse.js";
 
 const handleOnClick = (cartId, customer) => {
   let cart = getLocalStorageCart(cartId);
@@ -15,6 +17,7 @@ const handleOnClick = (cartId, customer) => {
 };
 
 export const CustomersOverviewPage = ({ title }) => {
+  const [searchQuery, setSearchQuery] = useState("");
   const { isLoading, error, data } = useQuery("customersData", () =>
     fetch(`/api/customers`).then((res) => res.json())
   );
@@ -22,13 +25,26 @@ export const CustomersOverviewPage = ({ title }) => {
   if (isLoading) return "Loading";
   if (error) return "An error has occurred: " + error.message;
 
+  const fuse = new Fuse(data, {
+    keys: ["name"],
+  });
+
+  const results = searchQuery ? fuse.search(searchQuery) : data;
+
   return (
     <>
       <AppWrapper>
         <Header title={title} />
         <ContentWrapper>
-          {data ? (
-            data.map((item) => (
+          <Searchbar
+            placeholder={"Suche ..."}
+            value={searchQuery}
+            onChange={(e) => {
+              setSearchQuery(e.target.value);
+            }}
+          />
+          {results ? (
+            results.map((item) => (
               <>
                 <Link
                   onClick={() => {
