@@ -5,26 +5,29 @@ import PropTypes from "prop-types";
 import Button from "./Button";
 import { Image, Transformation } from "cloudinary-react";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-`;
-
 const CardImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   object-fit: cover;
-  width: 240px;
-  height: 240px;
 `;
 
 const CardDescription = styled.article`
   color: var(--neutral-dark-N700);
-  padding: 1em 2em;
+  margin: 1em 0 1.2em 0;
+`;
+
+const CardServices = styled.article`
+  margin: 1em 0;
+  h3 {
+    margin: 0;
+    text-align: center;
+  }
+  ul {
+    margin: 0;
+    letter-spacing: normal;
+  }
 `;
 
 const CardPrice = styled.aside`
@@ -45,18 +48,18 @@ const CardExtraLarge = ({
   };
 
   return (
-    <Container>
+    <>
       <h2>{title}</h2>
       <CardImage>
         <CardImage>
           <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-            <Transformation width="240" crop="scale" />
+            <Transformation height="230" crop="limit" />
             <Transformation defaultImage="default.png" />
           </Image>
         </CardImage>
       </CardImage>
       <CardDescription>{description}</CardDescription>
-      <article>
+      <CardServices>
         <h3>Leistungsumfang:</h3>
         <ul>
           {service ? (
@@ -65,8 +68,8 @@ const CardExtraLarge = ({
             <>Can't load data</>
           )}
         </ul>
-      </article>
-      <CardPrice>Preis: € {price}</CardPrice>
+      </CardServices>
+      <CardPrice>Preis: € {price.toFixed(2)}</CardPrice>
       <Link to="/customers">
         <Button
           onClick={() => {
@@ -83,7 +86,7 @@ const CardExtraLarge = ({
           Hinzufügen
         </Button>
       </Link>
-    </Container>
+    </>
   );
 };
 

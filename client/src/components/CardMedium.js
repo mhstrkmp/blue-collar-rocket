@@ -5,20 +5,23 @@ import { Image, Transformation } from "cloudinary-react";
 
 const Container = styled.div`
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  height: 150px;
-  width: 340px;
   background: none;
+  margin-bottom: 1em;
+`;
+
+const CardImage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
 `;
 
 const DescriptionContainer = styled.div`
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
-  height: 100px;
-  padding: 1em 1.5em;
 `;
 
 const DetailsContainer = styled.div`
@@ -26,30 +29,19 @@ const DetailsContainer = styled.div`
   justify-content: space-between;
 `;
 
-const CardImage = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  object-fit: cover;
-  width: 100px;
-  height: 100px;
-  border-radius: 6px;
-`;
-
 const CardMedium = ({ title, imgSrc, quantity, price }) => {
   return (
     <Container>
       <CardImage>
         <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-          <Transformation width="100" crop="scale" />
+          <Transformation height="100" crop="limit" />
           <Transformation defaultImage="default.png" />
         </Image>
       </CardImage>
       <DescriptionContainer>
         <h2>{title}</h2>
         <DetailsContainer>
-          <p>€ {price}</p>
+          <p>€ {price.toFixed(2)}</p>
           <p>x {quantity}</p>
         </DetailsContainer>
       </DescriptionContainer>

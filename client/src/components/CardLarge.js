@@ -9,12 +9,12 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
-  max-width: 340px;
+  min-width: 310px;
   background: var(--primary-third);
   border-radius: 6px;
   margin: 1rem;
-  padding: 1em 0;
+  padding: 1em;
+  text-align: center;
   filter: drop-shadow(2px 2px 2px var(--neutral-mid-N60));
 `;
 
@@ -45,12 +45,12 @@ const CardLarge = ({ cardTitle, imgSrc, cardText, price }) => {
       <h2>{cardTitle}</h2>
       <CardImage>
         <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-          <Transformation width="150" crop="scale" />
+          <Transformation height="150" crop="limit" />
           <Transformation defaultImage="default.png" />
         </Image>
       </CardImage>
       <CardDescription>{makeExerp(cardText, 60)}</CardDescription>
-      <CardPrice>Preis: € {price}</CardPrice>
+      <CardPrice>Preis: € {price.toFixed(2)}</CardPrice>
     </Container>
   );
 };

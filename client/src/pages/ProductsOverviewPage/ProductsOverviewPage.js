@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Header from "../../components/Header";
 import Searchbar from "../../components/Searchbar";
-import {
-  AppWrapper,
-  ContentWrapper,
-  CardsWrapper,
-} from "../../components/Wrapper";
+import { ContentWrapper } from "../../components/Wrapper";
 import NavbarBottom from "../../components/NavbarBottom";
 import CardLarge from "../../components/CardLarge";
 import { useQuery } from "react-query";
@@ -32,40 +28,36 @@ export const ProductsOverviewPage = ({ title }) => {
 
   return (
     <>
-      <AppWrapper>
-        <Header title={title} />
-        <ContentWrapper>
-          <Searchbar
-            type="text"
-            placeholder={"Suche ..."}
-            value={searchQuery}
-            onChange={(e) => {
-              setSearchQuery(e.target.value);
-            }}
-          />
-          <CardsWrapper>
-            {results ? (
-              results.map((item) => (
-                <Link key={`link_${item._id}`} to={`/item/${item._id}`}>
-                  <CardLarge
-                    key={`card_${item._id}`}
-                    cardTitle={item.name}
-                    imgSrc={item.imgCloudinaryId}
-                    cardText={item.description}
-                    price={item.price}
-                  />
-                </Link>
-              ))
-            ) : (
-              <CardsWrapper>Can't load data</CardsWrapper>
-            )}
-          </CardsWrapper>
-          <a href="/storybook" target="_blank">
-            Go to Storybook
-          </a>
-        </ContentWrapper>
-        <NavbarBottom />
-      </AppWrapper>
+      <Header title={title} />
+      <ContentWrapper>
+        <Searchbar
+          type="text"
+          placeholder={"Suche ..."}
+          value={searchQuery}
+          onChange={(e) => {
+            setSearchQuery(e.target.value);
+          }}
+        />
+        {results ? (
+          results.map((item) => (
+            <Link key={`link_${item._id}`} to={`/item/${item._id}`}>
+              <CardLarge
+                key={`card_${item._id}`}
+                cardTitle={item.name}
+                imgSrc={item.imgCloudinaryId}
+                cardText={item.description}
+                price={item.price}
+              />
+            </Link>
+          ))
+        ) : (
+          <>Can't load data</>
+        )}
+        <a href="/storybook" target="_blank">
+          Go to Storybook
+        </a>
+      </ContentWrapper>
+      <NavbarBottom />
     </>
   );
 };

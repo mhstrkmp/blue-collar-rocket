@@ -7,7 +7,7 @@ import { convertIsoDateToLocale } from "../../utils/utils";
 import Header from "../../components/Header";
 import NavbarBottom from "../../components/NavbarBottom";
 import Chart from "../../components/Chart";
-import { AppWrapper, ContentWrapper } from "../../components/Wrapper";
+import { ContentWrapper } from "../../components/Wrapper";
 
 const Table = styled.table`
   margin: 1.8em 0;
@@ -41,34 +41,32 @@ export const ProfilePage = ({ title }) => {
 
   return (
     <>
-      <AppWrapper>
-        <Header title={title} />
-        <ContentWrapper>
-          <h2>Deine Bonuszahlungen</h2>
-          <Chart />
-          <Table>
-            <thead>
-              <tr>
-                <th colSpan="4">Vermittelte Aufträge</th>
+      <Header title={title} />
+      <ContentWrapper>
+        <h2>Deine Bonuszahlungen</h2>
+        <Chart />
+        <Table>
+          <thead>
+            <tr>
+              <th colSpan="4">Vermittelte Aufträge</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item) => (
+              <tr key={`id_${item._id}`}>
+                <td>{convertIsoDateToLocale(item.dateAdded)}</td>
+                <td>{item.customer.name}</td>
+                <td>{item.name}</td>
+                <td>€{item.price.toFixed(2)}</td>
               </tr>
-            </thead>
-            <tbody>
-              {data.map((item) => (
-                <tr key={`id_${item._id}`}>
-                  <td>{convertIsoDateToLocale(item.dateAdded)}</td>
-                  <td>{item.customer.name}</td>
-                  <td>{item.name}</td>
-                  <td>€{item.price.toFixed(2)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
-          <a href="/storybook" target="_blank">
-            Go to Storybook
-          </a>
-        </ContentWrapper>
-        <NavbarBottom />
-      </AppWrapper>
+            ))}
+          </tbody>
+        </Table>
+        <a href="/storybook" target="_blank">
+          Go to Storybook
+        </a>
+      </ContentWrapper>
+      <NavbarBottom />
     </>
   );
 };

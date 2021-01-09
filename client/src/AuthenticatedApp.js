@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GlobalStyle from "./GlobalStyle";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { AppWrapper } from "./components/Wrapper";
 import { CategoriesPage } from "./pages/CategoriesPage/CategoriesPage";
 import { CheckoutPage } from "./pages/CheckoutPage/CheckoutPage";
 import { CustomersOverviewPage } from "./pages/CustomersOverviewPage/CustomersOverviewPage";
@@ -19,32 +20,34 @@ function AuthenticatedApp() {
     <>
       <QueryClientProvider client={queryClient}>
         <GlobalStyle />
-        <Router>
-          <Switch>
-            <Route exact path="/">
-              <CategoriesPage title={"Home"} setTitle={setTitle} />
-            </Route>
-            <Route path="/category/:id">
-              <ProductsOverviewPage title={title} />
-            </Route>
-            <Route path="/items">
-              <ProductsOverviewPage title={"Suche"} />
-            </Route>
-            <Route path="/item/:id">
-              <ProductPage title={"Details"} />
-            </Route>
-            <Route path="/customers">
-              <CustomersOverviewPage title={"Kunden"} />
-            </Route>
-            <Route path="/checkout">
-              <CheckoutPage title={"Warenkorb"} />
-            </Route>
-            <Route path="/profile">
-              <ProfilePage title={"Profil"} />
-            </Route>
-          </Switch>
-        </Router>
-        <ReactQueryDevtools initialIsOpen={false} />
+        <AppWrapper>
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <CategoriesPage title={"Home"} setTitle={setTitle} />
+              </Route>
+              <Route path="/category/:id">
+                <ProductsOverviewPage title={title} />
+              </Route>
+              <Route path="/items">
+                <ProductsOverviewPage title={"Suche"} />
+              </Route>
+              <Route path="/item/:id">
+                <ProductPage title={"Details"} />
+              </Route>
+              <Route path="/customers">
+                <CustomersOverviewPage title={"Kunden"} />
+              </Route>
+              <Route path="/checkout">
+                <CheckoutPage title={"Warenkorb"} />
+              </Route>
+              <Route path="/profile">
+                <ProfilePage title={"Profil"} />
+              </Route>
+            </Switch>
+          </Router>
+          <ReactQueryDevtools initialIsOpen={false} />
+        </AppWrapper>
       </QueryClientProvider>
     </>
   );

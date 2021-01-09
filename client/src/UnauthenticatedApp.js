@@ -2,18 +2,32 @@ import React, { useState } from "react";
 import GlobalStyle from "./GlobalStyle";
 import { useAuth } from "./context/AuthContext";
 import styled from "styled-components/macro";
-import { AppWrapper } from "./components/Wrapper";
 import Button from "./components/Button";
-import { ReactComponent as Logo } from "./assets/logo.svg";
+import logo from "./assets/bcrLogo.png";
 
 const Container = styled.div`
+  background-image: url("/gplaypattern.png");
+  background-repeat: repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  padding: 2.5rem;
+  img {
+    width: 66%;
+    margin-bottom: 2em;
+  }
+`;
+
+const LogInForm = styled.form`
+  input {
+    padding: 0.3em;
+    color: var(--neutral-mid-N400);
+  }
+  button {
+    margin-top: 2em;
+  }
 `;
 
 const UnauthenticatedApp = () => {
@@ -29,38 +43,31 @@ const UnauthenticatedApp = () => {
   return (
     <>
       <GlobalStyle />
-      <AppWrapper>
-        <Container>
-          <Logo />
-          <h2>Please Log In:</h2>
-          <form onSubmit={handleSubmit}>
-            <label>
-              <p>Username:</p>
-              <input
-                type="text"
-                autoComplete="username"
-                onChange={(e) => setUserName(e.target.value)}
-              />
-            </label>
-            <label>
-              <p>Password:</p>
-              <input
-                type="password"
-                autoComplete="current-password"
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </label>
-            <div>
-              <Button type="submit">Submit</Button>
-            </div>
-          </form>
+      <Container>
+        <img src={logo} alt="Logo" />
+        <h2>Please Log In:</h2>
+        <LogInForm onSubmit={handleSubmit}>
+          <label>
+            <p>Username:</p>
+            <input
+              type="text"
+              autoComplete="username"
+              onChange={(e) => setUserName(e.target.value)}
+            />
+          </label>
+          <label>
+            <p>Password:</p>
+            <input
+              type="password"
+              autoComplete="current-password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </label>
           <div>
-            <h3>Test Credentials:</h3>
-            <p>Username: Meister GmbH</p>
-            <p>Password: passwort</p>
+            <Button type="submit">Submit</Button>
           </div>
-        </Container>
-      </AppWrapper>
+        </LogInForm>
+      </Container>
     </>
   );
 };

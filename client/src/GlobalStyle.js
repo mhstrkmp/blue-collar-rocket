@@ -38,21 +38,20 @@ body
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--neutral-dark-N700);
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  color: var(--neutral-mid-N400);
   background-color: var(--neutral-light-N10);
 }
-
-@media (min-width: 815px) {
-  body {
-  background-color: var(--primary-second);
-  }}
 
 
 h1,
 h2,
 h3,
 h4 {
-  color: var(--neutral-dark-N700);
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+  color: var(--neutral-dark-N900);
   margin: 0;
   padding-bottom: 0.3em;
 }
