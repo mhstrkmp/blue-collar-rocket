@@ -24,17 +24,15 @@ export const ProductPage = ({ title }) => {
         <ContentWrapper>
           {data ? (
             data.map((item) => (
-              <>
-                <CardExtraLarge
-                  key={`CardExtraLarge_${item.id}`}
-                  title={item.name}
-                  imgSrc={item.imgCloudinaryId}
-                  description={item.description}
-                  service={item.service}
-                  price={item.price}
-                  itemId={item.id}
-                />
-              </>
+              <CardExtraLarge
+                key={`CardExtraLarge_${item._id}`}
+                title={item.name}
+                imgSrc={item.imgCloudinaryId}
+                description={item.description}
+                service={item.service}
+                price={item.price}
+                itemId={item.id}
+              />
             ))
           ) : (
             <>Can't load data</>

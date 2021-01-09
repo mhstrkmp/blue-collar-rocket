@@ -45,23 +45,20 @@ export const CustomersOverviewPage = ({ title }) => {
           />
           {results ? (
             results.map((item) => (
-              <>
-                <Link
-                  onClick={() => {
-                    handleOnClick("blueCollarRocketCart", {
-                      customer: { ...item },
-                    });
-                  }}
-                  key={`link_${item.id}`}
-                  to="/checkout"
-                >
-                  <CardSmall
-                    key={item.id}
-                    cardTitle={item.name}
-                    cardText={[item.address.street, item.address.city]}
-                  />
-                </Link>
-              </>
+              <Link
+                key={`link_${item._id}`}
+                to="/checkout"
+                onClick={() => {
+                  handleOnClick("blueCollarRocketCart", {
+                    customer: { ...item },
+                  });
+                }}
+              >
+                <CardSmall
+                  cardTitle={item.name}
+                  cardText={[item.address.street, item.address.city]}
+                />
+              </Link>
             ))
           ) : (
             <>Can't load data</>

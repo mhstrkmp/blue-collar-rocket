@@ -7,7 +7,7 @@ import CardSmall from "../../components/CardSmall";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useQuery } from "react-query";
 
-export const CategoriesPage = ({ title }) => {
+export const CategoriesPage = ({ title, setTitle }) => {
   const { isLoading, error, data } = useQuery("userCategories", () =>
     fetch(`/api/users/5fdb22ca3c243e0a96a8bd1e`).then((res) => res.json())
   );
@@ -22,9 +22,12 @@ export const CategoriesPage = ({ title }) => {
         <ContentWrapper>
           {data.categories ? (
             data.categories.map((item) => (
-              <Link key={item.categoryId} to={`/category/${item.categoryId}`}>
+              <Link
+                key={item.categoryId}
+                to={`/category/${item.categoryId}`}
+                onClick={() => setTitle(item.categoryName)}
+              >
                 <CardSmall
-                  key={`${item.categoryId}_${item.categoryName}`}
                   cardTitle={item.categoryName}
                   cardText={[item.categoryDescription]}
                 />
@@ -46,4 +49,5 @@ export const CategoriesPage = ({ title }) => {
 CategoriesPage.propTypes = {
   title: PropTypes.string,
   categories: PropTypes.array,
+  setTitle: PropTypes.func,
 };

@@ -29,7 +29,6 @@ export const ProfilePage = ({ title }) => {
       const { data } = await axios.get("/api/orders");
       return data;
     } catch (err) {
-      // Error handling
       console.error(err);
       return err;
     }
@@ -37,23 +36,6 @@ export const ProfilePage = ({ title }) => {
 
   if (isLoading) return "Loading...";
   if (error) return "An error has occurred: " + error.message;
-
-  // Playground
-  const monthToIndex = (date) => {
-    return new Date(date).getMonth();
-  };
-
-  const cummulatedBonuses = [];
-
-  const getOrderMonth = data.map((order) =>
-    // bla
-    // blub
-    monthToIndex(order.dateAdded)
-  );
-
-  console.log(getOrderMonth);
-
-  // Playground
 
   return (
     <>
