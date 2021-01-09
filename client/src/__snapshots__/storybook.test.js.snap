@@ -77,7 +77,7 @@ exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
 
 exports[`Storyshots Components/Cards/Large Product 1`] = `
 <div
-  className="CardLarge__Container-s54zhd-0 fidxZc"
+  className="CardLarge__Container-s54zhd-0 bJwvpS"
 >
   <h2>
     Blaue Box
@@ -138,30 +138,40 @@ exports[`Storyshots Components/Cards/Medium Product 1`] = `
 
 exports[`Storyshots Components/Cards/Small Category 1`] = `
 <div
-  className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+  className="CardSmall__Wrapper-sc-1c3qeca-0 eScdsH"
 >
-  <h2>
-    Kategorie
-  </h2>
-  <p>
-    Lorem ipsum dolor sit
-  </p>
+  <div
+    className="CardSmall__TextContainer-sc-1c3qeca-1 doFupI"
+  >
+    <h2>
+      Kategorie
+    </h2>
+    <p>
+      Lorem ipsum dolor sit
+    </p>
+  </div>
+  <img />
 </div>
 `;
 
 exports[`Storyshots Components/Cards/Small Customer 1`] = `
 <div
-  className="CardSmall__Container-sc-1c3qeca-0 bJvTMD"
+  className="CardSmall__Wrapper-sc-1c3qeca-0 eScdsH"
 >
-  <h2>
-    Max Mustermann
-  </h2>
-  <p>
-    Musterstraße 95
-  </p>
-  <p>
-    48924 Musterstadt
-  </p>
+  <div
+    className="CardSmall__TextContainer-sc-1c3qeca-1 doFupI"
+  >
+    <h2>
+      Max Mustermann
+    </h2>
+    <p>
+      Musterstraße 95
+    </p>
+    <p>
+      48924 Musterstadt
+    </p>
+  </div>
+  <img />
 </div>
 `;
 
@@ -231,7 +241,7 @@ exports[`Storyshots Components/Navbar Bottom Default 1`] = `
 
 exports[`Storyshots Components/Searchbar Default 1`] = `
 <input
-  className="Searchbar-sc-1bd71k1-0 xnXli"
+  className="Searchbar-sc-1bd71k1-0 cLApDu"
   placeholder="Suche"
 />
 `;

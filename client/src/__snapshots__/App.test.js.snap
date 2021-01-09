@@ -21,6 +21,7 @@ exports[`App snapshot renders 1`] = `
           Username:
         </p>
         <input
+          autoComplete="username"
           onChange={[Function]}
           type="text"
         />
@@ -30,6 +31,7 @@ exports[`App snapshot renders 1`] = `
           Password:
         </p>
         <input
+          autoComplete="current-password"
           onChange={[Function]}
           type="password"
         />

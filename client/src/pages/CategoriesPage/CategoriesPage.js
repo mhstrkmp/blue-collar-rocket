@@ -30,6 +30,7 @@ export const CategoriesPage = ({ title, setTitle }) => {
                 <CardSmall
                   cardTitle={item.categoryName}
                   cardText={[item.categoryDescription]}
+                  imgSrc={item.categoryImage}
                 />
               </Link>
             ))

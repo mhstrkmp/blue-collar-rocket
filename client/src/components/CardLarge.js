@@ -15,7 +15,7 @@ const Container = styled.div`
   border-radius: 6px;
   margin: 1rem;
   padding: 1em 0;
-  filter: drop-shadow(2px 2px 2px var(--primary-first));
+  filter: drop-shadow(2px 2px 2px var(--neutral-mid-N60));
 `;
 
 const CardImage = styled.div`

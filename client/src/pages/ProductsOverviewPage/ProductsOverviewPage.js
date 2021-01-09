@@ -36,6 +36,7 @@ export const ProductsOverviewPage = ({ title }) => {
         <Header title={title} />
         <ContentWrapper>
           <Searchbar
+            type="text"
             placeholder={"Suche ..."}
             value={searchQuery}
             onChange={(e) => {

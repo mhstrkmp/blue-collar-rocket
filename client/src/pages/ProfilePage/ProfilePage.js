@@ -37,6 +37,8 @@ export const ProfilePage = ({ title }) => {
   if (isLoading) return "Loading...";
   if (error) return "An error has occurred: " + error.message;
 
+  data.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+
   return (
     <>
       <AppWrapper>

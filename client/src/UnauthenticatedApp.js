@@ -38,6 +38,7 @@ const UnauthenticatedApp = () => {
               <p>Username:</p>
               <input
                 type="text"
+                autoComplete="username"
                 onChange={(e) => setUserName(e.target.value)}
               />
             </label>
@@ -45,6 +46,7 @@ const UnauthenticatedApp = () => {
               <p>Password:</p>
               <input
                 type="password"
+                autoComplete="current-password"
                 onChange={(e) => setPassword(e.target.value)}
               />
             </label>
