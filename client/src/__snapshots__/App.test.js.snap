@@ -8,16 +8,13 @@ exports[`App snapshot renders 1`] = `
     alt="Logo"
     src="bcrLogo.png"
   />
-  <h2>
-    Please Log In:
-  </h2>
   <form
-    className="UnauthenticatedApp__LogInForm-sc-14rep0y-1 bOfuid"
+    className="UnauthenticatedApp__LogInForm-sc-14rep0y-1 huPlYN"
     onSubmit={[Function]}
   >
     <label>
       <p>
-        Username:
+        Benutzername:
       </p>
       <input
         autoComplete="username"
@@ -27,7 +24,7 @@ exports[`App snapshot renders 1`] = `
     </label>
     <label>
       <p>
-        Password:
+        Passwort:
       </p>
       <input
         autoComplete="current-password"
@@ -40,7 +37,7 @@ exports[`App snapshot renders 1`] = `
         className="Button-pzvjfl-0 lntRdW"
         type="submit"
       >
-        Submit
+        Login
       </button>
     </div>
   </form>

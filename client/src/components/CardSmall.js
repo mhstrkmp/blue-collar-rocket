@@ -31,7 +31,8 @@ const CardSmall = ({ cardTitle, cardText, imgSrc }) => {
         {cardText && cardText.map((item) => <p key={item}>{item}</p>)}
       </TextContainer>
       <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-        <Transformation height="50" crop="limit" />
+        <Transformation width="50" height="50" crop="limit" />
+        <Transformation defaultImage="default.png" />
       </Image>
     </Wrapper>
   );

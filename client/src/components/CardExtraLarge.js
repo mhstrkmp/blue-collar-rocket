@@ -53,7 +53,7 @@ const CardExtraLarge = ({
       <CardImage>
         <CardImage>
           <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-            <Transformation height="230" crop="limit" />
+            <Transformation width="230" height="230" crop="limit" />
             <Transformation defaultImage="default.png" />
           </Image>
         </CardImage>

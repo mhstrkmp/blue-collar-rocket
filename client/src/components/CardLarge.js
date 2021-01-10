@@ -45,7 +45,7 @@ const CardLarge = ({ cardTitle, imgSrc, cardText, price }) => {
       <h2>{cardTitle}</h2>
       <CardImage>
         <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-          <Transformation height="150" crop="limit" />
+          <Transformation width="150" height="150" crop="limit" />
           <Transformation defaultImage="default.png" />
         </Image>
       </CardImage>

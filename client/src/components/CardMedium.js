@@ -34,7 +34,7 @@ const CardMedium = ({ title, imgSrc, quantity, price }) => {
     <Container>
       <CardImage>
         <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-          <Transformation height="100" crop="limit" />
+          <Transformation width="100" height="100" crop="limit" />
           <Transformation defaultImage="default.png" />
         </Image>
       </CardImage>

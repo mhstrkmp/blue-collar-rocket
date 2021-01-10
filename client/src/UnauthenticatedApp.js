@@ -23,10 +23,14 @@ const Container = styled.div`
 const LogInForm = styled.form`
   input {
     padding: 0.3em;
+    margin-bottom: 1em;
     color: var(--neutral-mid-N400);
+    :focus {
+      outline: none;
+    }
   }
   button {
-    margin-top: 2em;
+    margin-top: 1em;
   }
 `;
 
@@ -45,10 +49,9 @@ const UnauthenticatedApp = () => {
       <GlobalStyle />
       <Container>
         <img src={logo} alt="Logo" />
-        <h2>Please Log In:</h2>
         <LogInForm onSubmit={handleSubmit}>
           <label>
-            <p>Username:</p>
+            <p>Benutzername:</p>
             <input
               type="text"
               autoComplete="username"
@@ -56,7 +59,7 @@ const UnauthenticatedApp = () => {
             />
           </label>
           <label>
-            <p>Password:</p>
+            <p>Passwort:</p>
             <input
               type="password"
               autoComplete="current-password"
@@ -64,7 +67,7 @@ const UnauthenticatedApp = () => {
             />
           </label>
           <div>
-            <Button type="submit">Submit</Button>
+            <Button type="submit">Login</Button>
           </div>
         </LogInForm>
       </Container>

@@ -11,15 +11,19 @@ import { ContentWrapper } from "../../components/Wrapper";
 
 const Table = styled.table`
   margin: 1.8em 0;
-  font-size: 0.8em;
+  vertical-align: sub;
   th {
     padding-bottom: 0.6em;
   }
   td {
-    padding-bottom: 0.3em;
+    font-size: 0.95em;
   }
-  td:not(:last-child) {
-    padding-right: 0.5em;
+  tr:nth-child(even) {
+    font-size: 0.9em;
+    color: var(--neutral-mid-N60);
+  }
+  tr > td:last-child {
+    text-align: right;
   }
 `;
 
@@ -48,19 +52,21 @@ export const ProfilePage = ({ title }) => {
         <Table>
           <thead>
             <tr>
-              <th colSpan="4">Vermittelte Aufträge</th>
+              <th colSpan="2">Vermittelte Aufträge</th>
             </tr>
           </thead>
-          <tbody>
-            {data.map((item) => (
-              <tr key={`id_${item._id}`}>
-                <td>{convertIsoDateToLocale(item.dateAdded)}</td>
+          {data.map((item) => (
+            <tbody key={`id_${item._id}`}>
+              <tr>
+                <td> {convertIsoDateToLocale(item.dateAdded)}</td>
                 <td>{item.customer.name}</td>
+              </tr>
+              <tr>
                 <td>{item.name}</td>
                 <td>€{item.price.toFixed(2)}</td>
               </tr>
-            ))}
-          </tbody>
+            </tbody>
+          ))}
         </Table>
         <a href="/storybook" target="_blank">
           Go to Storybook
