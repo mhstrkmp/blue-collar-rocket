@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { LoadingSpinner } from "../../components/LoadingSpinner";
 import Header from "../../components/Header";
 import Searchbar from "../../components/Searchbar";
 import { ContentWrapper } from "../../components/Wrapper";
@@ -22,7 +23,9 @@ export const CustomersOverviewPage = ({ title }) => {
     fetch(`/api/customers`).then((res) => res.json())
   );
 
-  if (isLoading) return "Loading";
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
   if (error) return "An error has occurred: " + error.message;
 
   const fuse = new Fuse(data, {

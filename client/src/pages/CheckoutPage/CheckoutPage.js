@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import axios from "axios";
+import toast from "react-hot-toast";
 import Header from "../../components/Header";
 import { ContentWrapper } from "../../components/Wrapper";
 import CardSmall from "../../components/CardSmall";
@@ -8,7 +10,10 @@ import Button from "../../components/Button";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useHistory } from "react-router-dom";
 import { getLocalStorageCart } from "../../utils/utils";
-import axios from "axios";
+
+const deleteLocalStorage = (item) => {
+  localStorage.removeItem(item);
+};
 
 const sendPostRequest = async (order) => {
   try {
@@ -17,13 +22,11 @@ const sendPostRequest = async (order) => {
       ...order,
     };
     await axios.post("/api/orders", data);
-  } catch (err) {
-    console.error(err);
+    deleteLocalStorage("blueCollarRocketCart");
+  } catch (error) {
+    console.error(error.response);
+    return error.response;
   }
-};
-
-const deleteLocalStorage = (item) => {
-  localStorage.removeItem(item);
 };
 
 export const CheckoutPage = ({ title }) => {
@@ -50,9 +53,20 @@ export const CheckoutPage = ({ title }) => {
               quantity={1}
             />
             <Button
-              onClick={async () => {
-                await sendPostRequest(cart);
-                deleteLocalStorage("blueCollarRocketCart");
+              onClick={() => {
+                toast.promise(
+                  sendPostRequest(cart),
+                  {
+                    loading: "Sende Warenkorb",
+                    success: "Warenkorb versendet",
+                    error: "Ein Fehler ist aufgetreten ...",
+                  },
+                  {
+                    style: {
+                      minWidth: "250px",
+                    },
+                  }
+                );
                 history.push("/");
               }}
             >

@@ -4,6 +4,7 @@ import styled from "styled-components/macro";
 import axios from "axios";
 import { useQuery } from "react-query";
 import { convertIsoDateToLocale } from "../../utils/utils";
+import { LoadingSpinner } from "../../components/LoadingSpinner";
 import Header from "../../components/Header";
 import NavbarBottom from "../../components/NavbarBottom";
 import Chart from "../../components/Chart";
@@ -38,7 +39,9 @@ export const ProfilePage = ({ title }) => {
     }
   });
 
-  if (isLoading) return "Loading...";
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
   if (error) return "An error has occurred: " + error.message;
 
   data.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));

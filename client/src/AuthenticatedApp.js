@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GlobalStyle from "./GlobalStyle";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import { AppWrapper } from "./components/Wrapper";
 import { CategoriesPage } from "./pages/CategoriesPage/CategoriesPage";
 import { CheckoutPage } from "./pages/CheckoutPage/CheckoutPage";
@@ -18,6 +19,7 @@ function AuthenticatedApp() {
 
   return (
     <>
+      <Toaster />
       <QueryClientProvider client={queryClient}>
         <GlobalStyle />
         <AppWrapper>

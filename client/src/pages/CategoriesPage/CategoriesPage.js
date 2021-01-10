@@ -6,13 +6,16 @@ import { ContentWrapper } from "../../components/Wrapper";
 import CardSmall from "../../components/CardSmall";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useQuery } from "react-query";
+import { LoadingSpinner } from "../../components/LoadingSpinner";
 
 export const CategoriesPage = ({ title, setTitle }) => {
   const { isLoading, error, data } = useQuery("userCategories", () =>
     fetch(`/api/users/5fdb22ca3c243e0a96a8bd1e`).then((res) => res.json())
   );
 
-  if (isLoading) return "Loading...";
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
   if (error) return "An error has occurred: " + error.message;
 
   return (
