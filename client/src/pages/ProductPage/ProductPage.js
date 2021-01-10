@@ -15,7 +15,7 @@ export const ProductPage = ({ title }) => {
   );
 
   if (isLoading) {
-    return <LoadingSpinner />;
+    return <LoadingSpinner title={title} />;
   }
   if (error) return "An error has occurred: " + error.message;
 

@@ -24,8 +24,7 @@ const sendPostRequest = async (order) => {
     await axios.post("/api/orders", data);
     deleteLocalStorage("blueCollarRocketCart");
   } catch (error) {
-    console.error(error.response);
-    return error.response;
+    console.error(error);
   }
 };
 

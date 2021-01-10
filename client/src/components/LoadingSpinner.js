@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components/macro";
+import PropTypes from "prop-types";
 import { ContentWrapper } from "./Wrapper";
+import Header from "./Header";
+import NavbarBottom from "./NavbarBottom";
 
 const Container = styled.div`
   display: flex;
@@ -11,14 +14,22 @@ const Container = styled.div`
   font-size: 1.5em;
 `;
 
-export const LoadingSpinner = () => {
+export const LoadingSpinner = ({ title }) => {
   return (
-    <ContentWrapper>
-      <Container>
-        <p>
-          <i className="fas fa-spinner fa-spin"></i> Loading ...
-        </p>
-      </Container>
-    </ContentWrapper>
+    <>
+      <Header title={title} />
+      <ContentWrapper>
+        <Container>
+          <p>
+            <i className="fas fa-spinner fa-spin"></i> Loading ...
+          </p>
+        </Container>
+      </ContentWrapper>
+      <NavbarBottom />
+    </>
   );
+};
+
+LoadingSpinner.propTypes = {
+  title: PropTypes.string,
 };
