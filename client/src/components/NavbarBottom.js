@@ -6,7 +6,7 @@ import { ReactComponent as IconSearch } from "../assets/find_in_page.svg";
 import { ReactComponent as IconCart } from "../assets/shopping_cart.svg";
 import { ReactComponent as IconProfile } from "../assets/profile.svg";
 
-const Container = styled.div`
+const Container = styled.footer`
   z-index: 100;
   position: sticky;
   bottom: 0;

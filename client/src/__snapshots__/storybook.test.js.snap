@@ -17,29 +17,29 @@ exports[`Storyshots Components/Button Order 1`] = `
 `;
 
 exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
-<div
-  className="CardExtraLarge__Container-fu46da-0 iCNjIY"
->
+Array [
   <h2>
     Blaue Box
-  </h2>
+  </h2>,
   <div
-    className="CardExtraLarge__CardImage-fu46da-1 jMQAFB"
+    className="CardExtraLarge__CardImage-fu46da-0 ezlWKV"
   >
     <div
-      className="CardExtraLarge__CardImage-fu46da-1 jMQAFB"
+      className="CardExtraLarge__CardImage-fu46da-0 ezlWKV"
     >
       <img
         src="https://via.placeholder.com/240"
       />
     </div>
-  </div>
+  </div>,
   <article
-    className="CardExtraLarge__CardDescription-fu46da-2 dFFSoh"
+    className="CardExtraLarge__CardDescription-fu46da-1 hLqMlq"
   >
     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aspernatur tenetur culpa illum molestiae officia ...
-  </article>
-  <article>
+  </article>,
+  <article
+    className="CardExtraLarge__CardServices-fu46da-2 iKdNbR"
+  >
     <h3>
       Leistungsumfang:
     </h3>
@@ -54,13 +54,13 @@ exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
         Entsorgung der alten grauen Box
       </li>
     </ul>
-  </article>
+  </article>,
   <aside
     className="CardExtraLarge__CardPrice-fu46da-3 grsCJX"
   >
     Preis: € 
-    328.5
-  </aside>
+    328.50
+  </aside>,
   <a
     href="/customers"
     onClick={[Function]}
@@ -71,13 +71,13 @@ exports[`Storyshots Components/Cards/Extra Large Product 1`] = `
     >
       Hinzufügen
     </button>
-  </a>
-</div>
+  </a>,
+]
 `;
 
 exports[`Storyshots Components/Cards/Large Product 1`] = `
 <div
-  className="CardLarge__Container-s54zhd-0 bJwvpS"
+  className="CardLarge__Container-s54zhd-0 kSrAFJ"
 >
   <h2>
     Blaue Box
@@ -98,34 +98,34 @@ exports[`Storyshots Components/Cards/Large Product 1`] = `
     className="CardLarge__CardPrice-s54zhd-3 jjmLul"
   >
     Preis: € 
-    328.5
+    328.50
   </aside>
 </div>
 `;
 
 exports[`Storyshots Components/Cards/Medium Product 1`] = `
 <div
-  className="CardMedium__Container-ud6k7h-0 gPCKwI"
+  className="CardMedium__Container-ud6k7h-0 bDiltJ"
 >
   <div
-    className="CardMedium__CardImage-ud6k7h-3 ilNQcw"
+    className="CardMedium__CardImage-ud6k7h-1 ccbrpu"
   >
     <img
       src="https://via.placeholder.com/100"
     />
   </div>
   <div
-    className="CardMedium__DescriptionContainer-ud6k7h-1 gcGxjk"
+    className="CardMedium__DescriptionContainer-ud6k7h-2 wrsoo"
   >
     <h2>
       Blaue Box
     </h2>
     <div
-      className="CardMedium__DetailsContainer-ud6k7h-2 fXBuwY"
+      className="CardMedium__DetailsContainer-ud6k7h-3 dmpDWB"
     >
       <p>
         € 
-        328.5
+        328.50
       </p>
       <p>
         x 
@@ -138,7 +138,7 @@ exports[`Storyshots Components/Cards/Medium Product 1`] = `
 
 exports[`Storyshots Components/Cards/Small Category 1`] = `
 <div
-  className="CardSmall__Wrapper-sc-1c3qeca-0 eScdsH"
+  className="CardSmall__Wrapper-sc-1c3qeca-0 cClNQS"
 >
   <div
     className="CardSmall__TextContainer-sc-1c3qeca-1 doFupI"
@@ -156,7 +156,7 @@ exports[`Storyshots Components/Cards/Small Category 1`] = `
 
 exports[`Storyshots Components/Cards/Small Customer 1`] = `
 <div
-  className="CardSmall__Wrapper-sc-1c3qeca-0 eScdsH"
+  className="CardSmall__Wrapper-sc-1c3qeca-0 cClNQS"
 >
   <div
     className="CardSmall__TextContainer-sc-1c3qeca-1 doFupI"
@@ -177,10 +177,10 @@ exports[`Storyshots Components/Cards/Small Customer 1`] = `
 
 exports[`Storyshots Components/Header Default 1`] = `
 <header
-  className="Header__Container-sc-17wre1r-0 fflpnF"
+  className="Header__StyledHeader-sc-17wre1r-0 EKZcw"
 >
   <h1
-    className="Header__Title-sc-17wre1r-1 dMDOcO"
+    className="Header__Title-sc-17wre1r-1 hXYfjt"
   >
     Home
   </h1>
@@ -188,7 +188,7 @@ exports[`Storyshots Components/Header Default 1`] = `
 `;
 
 exports[`Storyshots Components/Navbar Bottom Default 1`] = `
-<div
+<footer
   className="NavbarBottom__Container-okzrgt-0 bbVMRI"
 >
   <a
@@ -236,12 +236,12 @@ exports[`Storyshots Components/Navbar Bottom Default 1`] = `
       profile.svg
     </svg>
   </a>
-</div>
+</footer>
 `;
 
 exports[`Storyshots Components/Searchbar Default 1`] = `
 <input
-  className="Searchbar-sc-1bd71k1-0 cLApDu"
+  className="Searchbar-sc-1bd71k1-0 cEsYBu"
   placeholder="Suche"
 />
 `;

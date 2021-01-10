@@ -1,61 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App snapshot renders 1`] = `
-<section
-  className="Wrapper__AppWrapper-sc-1so8v63-0 jgcRmx"
+<div
+  className="UnauthenticatedApp__Container-sc-14rep0y-0 gnyZj"
 >
-  <div
-    className="UnauthenticatedApp__Container-sc-14rep0y-0 fQZnIl"
+  <img
+    alt="Logo"
+    src="bcrLogo.png"
+  />
+  <form
+    className="UnauthenticatedApp__LogInForm-sc-14rep0y-1 huPlYN"
+    onSubmit={[Function]}
   >
-    <svg>
-      logo.svg
-    </svg>
-    <h2>
-      Please Log In:
-    </h2>
-    <form
-      onSubmit={[Function]}
-    >
-      <label>
-        <p>
-          Username:
-        </p>
-        <input
-          autoComplete="username"
-          onChange={[Function]}
-          type="text"
-        />
-      </label>
-      <label>
-        <p>
-          Password:
-        </p>
-        <input
-          autoComplete="current-password"
-          onChange={[Function]}
-          type="password"
-        />
-      </label>
-      <div>
-        <button
-          className="Button-pzvjfl-0 lntRdW"
-          type="submit"
-        >
-          Submit
-        </button>
-      </div>
-    </form>
+    <label>
+      <p>
+        Benutzername:
+      </p>
+      <input
+        autoComplete="username"
+        onChange={[Function]}
+        type="text"
+      />
+    </label>
+    <label>
+      <p>
+        Passwort:
+      </p>
+      <input
+        autoComplete="current-password"
+        onChange={[Function]}
+        type="password"
+      />
+    </label>
     <div>
-      <h3>
-        Test Credentials:
-      </h3>
-      <p>
-        Username: Meister GmbH
-      </p>
-      <p>
-        Password: passwort
-      </p>
+      <button
+        className="Button-pzvjfl-0 lntRdW"
+        type="submit"
+      >
+        Login
+      </button>
     </div>
-  </div>
-</section>
+  </form>
+</div>
 `;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Header from "../../components/Header";
 import Searchbar from "../../components/Searchbar";
-import { AppWrapper, ContentWrapper } from "../../components/Wrapper";
+import { ContentWrapper } from "../../components/Wrapper";
 import CardSmall from "../../components/CardSmall";
 import NavbarBottom from "../../components/NavbarBottom";
 import { useQuery } from "react-query";
@@ -33,43 +33,41 @@ export const CustomersOverviewPage = ({ title }) => {
 
   return (
     <>
-      <AppWrapper>
-        <Header title={title} />
-        <ContentWrapper>
-          <Searchbar
-            type="text"
-            placeholder={"Suche ..."}
-            value={searchQuery}
-            onChange={(e) => {
-              setSearchQuery(e.target.value);
-            }}
-          />
-          {results ? (
-            results.map((item) => (
-              <Link
-                key={`link_${item._id}`}
-                to="/checkout"
-                onClick={() => {
-                  handleOnClick("blueCollarRocketCart", {
-                    customer: { ...item },
-                  });
-                }}
-              >
-                <CardSmall
-                  cardTitle={item.name}
-                  cardText={[item.address.street, item.address.city]}
-                />
-              </Link>
-            ))
-          ) : (
-            <>Can't load data</>
-          )}
-          <a href="/storybook" target="_blank">
-            Go to Storybook
-          </a>
-        </ContentWrapper>
-        <NavbarBottom />
-      </AppWrapper>
+      <Header title={title} />
+      <ContentWrapper>
+        <Searchbar
+          type="text"
+          placeholder={"Suche ..."}
+          value={searchQuery}
+          onChange={(e) => {
+            setSearchQuery(e.target.value);
+          }}
+        />
+        {results ? (
+          results.map((item) => (
+            <Link
+              key={`link_${item._id}`}
+              to="/checkout"
+              onClick={() => {
+                handleOnClick("blueCollarRocketCart", {
+                  customer: { ...item },
+                });
+              }}
+            >
+              <CardSmall
+                cardTitle={item.name}
+                cardText={[item.address.street, item.address.city]}
+              />
+            </Link>
+          ))
+        ) : (
+          <>Can't load data</>
+        )}
+        <a href="/storybook" target="_blank">
+          Go to Storybook
+        </a>
+      </ContentWrapper>
+      <NavbarBottom />
     </>
   );
 };

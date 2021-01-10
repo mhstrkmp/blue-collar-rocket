@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 
-const Container = styled.header`
+const StyledHeader = styled.header`
+  z-index: 100;
   position: sticky;
   top: 0;
   display: flex;
@@ -12,21 +13,21 @@ const Container = styled.header`
   width: 100%;
   background: var(--primary-first);
   border: none;
-  filter: drop-shadow(1px 1px 1px var(--primary-second));
+  filter: drop-shadow(2px 2px 2px var(--neutral-mid-N60));
 `;
 
 const Title = styled.h1`
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-transform: uppercase;
   padding: 0;
   color: var(--primary-third);
 `;
 
 const Header = ({ title }) => (
-  <Container>
+  <StyledHeader>
     <Title>{title}</Title>
-  </Container>
+  </StyledHeader>
 );
 
 export default Header;

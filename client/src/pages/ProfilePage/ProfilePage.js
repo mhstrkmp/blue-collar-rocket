@@ -7,19 +7,23 @@ import { convertIsoDateToLocale } from "../../utils/utils";
 import Header from "../../components/Header";
 import NavbarBottom from "../../components/NavbarBottom";
 import Chart from "../../components/Chart";
-import { AppWrapper, ContentWrapper } from "../../components/Wrapper";
+import { ContentWrapper } from "../../components/Wrapper";
 
 const Table = styled.table`
   margin: 1.8em 0;
-  font-size: 0.8em;
+  vertical-align: sub;
   th {
     padding-bottom: 0.6em;
   }
   td {
-    padding-bottom: 0.3em;
+    font-size: 0.95em;
   }
-  td:not(:last-child) {
-    padding-right: 0.5em;
+  tr:nth-child(even) {
+    font-size: 0.9em;
+    color: var(--neutral-mid-N60);
+  }
+  tr > td:last-child {
+    text-align: right;
   }
 `;
 
@@ -41,34 +45,34 @@ export const ProfilePage = ({ title }) => {
 
   return (
     <>
-      <AppWrapper>
-        <Header title={title} />
-        <ContentWrapper>
-          <h2>Deine Bonuszahlungen</h2>
-          <Chart />
-          <Table>
-            <thead>
+      <Header title={title} />
+      <ContentWrapper>
+        <h2>Deine Bonuszahlungen</h2>
+        <Chart />
+        <Table>
+          <thead>
+            <tr>
+              <th colSpan="2">Vermittelte Aufträge</th>
+            </tr>
+          </thead>
+          {data.map((item) => (
+            <tbody key={`id_${item._id}`}>
               <tr>
-                <th colSpan="4">Vermittelte Aufträge</th>
+                <td> {convertIsoDateToLocale(item.dateAdded)}</td>
+                <td>{item.customer.name}</td>
               </tr>
-            </thead>
-            <tbody>
-              {data.map((item) => (
-                <tr key={`id_${item._id}`}>
-                  <td>{convertIsoDateToLocale(item.dateAdded)}</td>
-                  <td>{item.customer.name}</td>
-                  <td>{item.name}</td>
-                  <td>€{item.price.toFixed(2)}</td>
-                </tr>
-              ))}
+              <tr>
+                <td>{item.name}</td>
+                <td>€{item.price.toFixed(2)}</td>
+              </tr>
             </tbody>
-          </Table>
-          <a href="/storybook" target="_blank">
-            Go to Storybook
-          </a>
-        </ContentWrapper>
-        <NavbarBottom />
-      </AppWrapper>
+          ))}
+        </Table>
+        <a href="/storybook" target="_blank">
+          Go to Storybook
+        </a>
+      </ContentWrapper>
+      <NavbarBottom />
     </>
   );
 };

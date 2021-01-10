@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   margin: 1.5em 0;
   border-bottom: 1px solid var(--neutral-mid-N60);
   :last-child {
-    padding-right: 1em;
+    padding-right: 0.2em;
   }
 `;
 
@@ -31,7 +31,8 @@ const CardSmall = ({ cardTitle, cardText, imgSrc }) => {
         {cardText && cardText.map((item) => <p key={item}>{item}</p>)}
       </TextContainer>
       <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-        <Transformation width="50" crop="scale" />
+        <Transformation width="50" height="50" crop="limit" />
+        <Transformation defaultImage="default.png" />
       </Image>
     </Wrapper>
   );
