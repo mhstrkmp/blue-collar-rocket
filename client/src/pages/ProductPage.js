@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import PropTypes from "prop-types";
-import { LoadingSpinner } from "../../components/LoadingSpinner";
-import Header from "../../components/Header";
-import { ContentWrapper } from "../../components/Wrapper";
-import CardExtraLarge from "../../components/CardExtraLarge";
-import NavbarBottom from "../../components/NavbarBottom";
+import { LoadingSpinner } from "../components/LoadingSpinner";
+import Header from "../components/Header";
+import { ContentWrapper } from "../components/Wrapper";
+import CardExtraLarge from "../components/CardExtraLarge";
+import NavbarBottom from "../components/NavbarBottom";
 import { useQuery } from "react-query";
 
 export const ProductPage = ({ title }) => {

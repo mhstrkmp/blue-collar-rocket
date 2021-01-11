@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 import toast from "react-hot-toast";
-import Header from "../../components/Header";
-import { ContentWrapper } from "../../components/Wrapper";
-import CardSmall from "../../components/CardSmall";
-import CardMedium from "../../components/CardMedium";
-import Button from "../../components/Button";
-import NavbarBottom from "../../components/NavbarBottom";
+import Header from "../components/Header";
+import { ContentWrapper } from "../components/Wrapper";
+import CardSmall from "../components/CardSmall";
+import CardMedium from "../components/CardMedium";
+import Button from "../components/Button";
+import NavbarBottom from "../components/NavbarBottom";
 import { useHistory } from "react-router-dom";
-import { getLocalStorageCart } from "../../utils/utils";
+import { getLocalStorageCart } from "../utils/utils";
 
 const deleteLocalStorage = (item) => {
   localStorage.removeItem(item);

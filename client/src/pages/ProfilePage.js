@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 import axios from "axios";
 import { useQuery } from "react-query";
-import { convertIsoDateToLocale } from "../../utils/utils";
-import { LoadingSpinner } from "../../components/LoadingSpinner";
-import Header from "../../components/Header";
-import NavbarBottom from "../../components/NavbarBottom";
-import Chart from "../../components/Chart";
-import { ContentWrapper } from "../../components/Wrapper";
+import { convertIsoDateToLocale } from "../utils/utils";
+import { LoadingSpinner } from "../components/LoadingSpinner";
+import Header from "../components/Header";
+import NavbarBottom from "../components/NavbarBottom";
+import Chart from "../components/Chart";
+import { ContentWrapper } from "../components/Wrapper";
 
 const Table = styled.table`
   margin: 1.8em 0;

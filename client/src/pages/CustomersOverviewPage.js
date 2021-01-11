@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { LoadingSpinner } from "../../components/LoadingSpinner";
-import Header from "../../components/Header";
-import Searchbar from "../../components/Searchbar";
-import { ContentWrapper } from "../../components/Wrapper";
-import CardSmall from "../../components/CardSmall";
-import NavbarBottom from "../../components/NavbarBottom";
+import { LoadingSpinner } from "../components/LoadingSpinner";
+import Header from "../components/Header";
+import Searchbar from "../components/Searchbar";
+import { ContentWrapper } from "../components/Wrapper";
+import CardSmall from "../components/CardSmall";
+import NavbarBottom from "../components/NavbarBottom";
 import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
-import { getLocalStorageCart } from "../../utils/utils";
+import { getLocalStorageCart } from "../utils/utils";
 import Fuse from "fuse.js";
 
 const handleOnClick = (cartId, customer) => {

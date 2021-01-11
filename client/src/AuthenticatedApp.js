@@ -3,12 +3,12 @@ import GlobalStyle from "./GlobalStyle";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { AppWrapper } from "./components/Wrapper";
-import { CategoriesPage } from "./pages/CategoriesPage/CategoriesPage";
-import { CheckoutPage } from "./pages/CheckoutPage/CheckoutPage";
-import { CustomersOverviewPage } from "./pages/CustomersOverviewPage/CustomersOverviewPage";
-import { ProductPage } from "./pages/ProductPage/ProductPage";
-import { ProductsOverviewPage } from "./pages/ProductsOverviewPage/ProductsOverviewPage";
-import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
+import { CategoriesPage } from "./pages/CategoriesPage";
+import { CheckoutPage } from "./pages/CheckoutPage";
+import { CustomersOverviewPage } from "./pages/CustomersOverviewPage";
+import { ProductPage } from "./pages/ProductPage";
+import { ProductsOverviewPage } from "./pages/ProductsOverviewPage";
+import { ProfilePage } from "./pages/ProfilePage";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 

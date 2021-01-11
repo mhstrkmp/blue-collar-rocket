@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import Header from "../../components/Header";
-import { ContentWrapper } from "../../components/Wrapper";
-import CardSmall from "../../components/CardSmall";
-import NavbarBottom from "../../components/NavbarBottom";
+import Header from "../components/Header";
+import { ContentWrapper } from "../components/Wrapper";
+import CardSmall from "../components/CardSmall";
+import NavbarBottom from "../components/NavbarBottom";
 import { useQuery } from "react-query";
-import { LoadingSpinner } from "../../components/LoadingSpinner";
+import { LoadingSpinner } from "../components/LoadingSpinner";
 
 export const CategoriesPage = ({ title, setTitle }) => {
   const { isLoading, error, data } = useQuery("userCategories", () =>

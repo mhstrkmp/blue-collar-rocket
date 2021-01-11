@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { LoadingSpinner } from "../../components/LoadingSpinner";
-import Header from "../../components/Header";
-import Searchbar from "../../components/Searchbar";
-import { ContentWrapper } from "../../components/Wrapper";
-import NavbarBottom from "../../components/NavbarBottom";
-import CardLarge from "../../components/CardLarge";
+import { LoadingSpinner } from "../components/LoadingSpinner";
+import Header from "../components/Header";
+import Searchbar from "../components/Searchbar";
+import { ContentWrapper } from "../components/Wrapper";
+import NavbarBottom from "../components/NavbarBottom";
+import CardLarge from "../components/CardLarge";
 import { useQuery } from "react-query";
 import { Link, useLocation } from "react-router-dom";
 import Fuse from "fuse.js";

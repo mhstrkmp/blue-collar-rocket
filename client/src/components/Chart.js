@@ -1,6 +1,8 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
 
+const bonusPerMonth = [12, 19, 15, 23, 42, 13, 7, 33, 16, 19, 55, 13];
+
 const chartData = {
   labels: [
     "Jan",
@@ -19,7 +21,7 @@ const chartData = {
   datasets: [
     {
       label: "€ Bonus",
-      data: [12, 19, 15, 23, 42, 13, 7, 33, 16, 19, 55, 13],
+      data: [...bonusPerMonth],
       backgroundColor: [
         "rgba(255, 99, 132, 0.2)",
         "rgba(54, 162, 235, 0.2)",
