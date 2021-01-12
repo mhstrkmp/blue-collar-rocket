@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  min-width: 320px;
   background: none;
   margin: 1.5em 0;
   border-bottom: 1px solid var(--neutral-mid-N60);

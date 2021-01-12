@@ -138,7 +138,7 @@ exports[`Storyshots Components/Cards/Medium Product 1`] = `
 
 exports[`Storyshots Components/Cards/Small Category 1`] = `
 <div
-  className="CardSmall__Wrapper-sc-1c3qeca-0 hKYFYq"
+  className="CardSmall__Wrapper-sc-1c3qeca-0 iOGWXD"
 >
   <div
     className="CardSmall__TextContainer-sc-1c3qeca-1 doFupI"
@@ -155,7 +155,7 @@ exports[`Storyshots Components/Cards/Small Category 1`] = `
 
 exports[`Storyshots Components/Cards/Small Customer 1`] = `
 <div
-  className="CardSmall__Wrapper-sc-1c3qeca-0 hKYFYq"
+  className="CardSmall__Wrapper-sc-1c3qeca-0 iOGWXD"
 >
   <div
     className="CardSmall__TextContainer-sc-1c3qeca-1 doFupI"

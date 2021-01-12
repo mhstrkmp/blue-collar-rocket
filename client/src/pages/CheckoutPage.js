@@ -25,6 +25,7 @@ const sendPostRequest = async (order) => {
     deleteLocalStorage("blueCollarRocketCart");
   } catch (error) {
     console.error(error);
+    return Promise.reject(error);
   }
 };
 
