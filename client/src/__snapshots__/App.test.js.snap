@@ -2,7 +2,7 @@
 
 exports[`App snapshot renders 1`] = `
 <div
-  className="UnauthenticatedApp__Container-sc-14rep0y-0 gnyZj"
+  className="UnauthenticatedApp__Container-sc-14rep0y-0 kfOpLr"
 >
   <img
     alt="Logo"
@@ -41,5 +41,16 @@ exports[`App snapshot renders 1`] = `
       </button>
     </div>
   </form>
+  <div>
+    <h3>
+      Test-Account:
+    </h3>
+    <p>
+      Benutzername: Meister GmbH
+    </p>
+    <p>
+      Passwort: passwort
+    </p>
+  </div>
 </div>
 `;

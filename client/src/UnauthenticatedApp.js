@@ -16,6 +16,7 @@ const Container = styled.div`
   width: 100%;
   img {
     width: 66%;
+    max-width: 350px;
     margin-bottom: 2em;
   }
 `;
@@ -70,6 +71,11 @@ const UnauthenticatedApp = () => {
             <Button type="submit">Login</Button>
           </div>
         </LogInForm>
+        <div>
+          <h3>Test-Account:</h3>
+          <p>Benutzername: Meister GmbH</p>
+          <p>Passwort: passwort</p>
+        </div>
       </Container>
     </>
   );
