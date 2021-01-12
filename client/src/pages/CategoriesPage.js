@@ -39,10 +39,10 @@ export const CategoriesPage = ({ title, setTitle }) => {
         ) : (
           <>Can't load data</>
         )}
-        <a href="/storybook" target="_blank">
-          Go to Storybook
-        </a>
       </ContentWrapper>
+      <a href="/storybook" target="_blank">
+        Go to Storybook
+      </a>
       <NavbarBottom />
     </>
   );

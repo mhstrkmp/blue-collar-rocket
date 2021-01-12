@@ -77,7 +77,7 @@ Array [
 
 exports[`Storyshots Components/Cards/Large Product 1`] = `
 <div
-  className="CardLarge__Container-s54zhd-0 kSrAFJ"
+  className="CardLarge__Container-s54zhd-0 hjKfGF"
 >
   <h2>
     Blaue Box
@@ -189,59 +189,63 @@ exports[`Storyshots Components/Header Default 1`] = `
 
 exports[`Storyshots Components/Navbar Bottom Default 1`] = `
 <footer
-  className="NavbarBottom__Container-okzrgt-0 bbVMRI"
+  className="NavbarBottom__NavbarContainer-okzrgt-0 bMNrkf"
 >
-  <a
-    aria-current="page"
-    className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk active"
-    href="/"
-    onClick={[Function]}
-    style={
-      Object {
-        "fill": "var(--primary-third)",
+  <div
+    className="NavbarBottom__LinkContainer-okzrgt-1 kiaXyx"
+  >
+    <a
+      aria-current="page"
+      className="NavbarBottom__StyledNavLink-okzrgt-2 fnXYXz active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "fill": "var(--primary-third)",
+        }
       }
-    }
-  >
-    <svg>
-      home.svg
-    </svg>
-  </a>
-  <a
-    aria-current={null}
-    className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
-    href="/items"
-    onClick={[Function]}
-  >
-    <svg>
-      find_in_page.svg
-    </svg>
-  </a>
-  <a
-    aria-current={null}
-    className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
-    href="/checkout"
-    onClick={[Function]}
-  >
-    <svg>
-      shopping_cart.svg
-    </svg>
-  </a>
-  <a
-    aria-current={null}
-    className="NavbarBottom__StyledNavLink-okzrgt-1 gBInXk"
-    href="/profile"
-    onClick={[Function]}
-  >
-    <svg>
-      profile.svg
-    </svg>
-  </a>
+    >
+      <svg>
+        home.svg
+      </svg>
+    </a>
+    <a
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-2 fnXYXz"
+      href="/items"
+      onClick={[Function]}
+    >
+      <svg>
+        find_in_page.svg
+      </svg>
+    </a>
+    <a
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-2 fnXYXz"
+      href="/checkout"
+      onClick={[Function]}
+    >
+      <svg>
+        shopping_cart.svg
+      </svg>
+    </a>
+    <a
+      aria-current={null}
+      className="NavbarBottom__StyledNavLink-okzrgt-2 fnXYXz"
+      href="/profile"
+      onClick={[Function]}
+    >
+      <svg>
+        profile.svg
+      </svg>
+    </a>
+  </div>
 </footer>
 `;
 
 exports[`Storyshots Components/Searchbar Default 1`] = `
 <input
-  className="Searchbar-sc-1bd71k1-0 cEsYBu"
+  className="Searchbar-sc-1bd71k1-0 hFNZxI"
   placeholder="Suche"
 />
 `;

@@ -32,15 +32,15 @@ export const ProductsOverviewPage = ({ title }) => {
   return (
     <>
       <Header title={title} />
-      <ContentWrapper>
-        <Searchbar
-          type="text"
-          placeholder={"Suche ..."}
-          value={searchQuery}
-          onChange={(e) => {
-            setSearchQuery(e.target.value);
-          }}
-        />
+      <Searchbar
+        type="text"
+        placeholder={"Suche ..."}
+        value={searchQuery}
+        onChange={(e) => {
+          setSearchQuery(e.target.value);
+        }}
+      />
+      <ContentWrapper wrapContent>
         {results ? (
           results.map((item) => (
             <Link key={`link_${item._id}`} to={`/item/${item._id}`}>
@@ -56,10 +56,10 @@ export const ProductsOverviewPage = ({ title }) => {
         ) : (
           <>Can't load data</>
         )}
-        <a href="/storybook" target="_blank">
-          Go to Storybook
-        </a>
       </ContentWrapper>
+      <a href="/storybook" target="_blank">
+        Go to Storybook
+      </a>
       <NavbarBottom />
     </>
   );

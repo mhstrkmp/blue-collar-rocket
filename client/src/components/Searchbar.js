@@ -2,10 +2,11 @@ import styled from "styled-components/macro";
 
 const Searchbar = styled.input`
   width: 100%;
+  max-width: 500px;
   font-size: 1em;
   border-radius: 6px;
   padding: 1rem;
-  margin-bottom: 1em;
+  margin: 1em auto;
   background: var(--primary-third);
   border: none;
   color: var(--neutral-mid-N400);

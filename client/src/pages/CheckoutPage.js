@@ -81,10 +81,10 @@ export const CheckoutPage = ({ title }) => {
             </p>
           </>
         )}
-        <a href="/storybook" target="_blank">
-          Go to Storybook
-        </a>
       </ContentWrapper>
+      <a href="/storybook" target="_blank">
+        Go to Storybook
+      </a>
       <NavbarBottom />
     </>
   );

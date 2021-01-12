@@ -9,10 +9,17 @@ export const AppWrapper = styled.section`
 `;
 
 export const ContentWrapper = styled.section`
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 1em 2em;
+  @media (min-width: 768px) {
+    justify-content: center;
+    flex-direction: ${(props) => (props.wrapContent ? "row" : "column")};
+    flex-wrap: ${(props) => (props.wrapContent ? "wrap" : "nowrap")};
+  }
 `;

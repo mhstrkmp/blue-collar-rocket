@@ -10,6 +10,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-width: 310px;
+  max-width: 350px;
   background: var(--primary-third);
   border-radius: 6px;
   margin: 1rem;

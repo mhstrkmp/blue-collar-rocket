@@ -71,10 +71,10 @@ export const ProfilePage = ({ title }) => {
             </tbody>
           ))}
         </Table>
-        <a href="/storybook" target="_blank">
-          Go to Storybook
-        </a>
       </ContentWrapper>
+      <a href="/storybook" target="_blank">
+        Go to Storybook
+      </a>
       <NavbarBottom />
     </>
   );
