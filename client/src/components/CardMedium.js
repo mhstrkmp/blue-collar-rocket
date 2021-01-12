@@ -5,8 +5,9 @@ import { Image, Transformation } from "cloudinary-react";
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
   background: none;
   margin-bottom: 1em;
 `;
@@ -15,7 +16,7 @@ const CardImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 1em;
+  margin-left: 1em;
 `;
 
 const DescriptionContainer = styled.div`
@@ -32,12 +33,6 @@ const DetailsContainer = styled.div`
 const CardMedium = ({ title, imgSrc, quantity, price }) => {
   return (
     <Container>
-      <CardImage>
-        <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-          <Transformation width="100" height="100" crop="limit" />
-          <Transformation defaultImage="default.png" />
-        </Image>
-      </CardImage>
       <DescriptionContainer>
         <h2>{title}</h2>
         <DetailsContainer>
@@ -45,6 +40,12 @@ const CardMedium = ({ title, imgSrc, quantity, price }) => {
           <p>x {quantity}</p>
         </DetailsContainer>
       </DescriptionContainer>
+      <CardImage>
+        <Image cloud_name="mhstrkmp" publicId={imgSrc}>
+          <Transformation width="100" height="100" crop="limit" />
+          <Transformation defaultImage="default.png" />
+        </Image>
+      </CardImage>
     </Container>
   );
 };

@@ -105,15 +105,8 @@ exports[`Storyshots Components/Cards/Large Product 1`] = `
 
 exports[`Storyshots Components/Cards/Medium Product 1`] = `
 <div
-  className="CardMedium__Container-ud6k7h-0 bDiltJ"
+  className="CardMedium__Container-ud6k7h-0 fFUXBi"
 >
-  <div
-    className="CardMedium__CardImage-ud6k7h-1 ccbrpu"
-  >
-    <img
-      src="https://via.placeholder.com/100"
-    />
-  </div>
   <div
     className="CardMedium__DescriptionContainer-ud6k7h-2 wrsoo"
   >
@@ -133,12 +126,19 @@ exports[`Storyshots Components/Cards/Medium Product 1`] = `
       </p>
     </div>
   </div>
+  <div
+    className="CardMedium__CardImage-ud6k7h-1 dQHWtp"
+  >
+    <img
+      src="https://via.placeholder.com/100"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Components/Cards/Small Category 1`] = `
 <div
-  className="CardSmall__Wrapper-sc-1c3qeca-0 cClNQS"
+  className="CardSmall__Wrapper-sc-1c3qeca-0 hKYFYq"
 >
   <div
     className="CardSmall__TextContainer-sc-1c3qeca-1 doFupI"
@@ -150,13 +150,12 @@ exports[`Storyshots Components/Cards/Small Category 1`] = `
       Lorem ipsum dolor sit
     </p>
   </div>
-  <img />
 </div>
 `;
 
 exports[`Storyshots Components/Cards/Small Customer 1`] = `
 <div
-  className="CardSmall__Wrapper-sc-1c3qeca-0 cClNQS"
+  className="CardSmall__Wrapper-sc-1c3qeca-0 hKYFYq"
 >
   <div
     className="CardSmall__TextContainer-sc-1c3qeca-1 doFupI"
@@ -171,7 +170,6 @@ exports[`Storyshots Components/Cards/Small Customer 1`] = `
       48924 Musterstadt
     </p>
   </div>
-  <img />
 </div>
 `;
 
@@ -245,7 +243,7 @@ exports[`Storyshots Components/Navbar Bottom Default 1`] = `
 
 exports[`Storyshots Components/Searchbar Default 1`] = `
 <input
-  className="Searchbar-sc-1bd71k1-0 hFNZxI"
+  className="Searchbar-sc-1bd71k1-0 csCfgf"
   placeholder="Suche"
 />
 `;

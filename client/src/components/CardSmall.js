@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 340px;
+  width: 100%;
   background: none;
   margin: 1.5em 0;
   border-bottom: 1px solid var(--neutral-mid-N60);
@@ -30,10 +30,12 @@ const CardSmall = ({ cardTitle, cardText, imgSrc }) => {
         <h2>{cardTitle}</h2>
         {cardText && cardText.map((item) => <p key={item}>{item}</p>)}
       </TextContainer>
-      <Image cloud_name="mhstrkmp" publicId={imgSrc}>
-        <Transformation width="50" height="50" crop="limit" />
-        <Transformation defaultImage="default.png" />
-      </Image>
+      {imgSrc && (
+        <Image cloud_name="mhstrkmp" publicId={imgSrc}>
+          <Transformation width="50" height="50" crop="limit" />
+          <Transformation defaultImage="default.png" />
+        </Image>
+      )}
     </Wrapper>
   );
 };

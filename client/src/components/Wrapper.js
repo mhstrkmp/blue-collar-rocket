@@ -9,6 +9,7 @@ export const AppWrapper = styled.section`
 `;
 
 export const ContentWrapper = styled.section`
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -16,7 +17,7 @@ export const ContentWrapper = styled.section`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 1em 2em;
+  padding: 1em;
   @media (min-width: 768px) {
     justify-content: center;
     flex-direction: ${(props) => (props.wrapContent ? "row" : "column")};

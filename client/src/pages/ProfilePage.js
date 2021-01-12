@@ -11,7 +11,8 @@ import Chart from "../components/Chart";
 import { ContentWrapper } from "../components/Wrapper";
 
 const Table = styled.table`
-  margin: 1.8em 0;
+  width: 100%;
+  margin: 2em 0;
   vertical-align: sub;
   th {
     padding-bottom: 0.6em;
@@ -71,10 +72,10 @@ export const ProfilePage = ({ title }) => {
             </tbody>
           ))}
         </Table>
+        <a href="/storybook" target="_blank">
+          Go to Storybook
+        </a>
       </ContentWrapper>
-      <a href="/storybook" target="_blank">
-        Go to Storybook
-      </a>
       <NavbarBottom />
     </>
   );

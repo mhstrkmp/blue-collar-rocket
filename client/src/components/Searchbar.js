@@ -14,6 +14,9 @@ const Searchbar = styled.input`
   :focus {
     outline: none;
   }
+  @media (max-width: 768px) {
+    max-width: 310px;
+  }
 `;
 
 export default Searchbar;
