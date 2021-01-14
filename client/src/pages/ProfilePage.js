@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 import axios from "axios";
@@ -29,7 +29,12 @@ const Table = styled.table`
   }
 `;
 
+// TODO get userBonusPercentage from database
+const userBonusPercentage = 0.05;
+
 export const ProfilePage = ({ title }) => {
+  const [bonusPerMonth, setBonusPerMonth] = useState([]);
+
   const { isLoading, error, data } = useQuery("orders", async () => {
     try {
       const { data } = await axios.get("/api/orders");
@@ -40,19 +45,29 @@ export const ProfilePage = ({ title }) => {
     }
   });
 
+  useEffect(() => {
+    const bonusSum = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    data &&
+      data.forEach((order) => {
+        const month = new Date(order.dateAdded).getMonth();
+        const price = order.price * userBonusPercentage;
+        bonusSum[month] += price;
+      });
+    setBonusPerMonth(bonusSum);
+  }, [data]);
+
   if (isLoading) {
     return <LoadingSpinner title={title} />;
   }
   if (error) return "An error has occurred: " + error.message;
 
   data.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
-
   return (
     <>
       <Header title={title} />
       <ContentWrapper>
         <h2>Deine Bonuszahlungen</h2>
-        <Chart />
+        <Chart bonusPerMonth={bonusPerMonth} />
         <Table>
           <thead>
             <tr>
