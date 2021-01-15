@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import { Bar } from "react-chartjs-2";
 
 const Chart = ({ bonusPerMonth }) => {
-  const [userData, setUserData] = useState([]);
+  const [bonusData, setBonusData] = useState([]);
   useEffect(() => {
-    setUserData(bonusPerMonth);
+    setBonusData(bonusPerMonth);
   }, [bonusPerMonth]);
 
   const chartData = {
@@ -26,7 +26,7 @@ const Chart = ({ bonusPerMonth }) => {
     datasets: [
       {
         label: "€ Bonus",
-        data: userData,
+        data: bonusData,
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
           "rgba(54, 162, 235, 0.2)",

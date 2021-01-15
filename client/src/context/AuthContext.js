@@ -20,7 +20,7 @@ function AuthProvider(props) {
   const login = async (username, password) => {
     try {
       const { data } = await axios.get(`/api/auth/${username}/${password}`);
-      setData({ user: data.name });
+      setData({ token: data.token });
       return;
     } catch (error) {
       console.error(error);

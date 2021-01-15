@@ -29,12 +29,12 @@ const Table = styled.table`
   }
 `;
 
-// TODO get userBonusPercentage from database
-const userBonusPercentage = 0.05;
+const userBonusPercentage = 0.03;
+const chosenYear = new Date().getFullYear();
+const bonusSum = Array.from({ length: 12 }, () => 0);
 
 export const ProfilePage = ({ title }) => {
   const [bonusPerMonth, setBonusPerMonth] = useState([]);
-
   const { isLoading, error, data } = useQuery("orders", async () => {
     try {
       const { data } = await axios.get("/api/orders");
@@ -46,12 +46,16 @@ export const ProfilePage = ({ title }) => {
   });
 
   useEffect(() => {
-    const bonusSum = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     data &&
       data.forEach((order) => {
-        const month = new Date(order.dateAdded).getMonth();
-        const price = order.price * userBonusPercentage;
-        bonusSum[month] += price;
+        const date = new Date(order.dateAdded);
+        const year = date.getFullYear();
+        if (year !== chosenYear) {
+          return;
+        }
+        const month = date.getMonth();
+        const bonus = order.price * userBonusPercentage;
+        bonusSum[month] += bonus;
       });
     setBonusPerMonth(bonusSum);
   }, [data]);
@@ -66,7 +70,7 @@ export const ProfilePage = ({ title }) => {
     <>
       <Header title={title} />
       <ContentWrapper>
-        <h2>Deine Bonuszahlungen</h2>
+        <h2>Deine Boni {chosenYear}</h2>
         <Chart bonusPerMonth={bonusPerMonth} />
         <Table>
           <thead>
