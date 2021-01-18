@@ -36,13 +36,17 @@ const LogInForm = styled.form`
 `;
 
 const UnauthenticatedApp = () => {
-  const { login } = useAuth();
+  const { login, error } = useAuth();
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    login(username, password);
+    try {
+      await login(username, password);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
@@ -50,6 +54,7 @@ const UnauthenticatedApp = () => {
       <GlobalStyle />
       <Container>
         <img src={logo} alt="Logo" />
+        {error && <h2>Falscher Benutzername oder Passwort ...</h2>}
         <LogInForm onSubmit={handleSubmit}>
           <label>
             <p>Benutzername:</p>

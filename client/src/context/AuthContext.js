@@ -5,6 +5,7 @@ const AuthContext = createContext();
 
 function AuthProvider(props) {
   const [data, setData] = useState({});
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const userString = localStorage.getItem("__bcrUser__");
@@ -19,15 +20,16 @@ function AuthProvider(props) {
   // Functions for login, logout and register will be inserted below
   const login = async (username, password) => {
     try {
+      setError(false);
       const { data } = await axios.get(`/api/auth/${username}/${password}`);
       setData({ token: data });
-      return;
     } catch (error) {
       console.error(error);
+      setError(true);
     }
   };
 
-  return <AuthContext.Provider value={{ data, login }} {...props} />;
+  return <AuthContext.Provider value={{ data, error, login }} {...props} />;
 }
 const useAuth = () => useContext(AuthContext);
 export { AuthProvider, useAuth };
