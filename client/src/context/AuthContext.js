@@ -9,27 +9,33 @@ function AuthProvider(props) {
 
   useEffect(() => {
     const userString = localStorage.getItem("__bcrUser__");
-    const user = JSON.parse(userString) || {};
+    const user = async () => (await JSON.parse(userString)) || {};
     setData(user);
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("__bcrUser__", JSON.stringify(data) || {});
-  }, [data]);
+  useEffect(
+    (error) => {
+      !error
+        ? localStorage.setItem("__bcrUser__", JSON.stringify(data) || {})
+        : localStorage.setItem("__bcrUser__", {});
+    },
+    [data]
+  );
 
   // Functions for login, logout and register will be inserted below
   const login = async (username, password) => {
     try {
-      setError(false);
       const { data } = await axios.get(`/api/auth/${username}/${password}`);
       setData({ token: data });
+      setError(false);
     } catch (error) {
-      console.error(error);
+      setData({});
       setError(true);
+      console.error(error);
     }
   };
 
-  return <AuthContext.Provider value={{ data, error, login }} {...props} />;
+  return <AuthContext.Provider value={{ data, login, error }} {...props} />;
 }
 const useAuth = () => useContext(AuthContext);
 export { AuthProvider, useAuth };
