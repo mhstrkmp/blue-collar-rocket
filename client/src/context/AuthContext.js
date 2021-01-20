@@ -4,6 +4,7 @@ import axios from "axios";
 const AuthContext = createContext();
 
 function AuthProvider(props) {
+  const [error, setError] = useState(false);
   const [data, setData] = useState({});
 
   useEffect(() => {
@@ -23,11 +24,11 @@ function AuthProvider(props) {
       setData({ token: data });
       return;
     } catch (error) {
-      console.error(error);
+      setError(true);
     }
   };
 
-  return <AuthContext.Provider value={{ data, login }} {...props} />;
+  return <AuthContext.Provider value={{ data, login, error }} {...props} />;
 }
 const useAuth = () => useContext(AuthContext);
 export { AuthProvider, useAuth };

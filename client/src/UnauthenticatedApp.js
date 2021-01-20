@@ -22,6 +22,7 @@ const Container = styled.div`
 `;
 
 const LogInForm = styled.form`
+  margin-top: 1.5em;
   input {
     padding: 0.3em;
     margin-bottom: 1em;
@@ -36,7 +37,7 @@ const LogInForm = styled.form`
 `;
 
 const UnauthenticatedApp = () => {
-  const { login } = useAuth();
+  const { login, error } = useAuth();
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
@@ -50,6 +51,7 @@ const UnauthenticatedApp = () => {
       <GlobalStyle />
       <Container>
         <img src={logo} alt="Logo" />
+        {error && <h2>Benutzername oder Passwort unbekannt ...</h2>}
         <LogInForm onSubmit={handleSubmit}>
           <label>
             <p>Benutzername:</p>
