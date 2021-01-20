@@ -9,7 +9,7 @@ exports[`App snapshot renders 1`] = `
     src="bcrLogo.png"
   />
   <form
-    className="UnauthenticatedApp__LogInForm-sc-14rep0y-1 huPlYN"
+    className="UnauthenticatedApp__LogInForm-sc-14rep0y-1 GMYna"
     onSubmit={[Function]}
   >
     <label>
