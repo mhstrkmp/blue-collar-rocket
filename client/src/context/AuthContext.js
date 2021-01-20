@@ -9,7 +9,7 @@ function AuthProvider(props) {
 
   useEffect(() => {
     const userString = localStorage.getItem("__bcrUser__");
-    const user = JSON.parse(userString) || {};
+    const user = async () => (await JSON.parse(userString)) || {};
     setData(user);
   }, []);
 
