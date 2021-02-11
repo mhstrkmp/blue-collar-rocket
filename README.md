@@ -7,7 +7,7 @@
 
 ## About this App
 
-I builded this as a capstone project of our web development bootcamp.
+I built this as a capstone project of our web development boot camp.
 
 Blue Collar Rocket is an app to streamline processes in craftsmanship. Delight your customers with excellent consulting and lightning-fast service. Motivate and reward your employees through an easy bonus system. Increase your revenue.
 
